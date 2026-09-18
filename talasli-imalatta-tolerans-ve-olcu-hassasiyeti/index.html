@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="tr" class="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Talaşlı İmalatta Tolerans ve Ölçü Hassasiyeti Rehberi</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel="canonical" href="./index.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel='dns-prefetch' href='//unpkg.com' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='preconnect' href='https://fonts.googleapis.com' />
+<link rel='preconnect' href='https://fonts.gstatic.com' />
+<meta name="description" content="Talaşlı imalatta tolerans nedir, ölçüsel hassasiyet ve CNC tolerans aralıkları nasıl belirlenir? Teknik ve uygulamalı rehber.">
+<link rel="alternate" type="application/rss+xml" title="Aymaksan Makina &raquo; Talaşlı İmalatta Tolerans ve Ölçü Hassasiyeti yorum akışı" href="./feed/index.html" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://hakanaydemir20.github.io/aymaksan-demo/wp-json/oembed/1.0/embed?url=http%3A%2F%2Faymaksan.test%2Ftalasli-imalatta-tolerans-ve-olcu-hassasiyeti%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://hakanaydemir20.github.io/aymaksan-demo/wp-json/oembed/1.0/embed?url=http%3A%2F%2Faymaksan.test%2Ftalasli-imalatta-tolerans-ve-olcu-hassasiyeti%2F&#038;format=xml" />
+<meta property="og:title" content="Talaşlı İmalatta Tolerans ve Ölçü Hassasiyeti Rehberi">
+<meta property="og:description" content="Talaşlı imalatta tolerans nedir, ölçüsel hassasiyet ve CNC tolerans aralıkları nasıl belirlenir? Teknik ve uygulamalı rehber.">
+<meta property="og:url" content="./index.html">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="Aymaksan Makina">
+<meta property="og:image" content="../wp-content/uploads/2026/01/talasli-imalatta-tolerans-1-1024x682.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Talaşlı İmalatta Tolerans ve Ölçü Hassasiyeti Rehberi">
+<meta name="twitter:description" content="Talaşlı imalatta tolerans nedir, ölçüsel hassasiyet ve CNC tolerans aralıkları nasıl belirlenir? Teknik ve uygulamalı rehber.">
+<meta name="twitter:image" content="../wp-content/uploads/2026/01/talasli-imalatta-tolerans-1-1024x682.webp">
+<link rel="alternate" hreflang="tr" href="./index.html">
+<link rel="alternate" hreflang="x-default" href="./index.html">
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='aymaksan-fonts-preconnect-css' href='https://fonts.googleapis.com' media='all' />
+<link rel='stylesheet' id='aymaksan-fonts-css' href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&#038;family=JetBrains+Mono:wght@500&#038;display=swap' media='all' />
+<link rel='stylesheet' id='material-symbols-css' href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&#038;display=swap' media='all' />
+<link rel='stylesheet' id='aymaksan-main-css' href='../wp-content/themes/aymaksan-stitch/style.css?ver=1.7.4' media='all' />
+<link rel='stylesheet' id='aymaksan-animations-css' href='../wp-content/themes/aymaksan-stitch/assets/css/animations.css?ver=1.7.4' media='all' />
+<link rel='stylesheet' id='aymaksan-responsive-css' href='../wp-content/themes/aymaksan-stitch/assets/css/responsive.css?ver=1.7.4' media='all' />
+<link rel='stylesheet' id='tocer-dist-css' href='../wp-content/plugins/tocer/assets/style.min.css?ver=4.2.3' media='all' />
+<script>
+	document.documentElement.classList.add('tocer-init');
+</script>
+<!-- Site Kit tarafından eklenen Google etiketi (gtag.js) snippet&#039;i -->
+<!-- Google Analytics snippet&#039;i, Site Kit tarafından eklendi -->
+<script id="google_gtagjs-js" src="https://www.googletagmanager.com/gtag/js?id=GT-MJWKZR4N" async></script>
+<script id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["aymaksan.test"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-MJWKZR4N", {"googlesitekit_post_type":"post","googlesitekit_post_author":"aymaksan"});
+ window._googlesitekit = window._googlesitekit || {}; window._googlesitekit.throttledEvents = []; window._googlesitekit.gtagEvent = (name, data) => { var key = JSON.stringify( { name, data } ); if ( !! window._googlesitekit.throttledEvents[ key ] ) { return; } window._googlesitekit.throttledEvents[ key ] = true; setTimeout( () => { delete window._googlesitekit.throttledEvents[ key ]; }, 5 ); gtag( "event", name, { ...data, event_source: "site-kit" } ); }; 
+//# sourceURL=google_gtagjs-js-after
+</script>
+<link rel="https://api.w.org/" href="https://hakanaydemir20.github.io/aymaksan-demo/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://hakanaydemir20.github.io/aymaksan-demo/wp-json/wp/v2/posts/2317" /><link rel="canonical" href="./index.html" />
+<meta name="generator" content="Site Kit by Google 1.179.0" /><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2H7PJWH');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Favicon -->
+<link rel="icon" href="../aymaksan/favicon.ico" type="image/x-icon">
+<!-- End Favicon --><link rel="icon" type="image/png" href="../wp-content/uploads/fbrfg/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="../wp-content/uploads/fbrfg/favicon.svg" />
+<link rel="shortcut icon" href="../wp-content/uploads/fbrfg/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../wp-content/uploads/fbrfg/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="aymaksan" />
+<link rel="manifest" href="../wp-content/uploads/fbrfg/site.webmanifest" /><script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Talaşlı İmalatta Tolerans ve Ölçü Hassasiyeti",
+    "description": "Talaşlı imalat süreçlerinde parçanın yalnızca nominal ölçülere sahip olması yeterli değildir. Gerçek üretim dünyasında, her ölçü belirli bir sapma aralığıyla birlikte değerlendirilir ve bu sapma aralığı talaşlı imalatta tolerans kavramı ile tanımlanır...",
+    "url": "https://hakanaydemir20.github.io/aymaksan-demo/talasli-imalatta-tolerans-ve-olcu-hassasiyeti/",
+    "datePublished": "2026-01-19T08:00:00+03:00",
+    "dateModified": "2026-02-04T21:13:50+03:00",
+    "author": {
+        "@type": "Organization",
+        "name": "Aymaksan Makina",
+        "url": "https://hakanaydemir20.github.io/aymaksan-demo/"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aymaksan Makina",
+        "url": "https://hakanaydemir20.github.io/aymaksan-demo/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://hakanaydemir20.github.io/aymaksan-demo/wp-content/uploads/aymaksan-logo.png"
+        }
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://hakanaydemir20.github.io/aymaksan-demo/talasli-imalatta-tolerans-ve-olcu-hassasiyeti/"
+    },
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://hakanaydemir20.github.io/aymaksan-demo/wp-content/uploads/2026/01/talasli-imalatta-tolerans-1-1024x682.webp"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Ana Sayfa",
+            "item": "https://hakanaydemir20.github.io/aymaksan-demo/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Talaşlı İmalat Blog",
+            "item": "https://hakanaydemir20.github.io/aymaksan-demo/kategori/talasli-imalat-blog/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Talaşlı İmalatta Tolerans ve Ölçü Hassasiyeti",
+            "item": "https://hakanaydemir20.github.io/aymaksan-demo/talasli-imalatta-tolerans-ve-olcu-hassasiyeti/"
+        }
+    ]
+}
+</script>
+
+<!-- Google Etiket Yöneticisi snippet&#039;i, Site Kit tarafından eklendi -->
+<script>
+			( function( w, d, s, l, i ) {
+				w[l] = w[l] || [];
+				w[l].push( {'gtm.start': new Date().getTime(), event: 'gtm.js'} );
+				var f = d.getElementsByTagName( s )[0],
+					j = d.createElement( s ), dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore( j, f );
+			} )( window, document, 'script', 'dataLayer', 'GTM-M2H7PJWH' );
+			
+</script>
+
+<!-- Son Google Etiket Yöneticisi snippet&#039;i, Site Kit tarafından eklendi -->
+<link rel="icon" href="../wp-content/uploads/2025/12/cropped-aymaksan-simge-32x32.webp" sizes="32x32" />
+<link rel="icon" href="../wp-content/uploads/2025/12/cropped-aymaksan-simge-192x192.webp" sizes="192x192" />
+<link rel="apple-touch-icon" href="../wp-content/uploads/2025/12/cropped-aymaksan-simge-180x180.webp" />
+<meta name="msapplication-TileImage" content="../wp-content/uploads/2025/12/cropped-aymaksan-simge-270x270.webp" />
+<style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=https://hakanaydemir20.github.io/aymaksan-demo/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id="wp-block-latest-comments-inline-css">
+ol.wp-block-latest-comments{box-sizing:border-box;margin-left:0}:where(.wp-block-latest-comments:not([style*=line-height] .wp-block-latest-comments__comment)){line-height:1.1}:where(.wp-block-latest-comments:not([style*=line-height] .wp-block-latest-comments__comment-excerpt p)){line-height:1.8}.has-dates :where(.wp-block-latest-comments:not([style*=line-height])),.has-excerpts :where(.wp-block-latest-comments:not([style*=line-height])){line-height:1.5}.wp-block-latest-comments .wp-block-latest-comments{padding-left:0}.wp-block-latest-comments__comment{list-style:none;margin-bottom:1em}.has-avatars .wp-block-latest-comments__comment{list-style:none;min-height:2.25em}.has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-excerpt,.has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta{margin-left:3.25em}.wp-block-latest-comments__comment-excerpt p{font-size:.875em;margin:.36em 0 1.4em}.wp-block-latest-comments__comment-date{display:block;font-size:.75em}.wp-block-latest-comments .avatar,.wp-block-latest-comments__comment-avatar{border-radius:1.5em;display:block;float:left;height:2.5em;margin-right:.75em;width:2.5em}.wp-block-latest-comments[class*=-font-size] a,.wp-block-latest-comments[style*=font-size] a{font-size:inherit}
+/*# sourceURL=https://hakanaydemir20.github.io/aymaksan-demo/wp-includes/blocks/latest-comments/style.min.css */
+</style>
+<style id="wp-block-latest-posts-inline-css">
+.wp-block-latest-posts{box-sizing:border-box}.wp-block-latest-posts.alignleft{margin-right:2em}.wp-block-latest-posts.alignright{margin-left:2em}.wp-block-latest-posts.wp-block-latest-posts__list{list-style:none}.wp-block-latest-posts.wp-block-latest-posts__list li{clear:both;overflow-wrap:break-word}.wp-block-latest-posts.is-grid{display:flex;flex-wrap:wrap}.wp-block-latest-posts.is-grid li{margin:0 1.25em 1.25em 0;width:100%}@media (min-width:600px){.wp-block-latest-posts.columns-2 li{width:calc(50% - .625em)}.wp-block-latest-posts.columns-2 li:nth-child(2n){margin-right:0}.wp-block-latest-posts.columns-3 li{width:calc(33.33333% - .83333em)}.wp-block-latest-posts.columns-3 li:nth-child(3n){margin-right:0}.wp-block-latest-posts.columns-4 li{width:calc(25% - .9375em)}.wp-block-latest-posts.columns-4 li:nth-child(4n){margin-right:0}.wp-block-latest-posts.columns-5 li{width:calc(20% - 1em)}.wp-block-latest-posts.columns-5 li:nth-child(5n){margin-right:0}.wp-block-latest-posts.columns-6 li{width:calc(16.66667% - 1.04167em)}.wp-block-latest-posts.columns-6 li:nth-child(6n){margin-right:0}}:root :where(.wp-block-latest-posts.is-grid){padding:0}:root :where(.wp-block-latest-posts.wp-block-latest-posts__list){padding-left:0}.wp-block-latest-posts__post-author,.wp-block-latest-posts__post-date{display:block;font-size:.8125em}.wp-block-latest-posts__post-excerpt,.wp-block-latest-posts__post-full-content{margin-bottom:1em;margin-top:.5em}.wp-block-latest-posts__featured-image a{display:inline-block}.wp-block-latest-posts__featured-image img{height:auto;max-width:100%;width:auto}.wp-block-latest-posts__featured-image.alignleft{float:left;margin-right:1em}.wp-block-latest-posts__featured-image.alignright{float:right;margin-left:1em}.wp-block-latest-posts__featured-image.aligncenter{margin-bottom:1em;text-align:center}
+/*# sourceURL=https://hakanaydemir20.github.io/aymaksan-demo/wp-includes/blocks/latest-posts/style.min.css */
+</style>
+<style id="wp-block-search-inline-css">
+.wp-block-search__button{margin-left:10px;word-break:normal}.wp-block-search__button.has-icon{line-height:0}.wp-block-search__button svg{fill:currentColor;height:1.25em;min-height:24px;min-width:24px;vertical-align:text-bottom;width:1.25em}:where(.wp-block-search__button){border:1px solid #ccc;padding:6px 10px}.wp-block-search__inside-wrapper{display:flex;flex:auto;flex-wrap:nowrap;max-width:100%}.wp-block-search__label{width:100%}.wp-block-search.wp-block-search__button-only .wp-block-search__button{box-sizing:border-box;display:flex;flex-shrink:0;justify-content:center;margin-left:0;max-width:100%}.wp-block-search.wp-block-search__button-only .wp-block-search__inside-wrapper{min-width:0!important;transition-property:width}.wp-block-search.wp-block-search__button-only .wp-block-search__input{flex-basis:100%;transition-duration:.3s}.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden,.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden .wp-block-search__inside-wrapper{overflow:hidden}.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden .wp-block-search__input{border-left-width:0!important;border-right-width:0!important;flex-basis:0;flex-grow:0;margin:0;min-width:0!important;padding-left:0!important;padding-right:0!important;width:0!important}:where(.wp-block-search__input){appearance:none;border:1px solid #949494;flex-grow:1;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;margin-left:0;margin-right:0;min-width:3rem;padding:8px;text-decoration:unset!important;text-transform:inherit}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper){background-color:#fff;border:1px solid #949494;box-sizing:border-box;padding:4px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input{border:none;border-radius:0;padding:0 4px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input:focus{outline:none}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) :where(.wp-block-search__button){padding:4px 8px}.wp-block-search.aligncenter .wp-block-search__inside-wrapper{margin:auto}.wp-block[data-align=right] .wp-block-search.wp-block-search__button-only .wp-block-search__inside-wrapper{float:right}
+/*# sourceURL=https://hakanaydemir20.github.io/aymaksan-demo/wp-includes/blocks/search/style.min.css */
+</style>
+<style id="wp-block-group-inline-css">
+.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}
+/*# sourceURL=https://hakanaydemir20.github.io/aymaksan-demo/wp-includes/blocks/group/style.min.css */
+</style>
+
+</head>
+<body class="wp-singular post-template-default single single-post postid-2317 single-format-standard wp-custom-logo wp-embed-responsive wp-theme-aymaksan-stitch is-singular">
+		<!-- Google Etiket Yöneticisi (noscript) snippet&#039;i, Site Kit tarafından eklendi -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2H7PJWH" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<!-- Son Google Etiket Yöneticisi (noscript) snippet&#039;i, Site Kit tarafından eklendi -->
+		<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2H7PJWH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Mobil Overlay -->
+<div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+<!-- Mobil Menü Drawer -->
+<div class="mobile-menu" id="mobile-menu" role="dialog"
+     aria-label="Navigasyon Menüsü"
+     aria-hidden="true">
+  <div class="mobile-menu-header">
+    <a href="../index.html" class="mobile-menu-logo">
+              <img src="../wp-content/uploads/2026/06/logo1-clean.png"
+             alt="Aymaksan Makina"
+             style="height:52px;width:auto;object-fit:contain;">
+          </a>
+    <button class="mobile-menu-close" id="mobile-menu-close"
+            aria-label="Menüyü kapat">
+      <span class="material-symbols-outlined" aria-hidden="true">close</span>
+    </button>
+  </div>
+  <nav aria-label="Mobil Menü">
+    <ul id="menu-ana-menu" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home"><a href="../index.html">Ana Sayfa</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../ozel-talasli-imalat-hizmetleri/index.html">Hizmetlerimiz</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../makine-parkimiz/index.html">Makine Parkımız</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../sektorlere-ozel-cnc-talasli-imalat/index.html">Sektörler</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../aymaksan-makina-hakkimizda/index.html">Hakkımızda</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../blog/index.html">Blog</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../talasli-imalat-teklif-iletisim/index.html">İletişim</a></li></ul>  </nav>
+  <div class="mobile-menu-contact">
+    <a href="tel:+905523615628" class="mobile-contact-item">
+      <span class="material-symbols-outlined" aria-hidden="true">call</span>
+      +90 552 361 56 28
+    </a>
+    <a href="mailto:info@aymaksanmakina.com" class="mobile-contact-item">
+      <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+      info@aymaksanmakina.com
+    </a>
+    <a href="../talasli-imalat-teklif-iletisim/index.html"
+       class="btn-primary" style="justify-content:center;width:100%;margin-top:8px;">
+      Teklif Alın    </a>
+  </div>
+</div>
+
+<!-- SABİT HEADER SARMALAYICI (topbar + ana header birlikte) -->
+<div class="site-header-wrap" id="site-header-wrap">
+
+<!-- Üst Bilgi Çubuğu -->
+<div class="topbar" role="complementary">
+  <div class="container">
+    <div class="topbar-inner">
+      <div class="topbar-left">
+        <a href="tel:+905523615628" class="topbar-item">
+          <span class="material-symbols-outlined" aria-hidden="true">call</span>
+          +90 552 361 56 28
+        </a>
+        <a href="mailto:info@aymaksanmakina.com" class="topbar-item">
+          <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+          info@aymaksanmakina.com
+        </a>
+        <span class="topbar-item topbar-address">
+          <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+          Ostim Sanayi Sitesi 1181. Sk. No:23, Yenimahalle/Ankara
+        </span>
+      </div>
+      <div class="topbar-right">
+        <a href="https://www.google.com/maps/search/Ostim+Sanayi+Sitesi+1181.+Sk.+No+23+Yenimahalle+Ankara"
+           target="_blank" rel="noopener" class="topbar-item" aria-label="Haritada Gör">
+          <span class="material-symbols-outlined" aria-hidden="true">map</span>
+          Haritada Gör
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ANA HEADER -->
+<header class="site-header" id="site-header" role="banner">
+  <div class="container">
+
+    <!-- Logo -->
+    <div class="site-logo">
+      <a href="../index.html"
+         aria-label="Aymaksan Makina — Ana Sayfa">
+                  <img src="../wp-content/uploads/2026/06/logo1-clean.png"
+               alt="Aymaksan Makina | CNC & Design & Automation"
+               class="site-logo-img"
+               style="height:64px;width:auto;max-width:230px;object-fit:contain;"
+               loading="eager" width="230" height="64">
+              </a>
+    </div>
+
+    <!-- Desktop Navigasyon -->
+    <nav class="primary-nav" id="primary-nav"
+         aria-label="Ana Navigasyon">
+      <ul id="menu-ana-menu-1" class="nav-list"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home"><a href="../index.html">Ana Sayfa</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../ozel-talasli-imalat-hizmetleri/index.html">Hizmetlerimiz</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../makine-parkimiz/index.html">Makine Parkımız</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../sektorlere-ozel-cnc-talasli-imalat/index.html">Sektörler</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../aymaksan-makina-hakkimizda/index.html">Hakkımızda</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../blog/index.html">Blog</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../talasli-imalat-teklif-iletisim/index.html">İletişim</a></li></ul>    </nav>
+
+    <!-- Header CTA -->
+    <a href="../talasli-imalat-teklif-iletisim/index.html"
+       class="header-cta">
+      <span class="material-symbols-outlined" aria-hidden="true">request_quote</span>
+      Teklif Alın    </a>
+
+    <!-- Hamburger -->
+    <button class="menu-toggle" id="menu-toggle"
+            aria-controls="mobile-menu" aria-expanded="false"
+            aria-label="Menüyü aç">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+  </div>
+</header>
+
+</div><!-- .site-header-wrap -->
+
+<!-- Back to top -->
+<button class="back-to-top" id="back-to-top"
+        aria-label="Sayfa başına dön">
+  <span class="material-symbols-outlined" aria-hidden="true">arrow_upward</span>
+</button>
+
+<main id="main" class="site-main" role="main">
+  <div class="container">
+    <nav class="breadcrumb container" aria-label="Sayfa konumu"><a href="../index.html">Ana Sayfa</a><span class="sep" aria-hidden="true">›</span><a href="../kategori/talasli-imalat-blog/index.html">Talaşlı İmalat Blog</a><span class="sep" aria-hidden="true">›</span><span aria-current="page">Talaşlı İmalatta Tolerans ve Ölçü Hassasiyeti</span></nav>
+    <div class="single-layout">
+
+      <!-- Sol TOC (sticky, grid col 1) -->
+      <div class="post-toc-col">
+<aside class="post-toc" id="post-toc" aria-label="İçindekiler">
+  <div class="post-toc__inner">
+    <div class="post-toc__title">İçindekiler</div>
+    <nav class="post-toc__nav" id="post-toc-nav"></nav>
+  </div>
+</aside>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var nav = document.getElementById('post-toc-nav');
+  var toc = document.getElementById('post-toc');
+  var col = document.querySelector('.post-toc-col');
+  if (!nav || !toc || !col) return;
+
+  var content = document.querySelector('.entry-content');
+  if (!content) { col.style.setProperty('display', 'none', 'important'); return; }
+
+  /*
+   * Tocer plugini iki şey yapar:
+   * 1. .entry-content içine DIV.tocer (gizli TOC widget) ekler
+   * 2. Asıl makale başlıklarına id="tocer-heading-N" class="tocer-heading" atar
+   *
+   * Bu yüzden yalnızca DIV.tocer IÇINDEKI başlıkları dışarıda bırakıyoruz.
+   * [id^="tocer"] selektörünü KULLANMIYORUZ — başlıkların kendisi bu ID'lere sahip.
+   */
+  var hiddenContainers = ['.tocer', '.ez-toc-container',
+                          '.wp-block-rank-math-toc-block', '.rank-math-toc',
+                          '.ez-toc-v2-container'];
+
+  var headings = Array.from(content.querySelectorAll('h2, h3')).filter(function(h) {
+    for (var s = 0; s < hiddenContainers.length; s++) {
+      if (h.closest(hiddenContainers[s])) return false;
+    }
+    return true;
+  });
+
+  if (headings.length < 3) { col.style.setProperty('display', 'none', 'important'); return; }
+
+  /* ── Header yüksekliği ── */
+  var headerEl = document.querySelector('.site-header');
+  var OFFSET   = (headerEl ? headerEl.offsetHeight : 80) + 16;
+
+  /* ── Linkleri oluştur; tüm başlıklara temiz ID ver ── */
+  headings.forEach(function(h, i) {
+    h.id = 'aym-toc-' + i; // her zaman taze ID — çakışmayı önler
+    var isSub = h.tagName === 'H3';
+    var a = document.createElement('a');
+    a.href       = '#' + h.id;
+    a.className  = 'post-toc__link' + (isSub ? ' post-toc__link--sub' : '');
+    a.dataset.id = h.id;
+    a.textContent = h.textContent.replace(/^\d+\s+/, '').trim();
+    nav.appendChild(a);
+  });
+
+  var links = Array.from(nav.querySelectorAll('a'));
+
+  /* ── Aktif link: scroll bazlı ── */
+  function getActive() {
+    var scrollY = window.scrollY || window.pageYOffset;
+    var active  = headings[0];
+    for (var i = 0; i < headings.length; i++) {
+      var absTop = headings[i].getBoundingClientRect().top + scrollY - OFFSET - 4;
+      if (scrollY >= absTop) active = headings[i];
+      else break;
+    }
+    return active;
+  }
+
+  function setActive(id) {
+    links.forEach(function(l) { l.classList.remove('active'); });
+    var a = nav.querySelector('[data-id="' + id + '"]');
+    if (!a) return;
+    a.classList.add('active');
+    var inner = toc.querySelector('.post-toc__inner');
+    var aTop  = a.offsetTop;
+    var ih    = inner.clientHeight;
+    if (aTop < inner.scrollTop || aTop > inner.scrollTop + ih - 32) {
+      inner.scrollTop = aTop - ih / 2 + 16;
+    }
+  }
+
+  var lastId = '';
+  function onScroll() {
+    var h = getActive();
+    if (h && h.id !== lastId) { lastId = h.id; setActive(h.id); }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ── Tıklama: smooth scroll ── */
+  nav.addEventListener('click', function(e) {
+    var a = e.target.closest('a[data-id]');
+    if (!a) return;
+    e.preventDefault();
+    var target = document.getElementById(a.dataset.id);
+    if (!target) return;
+    var targetY = target.getBoundingClientRect().top
+                  + (window.scrollY || window.pageYOffset)
+                  - OFFSET;
+    window.scrollTo({ top: Math.max(0, targetY), behavior: 'smooth' });
+  });
+});
+</script>
+</div><!-- .post-toc-col -->
+
+      <!-- Ana İçerik -->
+      <article id="post-2317" class="post-2317 post type-post status-publish format-standard has-post-thumbnail hentry category-talasli-imalat-blog" role="article">
+
+        
+          <header class="post-header">
+                          <div class="post-card__meta">
+                <a href="../kategori/talasli-imalat-blog/index.html">
+                  Talaşlı İmalat Blog                </a>
+                <span>—</span>
+                <span>19 Oca 2026</span>
+              </div>
+            
+            <h1>Talaşlı İmalatta Tolerans ve Ölçü Hassasiyeti</h1>
+
+            <div class="post-meta">
+              <span>aymaksan</span>
+            </div>
+          </header>
+
+                      <div class="post-thumbnail">
+              <img width="1200" height="799" src="../wp-content/uploads/2026/01/talasli-imalatta-tolerans-1.webp" class="attachment-hero size-hero wp-post-image" alt="Talaşlı İmalatta Tolerans ve Ölçü Hassasiyeti" loading="lazy" decoding="async" fetchpriority="high" srcset="../wp-content/uploads/2026/01/talasli-imalatta-tolerans-1.webp 1200w, ../wp-content/uploads/2026/01/talasli-imalatta-tolerans-1-300x200.webp 300w, ../wp-content/uploads/2026/01/talasli-imalatta-tolerans-1-1024x682.webp 1024w, ../wp-content/uploads/2026/01/talasli-imalatta-tolerans-1-768x511.webp 768w" sizes="(max-width: 1200px) 100vw, 1200px" />            </div>
+          
+          <div class="entry-content">
+            <h2 id="tocer-heading-1" class="tocer-heading">Talaşlı İmalatta Tolerans ve Ölçü Hassasiyetinin Temel Prensipleri</h2>
+<p>Talaşlı imalat süreçlerinde parçanın yalnızca nominal ölçülere sahip olması yeterli değildir. Gerçek üretim dünyasında, her ölçü belirli bir sapma aralığıyla birlikte değerlendirilir ve bu sapma aralığı <strong><em>talaşlı imalatta tolerans</em></strong> kavramı ile tanımlanır. Tolerans, bir ölçünün kabul edilebilir alt ve üst sınırlarını ifade ederken; <strong>boyutsal doğruluk</strong>, bu sınırlar içerisinde kalabilme yeteneğini temsil eder.</p>
+<p>Modern CNC işleme ortamlarında tolerans yönetimi; makine rijitliği, kesici takım geometrisi, bağlama yöntemi ve ölçüm altyapısı gibi çok sayıda değişkenin birlikte kontrol edilmesini gerektirir. Bu nedenle tolerans konusu yalnızca teknik resimde belirtilen bir değer değil, doğrudan üretim stratejisini belirleyen kritik bir parametre haline gelmiştir.</p>
+<p>Özellikle <strong><em>hassas parça üretimi</em></strong> gerektiren savunma, otomotiv, medikal ve kalıpçılık sektörlerinde toleranslar; maliyet, çevrim süresi ve kalite arasında hassas bir denge kurulmasını zorunlu kılar. Gereğinden dar tanımlanan toleranslar üretim süresini uzatırken, gereğinden geniş toleranslar fonksiyonel riskler doğurur.</p>
+<p>Bu yazıda; tolerans kavramının teknik altyapısı, <strong><em>tolerans nedir</em></strong> sorusunun pratik karşılığı, CNC tolerans aralıklarının nasıl belirlendiği ve ölçüsel hassasiyetin kalite süreçlerine etkisi adım adım ele alınacaktır.</p>
+<h2 id="tocer-heading-2" class="tocer-heading">Tolerans Nedir? Talaşlı İmalatta Teknik Anlamı</h2>
+<p>Üretimde tolerans, ideal ölçü ile gerçekleşen sonuç arasındaki kabul edilebilir farkı ifade eder. <strong><em>tolerans ne demek</em></strong> sorusu, talaş kaldırma süreçlerinde makine davranışı ve çevresel etkilerle birlikte değerlendirilmelidir. Bu bağlamda <strong><em>talaşlı imalatta tolerans</em></strong>, yalnızca teorik bir sınır değil, üretilebilirliğin teknik tanımıdır.</p>
+<h2 id="tocer-heading-3" class="tocer-heading">Tolerans Nedir ve Neden Mutlak Ölçü Kullanılmaz?</h2>
+<p>Üretimde “tam ölçü” kavramı teorik bir varsayımdır. Hiçbir üretim prosesi mutlak ölçüyü garanti edemez. Bu nedenle her ölçü, belirli bir sapma payı ile birlikte tanımlanır. İşte bu sapma payına tolerans denir. <strong><em>Tolerans nedir</em></strong> sorusunun talaşlı imalat özelindeki karşılığı; parçanın fonksiyonunu kaybetmeden çalışabileceği ölçü aralığıdır.</p>
+<p>Talaş kaldırma işlemleri sırasında ısı oluşumu, takım aşınması ve makine titreşimleri ölçü üzerinde mikron seviyesinde farklılıklara neden olur. Bu farklılıkların kontrol altına alınması için toleranslar teknik resim üzerinde açık şekilde belirtilir.</p>
+<h2 id="tocer-heading-4" class="tocer-heading">Tolerans ile Ölçüsel Hassasiyet Arasındaki Fark</h2>
+<p>Tolerans ve <strong><em>ölçüsel hassasiyet</em></strong> kavramları sıklıkla birbirine karıştırılır. Tolerans, izin verilen sınırları tanımlar; hassasiyet ise üretimin bu sınırlar içinde kalabilme başarısını ifade eder. Yani tolerans bir tanım, hassasiyet ise bir üretim performansıdır.</p>
+<p>Örneğin ±0,01 mm tolerans verilen bir ölçüde, sürekli ±0,002 mm sapma ile üretim yapılabiliyorsa, proses yüksek boyutsal doğruluğa sahiptir. Bu fark özellikle seri üretim yapan CNC atölyelerinde kalite istikrarının temel göstergelerinden biridir.</p>
+<h2 id="tocer-heading-5" class="tocer-heading">Talaşlı İmalatta Tolerans Türleri</h2>
+<p>Talaşlı imalatta tolerans türleri, ölçü doğruluğunu farklı açılardan kontrol etmeye yönelik yaklaşımlar sunar. Boyutsal toleranslar temel ölçülere odaklanırken, şekil ve konum ilişkileri farklı yöntemlerle ele alınır. Bu ayrım, parçanın yalnızca ölçüsel değil, fonksiyonel olarak da doğru çalışmasını sağlar.</p>
+<h2 id="tocer-heading-6" class="tocer-heading">Boyutsal Toleranslar ve CNC Uygulamaları</h2>
+<p>Boyutsal toleranslar; çap, uzunluk, genişlik ve kalınlık gibi temel ölçülerin kabul edilebilir sınırlarını belirler. CNC tezgâhlarında <strong><em>cnc tolerans aralıkları</em></strong>, kullanılan makine sınıfına ve işlenen malzemeye göre değişkenlik gösterir.</p>
+<p>Alüminyum gibi kolay işlenebilir malzemelerde daha dar toleranslar elde edilebilirken, paslanmaz çelik veya titanyum gibi zor işlenen alaşımlarda bu aralıklar genişletilmek zorunda kalabilir. Bu noktada tolerans belirleme süreci, yalnızca çizim değil aynı zamanda proses mühendisliği konusudur. Bu noktada tolerans kavramının genel çerçevesi için <a href="https://aymaksanmakina.com/talasli-imalat-blog/" data-wplink-url-error="true">Talaşlı İmalat Blog</a> sayfasında yer alan temel üretim yaklaşımlarını incelemek, konunun bütünsel anlaşılması açısından faydalıdır.</p>
+<h2 id="tocer-heading-7" class="tocer-heading">Geometrik Toleranslar ve Fonksiyonel Hassasiyetin Yönetimi</h2>
+<p>Parçaların montaj ve çalışma performansı, yalnızca ölçü doğruluğuna değil geometrik ilişkilere de bağlıdır. Bu noktada <strong><em>geometrik tolerans</em></strong>, yüzeyler ve eksenler arasındaki konum doğruluğunu tanımlar. Fonksiyonel hassasiyetin korunması, özellikle karmaşık montajlarda kritik önem taşır.</p>
+<figure class="wp-block-image"><img decoding="async" src="../wp-content/uploads/2026/01/talasli-imalatta-tolerans-geometrik-tolerans.webp" alt="talaşlı imalatta tolerans - geometrik tolerans" /><figcaption>talaşlı imalatta tolerans &#8211; geometrik tolerans</figcaption></figure>
+<h2 id="tocer-heading-8" class="tocer-heading">Geometrik Tolerans Kavramı (GD&amp;T) Neyi İfade Eder?</h2>
+<p>Boyutsal toleranslar yalnızca ölçünün ne kadar sapabileceğini tanımlar; ancak parçanın <strong>şekil</strong>, <strong>konum</strong> ve <strong>yönelim</strong> doğruluğunu garanti etmez. Bu noktada devreye <em><strong>geometrik doğruluk</strong></em> kavramı girer. GD&amp;T (Geometric Dimensioning and Tolerancing), parçanın fonksiyonel çalışmasını etkileyen geometrik özelliklerin kontrol altına alınmasını sağlar.</p>
+<p>Örneğin bir mil çapı tolerans dahilinde olsa bile eksen kaçıklığı varsa yataklama problemleri ortaya çıkar. Aynı şekilde bir yüzey ölçü olarak doğru olabilir; fakat paralellik veya düzlemsellik hatası montaj sırasında sorun yaratır. Bu nedenle <strong><em>hassas parça üretimi</em></strong> gerektiren projelerde geometrik toleranslar, boyutsal toleranslardan daha kritik hale gelir.</p>
+<h2 id="tocer-heading-9" class="tocer-heading">GD&amp;T Sembollerinin Talaşlı İmalattaki Pratik Karşılığı</h2>
+<p>Teknik resimlerde kullanılan <em><strong>geometrik doğruluk</strong></em> sembolleri, CNC operatörüne ve kalite birimine net bir üretim dili sunar. En yaygın kullanılan <strong>geometrik tolerans türleri</strong> şunlardır:</p>
+<ul>
+<li><strong>Düzlemsellik (Flatness):</strong> Yüzeyin tamamının belirli bir tolerans bandı içinde kalması</li>
+<li><strong>Paralellik (Parallelism):</strong> İki yüzeyin veya eksenin birbirine paralel kalması</li>
+<li><strong>Diklik (Perpendicularity):</strong> 90° açı ilişkisinin korunması</li>
+<li><strong>Konum (Position):</strong> Delik veya mil ekseninin referans datuma göre yeri</li>
+<li><strong>Eşmerkezlilik (Concentricity):</strong> Dönen parçaların balans doğruluğu</li>
+</ul>
+<p>Bu toleranslar, ölçüm aşamasında CMM (Koordinat Ölçüm Cihazı) veya hassas mastarlar ile kontrol edilir. Burada amaç, yalnızca ölçü tutturmak değil; parçanın çalışma koşullarında <strong>fonksiyonel kararlılık</strong> sağlamasıdır.</p>
+<h2 id="tocer-heading-10" class="tocer-heading">CNC Tolerans Aralıkları Nasıl Belirlenir?</h2>
+<p>Üretimde kabul edilebilir sapma sınırları belirlenirken makine kabiliyeti temel alınır. <strong>CNC (Computer Numeric Control)<em> tolerans aralıkları</em></strong>, kullanılan tezgâhın stabilitesi, takım davranışı ve ölçüm altyapısı ile doğrudan ilişkilidir. Teorik olarak mümkün değerler, seri üretimde sürdürülebilir olmayabilir.</p>
+<figure class="wp-block-image"><img decoding="async" src="../wp-content/uploads/2026/01/talasli-imalatta-tolerans-cnc-tolerans-araliklari.webp" alt="talaşlı imalatta tolerans - cnc tolerans aralıkları" /><figcaption>talaşlı imalatta tolerans &#8211; cnc tolerans aralıkları</figcaption></figure>
+<h2 id="tocer-heading-11" class="tocer-heading">CNC Tolerans Aralıkları ve Makine Kabiliyeti</h2>
+<p>Her CNC tezgâhı teorik olarak aynı toleransları veremez. <strong><em>CNC tolerans aralıkları</em></strong>; makinenin rijitliği, lineer kızak yapısı, termal stabilitesi ve kontrol ünitesinin çözünürlüğüne bağlıdır. Genel bir çerçeve çizmek gerekirse:</p>
+<ul>
+<li>Standart CNC frezeleme: ±0,05 mm – ±0,02 mm</li>
+<li>Hassas CNC işleme: ±0,01 mm – ±0,005 mm</li>
+<li>Ultra hassas uygulamalar: ±0,002 mm ve altı (özel koşullarda)</li>
+</ul>
+<p>Ancak burada kritik nokta, toleransın <strong>sürdürülebilir</strong> olmasıdır. Tek seferlik ölçü tutturmak değil, seri üretimde aynı hassasiyetin korunması esastır. Bu nedenle tolerans belirleme süreci, üretici firma ile tasarımcı arasında mutlaka teknik bir değerlendirme gerektirir.</p>
+<p>Bu bağlamda, toleransların nasıl sınıflandırıldığına dair resmî bilgi için aşağıdaki kaynaktan faydalanılabilir: <strong>Genel tolerans standartları</strong>, <a href="https://www.iso.org/standard/7748.html" target="_blank" rel="noopener">ISO 2768-1:1989 &#8211; General tolerances — Part 1: Tolerances for linear and angular dimensions without individual tolerance indications</a> adresinde yer alan <strong>TS EN ISO 2768</strong> standardı kapsamında tanımlanmaktadır. Geometrik ürün özellikleri (GPS) — Boyutsal toleranslama — Doğrusal ve açısal boyutların genel spesifikasyonu için tolerans sınırları ise <a href="https://www.iso.org/standard/85741.html" target="_blank" rel="noopener">ISO/DIS 2768 &#8211; Geometrical product specifications (GPS) — Dimensional tolerancing — Tolerance limits for general specification of linear and angular sizes</a> adresinde yer almaktadır.</p>
+<p>Bu standart, teknik resimde tolerans belirtilmediği durumlarda geçerli olacak genel tolerans aralıklarını belirleyerek hem tasarımcı hem de üretici için ortak bir referans oluşturur.</p>
+<h2 id="tocer-heading-12" class="tocer-heading">Tolerans &#8211; Maliyet &#8211; Kalite Dengesi</h2>
+<p>Tolerans seviyeleri doğrudan üretim maliyetini ve kalite algısını etkiler. Gereğinden dar sınırlar süreyi uzatırken, geniş tanımlar fonksiyonel risk oluşturur. <strong><em>talaşlı imalat tolerans</em></strong> kararları, parçanın gerçek kullanım gereksinimleri dikkate alınarak belirlendiğinde bu denge sağlanabilir.</p>
+<h2 id="tocer-heading-13" class="tocer-heading">Gereğinden Dar Toleransın Üretime Etkisi</h2>
+<p>Toleranslar gereğinden dar tanımlandığında, üretim süresi uzar, takım aşınması hızlanır ve hurda oranı artar. Özellikle seri üretimde bu durum, parça başı maliyeti ciddi biçimde yükseltir. Bu nedenle <strong><em>talaşlı imalatta tolerans</em></strong> belirlenirken, parçanın gerçek fonksiyonu mutlaka dikkate alınmalıdır.</p>
+<p>Fonksiyonel olarak ±0,05 mm toleransla çalışabilecek bir parça için ±0,01 mm tolerans talep etmek, teknik olarak mümkün olsa bile ticari açıdan rasyonel değildir. Bu dengeyi doğru kurmak için <a href="https://aymaksanmakina.com/cnc-uretimde-tolerans-ve-hassasiyet-yonetimi/">CNC Üretimde Tolerans ve Hassasiyet Yönetimi</a> başlıklı içerikte yer alan proses optimizasyonu yaklaşımları yol gösterici olacaktır.</p>
+<h2 id="tocer-heading-14" class="tocer-heading">Ölçüsel Hassasiyetin Kalite Kontrol Süreçlerindeki Rolü</h2>
+<p>Kalite kontrolün etkinliği, üretim sürecinin ne kadar tutarlı olduğunu gösterir. Bu tutarlılığın temel göstergelerinden biri <em><strong>boyutsal doğruluk</strong></em> seviyesidir. Sürekli ve tekrarlanabilir sonuçlar, prosesin kontrol altında olduğunu ve sapmaların yönetilebilir düzeyde kaldığını gösterir.</p>
+<figure class="wp-block-image"><img decoding="async" src="../wp-content/uploads/2026/01/talasli-imalatta-tolerans-olcusel-hassasiyet.webp" alt="talaşlı imalatta tolerans - ölçüsel hassasiyet" /><figcaption>talaşlı imalatta tolerans &#8211; ölçüsel hassasiyet</figcaption></figure>
+<h2 id="tocer-heading-15" class="tocer-heading">Ölçüsel Hassasiyet Neden Üretim Performansının Göstergesidir?</h2>
+<p>Üretimde toleransların tanımlanması tek başına yeterli değildir; asıl belirleyici unsur, bu toleransların <strong>süreklilikle</strong> karşılanabilmesidir. İşte bu noktada <strong><em>ölçüsel hassasiyet</em></strong>, talaşlı imalat süreçlerinde kalite performansının doğrudan göstergesi haline gelir. Aynı parçanın seri üretimde her çevrimde benzer sapmalarla üretilmesi, prosesin kontrol altında olduğuna işaret eder.</p>
+<p>Ölçüdeki hassasiyet; makine kabiliyeti (Cp, Cpk), takım ömrü yönetimi ve operatör deneyimiyle yakından ilişkilidir. Toleranslar daraldıkça, ölçüm sıklığı ve ölçüm yöntemlerinin doğruluğu kritik hale gelir. Bu nedenle kalite kontrol, üretimin sonunda yapılan bir doğrulama değil; üretimin ayrılmaz bir parçasıdır.</p>
+<h2 id="tocer-heading-16" class="tocer-heading">Talaşlı İmalatta Kullanılan Ölçüm Yöntemleri</h2>
+<p>Üretimde toleransların doğrulanması, kullanılan ölçüm yöntemlerine bağlıdır. Temel ekipmanlar hızlı kontrol sağlarken, ileri sistemler karmaşık geometrilerin analizine olanak tanır. Ölçüm yönteminin seçimi, hedeflenen doğruluk seviyesi ve parça karmaşıklığına göre yapılmalıdır.</p>
+<h2 id="tocer-heading-17" class="tocer-heading">Mastarlar, Kumpaslar ve Mikrometreler</h2>
+<p>Temel ölçüm ekipmanları, hızlı ve pratik kontrol sağlar. Kumpas ve mikrometreler, özellikle ±0,02 mm ve üzeri toleransların kontrolünde yeterlidir. Ancak bu ekipmanların düzenli kalibrasyonu yapılmadığında ölçüsel hatalar kaçınılmaz olur. <strong><em>Talaşlı imalatta tolerans</em></strong> yönetiminde ölçüm cihazının doğruluğu, makine hassasiyeti kadar önemlidir.</p>
+<h2 id="tocer-heading-18" class="tocer-heading">CMM (Koordinat Ölçüm Cihazı) ile Hassas Kontrol</h2>
+<p>Geometrik toleransların ve karmaşık yüzeylerin kontrolü için CMM sistemleri vazgeçilmezdir. CMM, parçanın referans datumlarına göre üç boyutlu ölçümünü yaparak <strong><em>geometrik tolerans</em></strong> sapmalarını net biçimde ortaya koyar. Özellikle konum, paralellik ve eşmerkezlilik gibi toleranslar, manuel ölçümle güvenilir şekilde doğrulanamaz. Türkiye’de ölçüm, muayene ve kalite altyapısı hakkında teknik rehberler için <a href="https://www.ume.tubitak.gov.tr/" target="_blank" rel="noopener">UME &#8211; Ulusal Metroloji Enstitüsü &#8211; TÜBİTAK UME</a> yayınları güvenilir bir referans sunar.</p>
+<h2 id="tocer-heading-19" class="tocer-heading">Teknik Resimde Toleransın Teklif ve Fiyatlandırmaya Etkisi</h2>
+<p>Teknik resimde toleransların net biçimde tanımlanmaması, üretici açısından belirsizlik yaratır. Bu belirsizlik, teklif sürecinde risk payı olarak fiyatlara yansıtılır. Açık tolerans bilgileri, üretim planlamasını kolaylaştırır ve daha öngörülebilir maliyet hesaplaması sağlar.</p>
+<h2 id="tocer-heading-20" class="tocer-heading">Tolerans Bilgisi Olmayan Çizimler Neden Risklidir?</h2>
+<p>Teknik resimde tolerans belirtilmediğinde, üretici genel tolerans standartlarına göre yorum yapmak zorunda kalır. Bu durum, teklif sürecinde belirsizlik yaratır ve maliyetlerin gereğinden yüksek hesaplanmasına neden olabilir. Özellikle <strong><em>cnc tolerans aralıkları</em></strong> net tanımlanmamış projelerde, üretici risk payını fiyata yansıtmak zorunda kalır.</p>
+<p>Dar toleranslı bölgelerin çizimde açıkça belirtilmesi, üreticinin proses planlamasını doğru yapmasını sağlar. Bu da hem daha rekabetçi fiyat hem de daha öngörülebilir teslim süresi anlamına gelir. Bu konunun teklif süreçlerine etkisini detaylı görmek için <a href="https://aymaksanmakina.com/cnc-imalat-teknik-cizim-teklifi-nasil-etkiler/">CNC İmalatta Teknik Çizim Teklifi Nasıl Etkiler?</a> başlıklı içerikte yer alan örnek senaryolar yol göstericidir.</p>
+<h2 id="tocer-heading-21" class="tocer-heading">Kalite Kontrol ile Tolerans Sürekliliğinin Sağlanması</h2>
+<p>Tolerans sürekliliği, yalnızca son kontrolde yapılan ölçümlerle sağlanamaz. Proses içi kontroller ve düzenli geri besleme, sapmaların erken aşamada tespit edilmesini mümkün kılar. Bu yaklaşım, seri üretimde kalite dalgalanmalarının önüne geçer.</p>
+<h2 id="tocer-heading-22" class="tocer-heading">Proses İçi Ölçüm ve Geri Besleme</h2>
+<p>Kalite kontrol yalnızca son kontrolde yapılmamalıdır. Proses içi ölçüm, sapmaların erken aşamada tespit edilmesini sağlar. Bu yaklaşım, özellikle <strong><em>hassas parça üretimi</em></strong> gerektiren işlerde hurda oranını ciddi şekilde düşürür.</p>
+<p>Ölçüm sonuçlarının operatör ve mühendislik ekibiyle anlık paylaşılması, takım telafilerinin zamanında yapılmasına olanak tanır. Böylece tolerans dışına çıkmadan üretim sürdürülebilir hale gelir. Bu yaklaşımın uygulamadaki karşılığını görmek için <a href="https://aymaksanmakina.com/talasli-imalatta-kalite-kontrol/">Talaşlı İmalatta Kalite Kontrol Nasıl Yapılır?</a> başlıklı içerikte yer alan ölçüm stratejileri incelenebilir.</p>
+<h2 id="tocer-heading-23" class="tocer-heading">Toleransların Montaj, Fonksiyon ve Ömür Üzerindeki Etkisi</h2>
+<p>Parçalar tekil olarak uygun ölçülerde olsa bile montaj sırasında uyumsuzluk yaşanabilir. Bu durum, fonksiyonel sorunlara ve erken aşınmaya yol açar. Özellikle çok bileşenli sistemlerde tolerans ilişkilerinin doğru yönetilmesi, ürün ömrünü doğrudan etkiler.</p>
+<h2 id="tocer-heading-24" class="tocer-heading">Montaj Uyumunda Talaşlı İmalatta Toleransın Rolü</h2>
+<p>Montaj aşamasında yaşanan problemler, çoğu zaman üretim sırasında fark edilmeyen tolerans uyumsuzluklarından kaynaklanır. Parçalar tekil olarak tolerans içinde olabilir; ancak bir araya geldiklerinde fonksiyonel boşluklar ya da sıkı geçmeler ortaya çıkabilir. Bu durum, özellikle çok bileşenli sistemlerde tolerans zinciri (tolerance stack-up) etkisini gündeme getirir.</p>
+<p><strong><em>Talaşlı imalatta tolerans</em></strong> belirlenirken yalnızca tek parçanın ölçüsü değil, montajdaki tüm parçaların birbiriyle olan ilişkisi dikkate alınmalıdır. Aksi halde montaj sırasında zorlanma, aşırı sürtünme veya erken aşınma gibi problemler kaçınılmaz olur.</p>
+<h2 id="tocer-heading-25" class="tocer-heading">Fonksiyonel Boşluklar ve Çalışma Performansı</h2>
+<p>Fonksiyonel boşluklar, hareketli parçalarda performansı doğrudan etkiler. Gereğinden geniş boşluklar titreşime ve gürültüye neden olurken, gereğinden dar boşluklar kilitlenme riskini artırır. Bu denge, <strong><em>ölçüsel hassasiyet</em></strong> ile fonksiyonel gereksinimlerin birlikte değerlendirilmesiyle sağlanır.</p>
+<p>Örneğin yataklama yüzeylerinde mikron seviyesindeki sapmalar bile, sistemin çalışma ömrünü ciddi biçimde kısaltabilir. Bu nedenle toleranslar, yalnızca üretilebilirlik değil; kullanım koşulları göz önünde bulundurularak tanımlanmalıdır.</p>
+<h2 id="tocer-heading-26" class="tocer-heading">Sektörel Uygulamalarda Tolerans Yaklaşımları</h2>
+<p>Her sektör, toleranslara farklı öncelikler yükler. Seri üretim odaklı alanlarda değiştirilebilirlik öne çıkarken, <strong><em>hassas parça üretimi</em></strong> gerektiren uygulamalarda geometrik doğruluk ön plandadır. Bu nedenle tolerans stratejileri, sektörün teknik beklentilerine göre şekillendirilmelidir.</p>
+<h2 id="tocer-heading-27" class="tocer-heading">Otomotiv ve Savunma Sanayinde Hassasiyet Beklentisi</h2>
+<p>Otomotiv ve savunma sanayinde toleranslar, seri üretimde dahi dar aralıklarda tutulur. Buradaki temel amaç, parçalar arası değiştirilebilirliği ve güvenilirliği sağlamaktır. Özellikle güvenlik kritik bileşenlerde <strong><em>geometrik tolerans</em></strong> kontrolleri vazgeçilmezdir.</p>
+<h2 id="tocer-heading-28" class="tocer-heading">Medikal ve Kalıpçılıkta Hassas Parça Üretimi</h2>
+<p>Medikal implantlar ve kalıpçılık uygulamalarında toleranslar, çoğu zaman mikron seviyesinde tanımlanır. Burada yüzey kalitesi ve geometrik doğruluk, boyutsal toleranslardan daha baskın hale gelir. <strong><em>Hassas parça üretimi</em></strong>, ileri ölçüm teknikleri ve sıkı kalite kontrol gerektirir.</p>
+<p>Bu sektörlerde toleransların doğru yönetimi, ürün güvenliği ve regülasyonlara uyum açısından hayati önem taşır. Geometrik toleransların tanımı ve sembol kullanımı için uluslararası referans olan ISO 1101 standardına ilişkin özet bilgilere Geometrik ürün özellikleri (GPS) — Geometrik toleranslama — Şekil, yönelim, konum ve salınım toleransları &#8211; <a href="https://www.iso.org/standard/66777.html" target="_blank" rel="noopener">ISO 1101:2017 &#8211; Geometrical product specifications (GPS) — Geometrical tolerancing — Tolerances of form, orientation, location and run-out</a> adresinden erişilebilir. Bu standart, teknik resimlerde geometrik toleransların küresel ölçekte tutarlı biçimde kullanılmasını sağlar.</p>
+<h2 id="tocer-heading-29" class="tocer-heading">Yanlış Tolerans Seçiminin Sahadaki Sonuçları</h2>
+<p>Yanlış tolerans tanımları, üretim sonrası kullanım aşamasında ciddi sorunlar doğurabilir. Montaj zorlukları, beklenmeyen arızalar ve bakım maliyetleri bu hataların sonucudur. Tolerans kararları alınırken saha koşulları ve kullanım senaryoları mutlaka dikkate alınmalıdır.</p>
+<h2 id="tocer-heading-30" class="tocer-heading">Üretim, Maliyet ve Teslim Süresi Riskleri</h2>
+<p>Yanlış tanımlanmış toleranslar, üretimde beklenmeyen duruşlara ve revizyonlara yol açar. Gereksiz dar toleranslar, takım ömrünü kısaltırken; aşırı geniş toleranslar sahada arıza riskini artırır. Bu durum, hem kalite hem de marka güvenilirliği açısından ciddi kayıplara neden olabilir.</p>
+<p>Toleransların işlevsel gereksinimlere göre optimize edilmesi, toplam sahip olma maliyetini düşürürken teslim sürelerinin öngörülebilirliğini artırır.</p>
+<h2 id="tocer-heading-31" class="tocer-heading">Tolerans Yönetiminde Hizmet ve Ölçüm Altyapısının Önemi</h2>
+<p>Etkili tolerans yönetimi, güçlü bir ölçüm ve kontrol altyapısı ile mümkündür. Kalibrasyon, proses izleme ve raporlama sistemleri bu altyapının temel bileşenleridir. Bu yapı sayesinde tanımlanan toleranslar uzun vadede korunabilir.</p>
+<h2 id="tocer-heading-32" class="tocer-heading">Ölçüm ve Kontrol Hizmetleri ile Süreklilik</h2>
+<p>Toleransların sürdürülebilir biçimde karşılanması, güçlü bir ölçüm ve kontrol altyapısı gerektirir. Bu altyapı; proses içi ölçüm, istatistiksel proses kontrolü ve düzenli kalibrasyon uygulamalarını kapsar. <strong><em>CNC tolerans aralıkları</em></strong> ancak bu disiplinle uzun vadede korunabilir. Bu noktada, tolerans sürekliliğinin sağlanması için <a href="https://aymaksanmakina.com/kalite-kontrol-ve-olcum-hizmetleri/" data-wplink-url-error="true">Kalite Kontrol ve Ölçüm</a> hizmet sayfasında sunulan ölçüm altyapısı ve kontrol yöntemleri kritik rol oynar.</p>
+<h2 id="tocer-heading-33" class="tocer-heading">Tolerans Belirlemede Doğru Strateji &#8211; En İyi Uygulamalar</h2>
+<p>Doğru tolerans stratejisi, fonksiyonel ihtiyaçlarla üretim kabiliyetini dengeler. Her ölçü için en dar sınırı hedeflemek yerine, gerekli hassasiyeti tanımlamak esastır. Bu yaklaşım kaliteyi korurken gereksiz maliyet artışlarını engeller.</p>
+<h2 id="tocer-heading-34" class="tocer-heading">Fonksiyon Odaklı Tolerans Tanımı</h2>
+<p>Tolerans belirlemenin en sağlıklı yolu, parçanın <strong>gerçek fonksiyonunu</strong> esas almaktır. Yük taşıyan, hareket eden veya sızdırmazlık sağlayan yüzeylerde toleranslar daha kritik iken; estetik veya ikincil yüzeylerde geniş aralıklar kabul edilebilir. Bu yaklaşım, <strong><em>talaşlı imalatta tolerans</em></strong> kararlarını teknik gerekçelerle temellendirir ve gereksiz maliyeti önler.</p>
+<h2 id="tocer-heading-35" class="tocer-heading">Proses Yeteneğine Göre CNC Tolerans Aralıkları</h2>
+<p>Tasarım aşamasında belirlenen toleransların, üretim hattının gerçek kabiliyetiyle uyumlu olması gerekir. Makine, takım, bağlama ve ölçüm zinciri birlikte değerlendirilmeden tanımlanan toleranslar, seri üretimde sürdürülemez. Bu nedenle <strong><em>cnc tolerans aralıkları</em></strong>, Cp/Cpk hedefleriyle birlikte planlanmalıdır.</p>
+<h2 id="tocer-heading-36" class="tocer-heading">Uygulamalı Değerlendirme &#8211; Ölçüsel Hassasiyetin Sürdürülebilirliği</h2>
+<p>Sürdürülebilir üretim performansı, sürekli iyileştirme anlayışıyla sağlanır. Ölçüm verilerinin analiz edilmesi ve süreçlere geri beslenmesi, <strong><em>ölçüsel hassasiyet</em></strong> seviyesinin korunmasına yardımcı olur. Bu yöntem, uzun vadeli kalite hedeflerinin gerçekleştirilmesini destekler.</p>
+<h2 id="tocer-heading-37" class="tocer-heading">Ölçüm &#8211; Geri Besleme &#8211; Düzeltme Döngüsü</h2>
+<p>Sürdürülebilir <strong><em>ölçüsel hassasiyet</em></strong>, tek seferlik ayarlardan değil; sürekli geri besleme döngüsünden doğar. Proses içi ölçüm, istatistiksel takip ve zamanında telafi uygulamaları; tolerans dışına çıkmadan üretimi mümkün kılar. Bu yaklaşım, <strong><em>hassas parça üretimi</em></strong> projelerinde kalite sürekliliğinin anahtarıdır.</p>
+<h2 id="tocer-heading-38" class="tocer-heading">Geometrik Toleransların Sahadaki Karşılığı</h2>
+<p><strong><em>Geometrik tolerans</em></strong> uygulamaları, montaj uyumu ve fonksiyonel performans üzerinde doğrudan etkilidir. GD&amp;T’nin doğru kullanımı; titreşim, gürültü ve erken aşınma risklerini azaltır. Sahada yaşanan problemlerin önemli bir kısmı, geometrik ilişkilerin yetersiz tanımlanmasından kaynaklanır.</p>
+<h2 id="tocer-heading-39" class="tocer-heading">Sonuç &#8211; Talaşlı İmalatta Toleransın Stratejik Önemi</h2>
+<p><strong><em>Talaşlı imalatta tolerans</em></strong>, yalnızca teknik resimdeki bir değer değil; maliyet, kalite ve teslim süresini birlikte yöneten stratejik bir karardır. Doğru belirlenen toleranslar; üretilebilirliği artırır, kaliteyi güvence altına alır ve toplam sahip olma maliyetini düşürür. Toleransların fonksiyonel gereksinimler, proses yeteneği ve ölçüm altyapısı ile birlikte ele alınması; rekabetçi ve sürdürülebilir üretimin temelini oluşturur.</p>
+
+<!-- *tocer~post~container* -->
+          </div>
+
+          <!-- Etiketler -->
+          
+          <!-- Önceki / Sonraki -->
+          <nav class="post-navigation" aria-label="Yazı navigasyonu"
+               style="display:flex;justify-content:space-between;margin-top:var(--stack-lg);padding-top:var(--stack-md);border-top:1px solid var(--outline-variant);">
+            <div>
+              <span style="font-size:12px;color:var(--on-surface-variant);">Önceki</span><br><a href="../ozel-parca-kalite-kontrol-olcum-surecleri/index.html" rel="prev">Özel Parça Kalite Kontrol Ölçüm Süreçleri</a>            </div>
+            <div style="text-align:right;">
+              <span style="font-size:12px;color:var(--on-surface-variant);">Sonraki</span><br><a href="../cnc-uretimde-tolerans-ve-hassasiyet-yonetimi/index.html" rel="next">CNC Üretimde Tolerans ve Hassasiyet Yönetimi</a>            </div>
+          </nav>
+
+        
+      </article><!-- article -->
+
+      <!-- Kenar Çubuğu -->
+      <aside class="sidebar" role="complementary" aria-label="İlgili içerikler">
+
+        <!-- İlgili Yazılar -->
+                              <div class="sidebar-widget">
+              <h4>İlgili Yazılar</h4>
+              <ul style="display:flex;flex-direction:column;gap:12px;">
+                                  <li>
+                    <a href="../talasli-imalat-firmasi-secimi/index.html"
+                       style="font-size:14px;line-height:20px;color:var(--defense-navy);font-weight:500;">
+                      Talaşlı İmalat Firması Seçimi                    </a>
+                    <div style="font-size:12px;color:var(--on-surface-variant);margin-top:2px;">
+                      23 Mar 2026                    </div>
+                  </li>
+                                  <li>
+                    <a href="../talasli-imalat-teknikleri/index.html"
+                       style="font-size:14px;line-height:20px;color:var(--defense-navy);font-weight:500;">
+                      Talaşlı İmalat Teknikleri                    </a>
+                    <div style="font-size:12px;color:var(--on-surface-variant);margin-top:2px;">
+                      29 Ara 2025                    </div>
+                  </li>
+                                  <li>
+                    <a href="../ozel-talasli-imalat/index.html"
+                       style="font-size:14px;line-height:20px;color:var(--defense-navy);font-weight:500;">
+                      Özel Talaşlı İmalat                    </a>
+                    <div style="font-size:12px;color:var(--on-surface-variant);margin-top:2px;">
+                      02 Mar 2026                    </div>
+                  </li>
+                                  <li>
+                    <a href="../prototip-talasli-imalat-sureci-nasil-ilerler/index.html"
+                       style="font-size:14px;line-height:20px;color:var(--defense-navy);font-weight:500;">
+                      Prototip Talaşlı İmalat Süreci Nasıl İlerler?                    </a>
+                    <div style="font-size:12px;color:var(--on-surface-variant);margin-top:2px;">
+                      06 Nis 2026                    </div>
+                  </li>
+                              </ul>
+            </div>
+                  
+        <!-- Teklif CTA Widget -->
+        <div class="sidebar-widget" style="background:var(--defense-navy);color:#fff;border-color:transparent;">
+          <h4 style="color:rgba(255,255,255,.6);border-color:rgba(255,255,255,.15);">
+            Üretim Teklifi Alın          </h4>
+          <p style="font-size:14px;line-height:20px;color:#d1d5db;margin-bottom:16px;">
+            Teknik resimlerinizi gönderin, hızlı fiyat teklifi alın.          </p>
+          <a href="../talasli-imalat-teklif-iletisim/index.html"
+             class="btn-primary" style="justify-content:center;width:100%;background:var(--precision-blue);">
+            Teklif Al          </a>
+        </div>
+
+        <!-- Dinamik Sidebar Widget'ları -->
+                  <div id="block-2" class="sidebar-widget widget_block widget_search"><form role="search" method="get" action="https://hakanaydemir20.github.io/aymaksan-demo/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"    ><label class="wp-block-search__label" for="wp-block-search__input-1" >Ara</label><div class="wp-block-search__inside-wrapper" ><input class="wp-block-search__input" id="wp-block-search__input-1" placeholder="" value="" type="search" name="s" required /><button aria-label="Ara" class="wp-block-search__button wp-element-button" type="submit" >Ara</button></div></form></div><div id="block-3" class="sidebar-widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Son Yazılar</h2><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="../cnc-uretim-maliyetleri/index.html">CNC Üretim Maliyetleri</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="../ozel-parca-imalati-ile-seri-uretim-stratejileri/index.html">Özel Parça İmalatı İle Seri Üretim Stratejileri</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="../prototip-talasli-imalat-sureci-nasil-ilerler/index.html">Prototip Talaşlı İmalat Süreci Nasıl İlerler?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="../az-adet-cnc-imalat/index.html">Az Adet CNC İmalat</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="../cnc-tedarikci-yonetimi/index.html">CNC Tedarikçi Yönetimi</a></li>
+</ul></div></div></div><div id="block-4" class="sidebar-widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Son yorumlar</h2><div class="no-comments wp-block-latest-comments">Görüntülenecek bir yorum yok.</div></div></div></div>        
+      </aside><!-- .sidebar -->
+
+    </div><!-- .single-layout -->
+  </div><!-- .container -->
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Kolon 1: Logo + Hakkında -->
+        <div class="footer-col footer-col--brand">
+          <a href="../index.html" class="footer-logo-link">
+                          <img src="../wp-content/uploads/2026/06/logo1-clean.png"
+                   alt="Aymaksan Makina Logo"
+                   style="height:80px;width:auto;max-width:260px;object-fit:contain;filter:brightness(0) invert(1);"
+                   loading="lazy">
+                      </a>
+          <p class="footer-desc">
+            1988'den bu yana CNC talaşlı imalat, tasarım ve otomasyon alanında güvenilir üretim ortağınız.
+          </p>
+          <div class="footer-social">
+            <a href="https://www.google.com/search?q=AYMAKSAN+MAKİNA+Yorumlar"
+               target="_blank" rel="noopener" class="social-link" aria-label="Google Reviews">
+              <span class="material-symbols-outlined">reviews</span>
+            </a>
+            <a href="https://www.linkedin.com/company/aymaksan" target="_blank" rel="noopener"
+               class="social-link" aria-label="LinkedIn">
+              <span class="material-symbols-outlined">work</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Kolon 2: Hızlı Bağlantılar -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Hızlı Bağlantılar</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Ana Sayfa</a></li>
+            <li><a href="../ozel-talasli-imalat-hizmetleri/index.html">Hizmetlerimiz</a></li>
+            <li><a href="../makine-parkimiz/index.html">Makine Parkımız</a></li>
+            <li><a href="../sektorlere-ozel-cnc-talasli-imalat/index.html">Sektörler</a></li>
+            <li><a href="../aymaksan-makina-hakkimizda/index.html">Hakkımızda</a></li>
+            <li><a href="../blog/index.html">Blog</a></li>
+            <li><a href="../talasli-imalat-teklif-iletisim/index.html">İletişim</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolon 3: Hizmetler -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Hizmetlerimiz</h4>
+          <ul class="footer-links">
+            <li><a href="../cnc-tornalama/index.html">CNC Tornalama</a></li>
+            <li><a href="../cnc-frezeleme-ve-dik-isleme/index.html">CNC Frezeleme</a></li>
+            <li><a href="../kaynak-ve-montaj-hizmetleri/index.html">Kaynak & Montaj</a></li>
+            <li><a href="../kalite-kontrol-ve-olcum-hizmetleri/index.html">Kalite Kontrol</a></li>
+            <li><a href="../prototip-uretim-ve-ar-ge-destegi/index.html">Prototip Üretim</a></li>
+            <li><a href="../ozel-talasli-imalat-hizmeti/index.html">Özel Talaşlı İmalat</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolon 4: İletişim -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">İletişim</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+              <address>Ostim Sanayi Sitesi<br>1181. Sk. No:23<br>06370 Yenimahalle/Ankara</address>
+            </li>
+            <li>
+              <span class="material-symbols-outlined" aria-hidden="true">call</span>
+              <a href="tel:+905523615628">+90 552 361 56 28</a>
+            </li>
+            <li>
+              <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+              <a href="mailto:info@aymaksanmakina.com">info@aymaksanmakina.com</a>
+            </li>
+            <li>
+              <span class="material-symbols-outlined" aria-hidden="true">language</span>
+              <a href="https://aymaksanmakina.com" target="_blank" rel="noopener">aymaksanmakina.com</a>
+            </li>
+          </ul>
+        </div>
+
+      </div><!-- .footer-grid -->
+    </div><!-- .container -->
+  </div><!-- .footer-top -->
+
+  <!-- Footer Alt Çubuk -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <p class="footer-copy">
+          &copy; 2026 Aymaksan Makina.
+          Tüm hakları saklıdır.
+        </p>
+        <nav class="footer-legal-nav" aria-label="Yasal Bağlantılar">
+                                <a href="../gizlilik-politikasi/index.html">Gizlilik Politikası</a>
+            <a href="../hizmet-sartlari/index.html">Hizmet Şartları</a>
+            <a href="../kvkk-aydinlatma-metni/index.html">KVKK</a>
+                  </nav>
+      </div>
+    </div>
+  </div>
+
+</footer>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/aymaksan-stitch/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="aymaksan-main-js-js-extra">
+var aymaksanData = {"ajaxUrl":"https://hakanaydemir20.github.io/aymaksan-demo/wp-admin/admin-ajax.php","nonce":"3410ec64b7","siteUrl":"https://hakanaydemir20.github.io/aymaksan-demo","themeUrl":"https://hakanaydemir20.github.io/aymaksan-demo/wp-content/themes/aymaksan-stitch"};
+//# sourceURL=aymaksan-main-js-js-extra
+</script>
+<script defer src="../wp-content/themes/aymaksan-stitch/assets/js/main.js?ver=1.7.4" id="aymaksan-main-js-js"></script>
+<script defer src="../wp-content/themes/aymaksan-stitch/assets/js/mobile-menu.js?ver=1.7.4" id="aymaksan-mobile-menu-js"></script>
+<script defer src="../wp-content/themes/aymaksan-stitch/assets/js/animations.js?ver=1.7.4" id="aymaksan-animations-js-js"></script>
+<script async data-wp-strategy="async" fetchpriority="low" id="comment-reply-js" src="../wp-includes/js/comment-reply.min.js?ver=7.0"></script>
+<script id="qr-code-library-js" src="https://unpkg.com/@bitjson/qr-code@1.0.2/dist/qr-code.js?ver=1.0.2"></script>
+<script id="dan_splittext_enable-js" src="../wp-content/plugins/dancepad/local_assets/dancepad_splittext.min.js?ver=2.1.6&"></script>
+</body>
+</html>

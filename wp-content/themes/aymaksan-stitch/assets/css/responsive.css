@@ -1,0 +1,76 @@
+/* Responsive.css — Aymaksan Stitch */
+/* Ana style.css'deki @media kurallarının üzerine ek overrides */
+
+/* ── 1280px üstü — geniş ekran ── */
+@media (min-width: 1280px) {
+  .bento-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ── 1024-1279 — laptop ── */
+@media (max-width: 1279px) and (min-width: 1025px) {
+  .hero h1 { font-size: 40px; line-height: 48px; }
+  .bento-grid { grid-template-columns: repeat(2, 1fr); }
+  .bento-feature { min-height: 360px; }
+}
+
+/* ── 769-1024 — tablet landscape ── */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .single-layout { grid-template-columns: 1fr; }
+  .quality-inner { flex-direction: column; gap: var(--stack-md); }
+  .contact-grid { grid-template-columns: 1fr; }
+  .blog-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ── 481-768 — tablet portrait / geniş mobil ── */
+@media (max-width: 768px) and (min-width: 481px) {
+  .hero { min-height: 680px; padding-top: 80px; }
+  .hero h1 { font-size: 28px; line-height: 36px; }
+
+  .grid-3,
+  .blog-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .bento-grid { grid-template-columns: 1fr; }
+  .quality-inner { flex-direction: column; }
+
+  .pagination { flex-wrap: wrap; }
+}
+
+/* ── max 480 — telefon ── */
+@media (max-width: 480px) {
+  .hero { min-height: 560px; }
+  .hero h1 { font-size: 22px; line-height: 30px; }
+  .hero__lead { font-size: 14px; }
+
+  .hero__actions { flex-direction: column; }
+  .btn-primary,
+  .btn-secondary { justify-content: center; width: 100%; }
+
+  .grid-3,
+  .grid-4,
+  .blog-grid,
+  .bento-grid { grid-template-columns: 1fr; }
+
+  .footer-nav { flex-direction: column; align-items: center; gap: 12px; }
+
+  .page-hero h1 { font-size: 22px; line-height: 30px; }
+
+  .contact-form { padding: 20px; }
+  .sidebar { display: none; } /* Mobilde sidebar gizle */
+  .single-layout { grid-template-columns: 1fr; }
+}
+
+/* ── Print ── */
+@media print {
+  .site-header,
+  .site-footer,
+  .back-to-top,
+  .mobile-menu,
+  .sidebar { display: none !important; }
+
+  .container { max-width: 100%; padding: 0; }
+  body { font-size: 12pt; }
+  a { color: inherit; text-decoration: none; }
+  .entry-content a::after { content: ' (' attr(href) ')'; font-size: 10pt; color: #555; }
+}

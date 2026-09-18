@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="tr" class="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CNC Üretim Maliyetleri: Zaman ve Maliyet Optimizasyonu</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel="canonical" href="./index.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel='dns-prefetch' href='//unpkg.com' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='preconnect' href='https://fonts.googleapis.com' />
+<link rel='preconnect' href='https://fonts.gstatic.com' />
+<meta name="description" content="CNC üretim maliyetleri için zaman, takım, tolerans, malzeme ve proses planlamasına dayalı maliyet optimizasyonunu teknik ve net biçimde açıklıyoruz. AYMAKSAN.">
+<link rel="alternate" type="application/rss+xml" title="Aymaksan Makina &raquo; CNC Üretim Maliyetleri yorum akışı" href="./feed/index.html" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://hakanaydemir20.github.io/aymaksan-demo/wp-json/oembed/1.0/embed?url=http%3A%2F%2Faymaksan.test%2Fcnc-uretim-maliyetleri%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://hakanaydemir20.github.io/aymaksan-demo/wp-json/oembed/1.0/embed?url=http%3A%2F%2Faymaksan.test%2Fcnc-uretim-maliyetleri%2F&#038;format=xml" />
+<meta property="og:title" content="CNC Üretim Maliyetleri: Zaman ve Maliyet Optimizasyonu">
+<meta property="og:description" content="CNC üretim maliyetleri için zaman, takım, tolerans, malzeme ve proses planlamasına dayalı maliyet optimizasyonunu teknik ve net biçimde açıklıyoruz. AYMAKSAN.">
+<meta property="og:url" content="./index.html">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="Aymaksan Makina">
+<meta property="og:image" content="../wp-content/uploads/2026/04/cnc-uretim-maliyetleri-1-1024x771.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CNC Üretim Maliyetleri: Zaman ve Maliyet Optimizasyonu">
+<meta name="twitter:description" content="CNC üretim maliyetleri için zaman, takım, tolerans, malzeme ve proses planlamasına dayalı maliyet optimizasyonunu teknik ve net biçimde açıklıyoruz. AYMAKSAN.">
+<meta name="twitter:image" content="../wp-content/uploads/2026/04/cnc-uretim-maliyetleri-1-1024x771.webp">
+<link rel="alternate" hreflang="tr" href="./index.html">
+<link rel="alternate" hreflang="x-default" href="./index.html">
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='aymaksan-fonts-preconnect-css' href='https://fonts.googleapis.com' media='all' />
+<link rel='stylesheet' id='aymaksan-fonts-css' href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&#038;family=JetBrains+Mono:wght@500&#038;display=swap' media='all' />
+<link rel='stylesheet' id='material-symbols-css' href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&#038;display=swap' media='all' />
+<link rel='stylesheet' id='aymaksan-main-css' href='../wp-content/themes/aymaksan-stitch/style.css?ver=1.7.4' media='all' />
+<link rel='stylesheet' id='aymaksan-animations-css' href='../wp-content/themes/aymaksan-stitch/assets/css/animations.css?ver=1.7.4' media='all' />
+<link rel='stylesheet' id='aymaksan-responsive-css' href='../wp-content/themes/aymaksan-stitch/assets/css/responsive.css?ver=1.7.4' media='all' />
+<link rel='stylesheet' id='tocer-dist-css' href='../wp-content/plugins/tocer/assets/style.min.css?ver=4.2.3' media='all' />
+<script>
+	document.documentElement.classList.add('tocer-init');
+</script>
+<!-- Site Kit tarafından eklenen Google etiketi (gtag.js) snippet&#039;i -->
+<!-- Google Analytics snippet&#039;i, Site Kit tarafından eklendi -->
+<script id="google_gtagjs-js" src="https://www.googletagmanager.com/gtag/js?id=GT-MJWKZR4N" async></script>
+<script id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["aymaksan.test"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-MJWKZR4N", {"googlesitekit_post_type":"post","googlesitekit_post_author":"aymaksan"});
+ window._googlesitekit = window._googlesitekit || {}; window._googlesitekit.throttledEvents = []; window._googlesitekit.gtagEvent = (name, data) => { var key = JSON.stringify( { name, data } ); if ( !! window._googlesitekit.throttledEvents[ key ] ) { return; } window._googlesitekit.throttledEvents[ key ] = true; setTimeout( () => { delete window._googlesitekit.throttledEvents[ key ]; }, 5 ); gtag( "event", name, { ...data, event_source: "site-kit" } ); }; 
+//# sourceURL=google_gtagjs-js-after
+</script>
+<link rel="https://api.w.org/" href="https://hakanaydemir20.github.io/aymaksan-demo/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://hakanaydemir20.github.io/aymaksan-demo/wp-json/wp/v2/posts/3824" /><link rel="canonical" href="./index.html" />
+<meta name="generator" content="Site Kit by Google 1.179.0" /><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2H7PJWH');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Favicon -->
+<link rel="icon" href="../aymaksan/favicon.ico" type="image/x-icon">
+<!-- End Favicon --><link rel="icon" type="image/png" href="../wp-content/uploads/fbrfg/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="../wp-content/uploads/fbrfg/favicon.svg" />
+<link rel="shortcut icon" href="../wp-content/uploads/fbrfg/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../wp-content/uploads/fbrfg/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="aymaksan" />
+<link rel="manifest" href="../wp-content/uploads/fbrfg/site.webmanifest" /><script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "CNC Üretim Maliyetleri",
+    "description": "Modern imalatta rekabet artık yalnızca parçayı üretmekle sınırlı değildir. Aynı parçayı daha kısa çevrim süresiyle, daha düşük fire oranıyla ve daha öngörülebilir kaliteyle üretebilmek gerçek farkı oluşturur. Bu yüzden cnc üretim maliyetleri konusu, yalnızca muhasebe ya da teklif aşamasının değil; tasarımdan...",
+    "url": "https://hakanaydemir20.github.io/aymaksan-demo/cnc-uretim-maliyetleri/",
+    "datePublished": "2026-04-13T08:00:00+03:00",
+    "dateModified": "2026-04-12T11:26:54+03:00",
+    "author": {
+        "@type": "Organization",
+        "name": "Aymaksan Makina",
+        "url": "https://hakanaydemir20.github.io/aymaksan-demo/"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aymaksan Makina",
+        "url": "https://hakanaydemir20.github.io/aymaksan-demo/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://hakanaydemir20.github.io/aymaksan-demo/wp-content/uploads/aymaksan-logo.png"
+        }
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://hakanaydemir20.github.io/aymaksan-demo/cnc-uretim-maliyetleri/"
+    },
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://hakanaydemir20.github.io/aymaksan-demo/wp-content/uploads/2026/04/cnc-uretim-maliyetleri-1-1024x771.webp"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Ana Sayfa",
+            "item": "https://hakanaydemir20.github.io/aymaksan-demo/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "CNC Üretim Teknolojileri",
+            "item": "https://hakanaydemir20.github.io/aymaksan-demo/kategori/cnc-uretim-teknolojileri/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "CNC Üretim Maliyetleri",
+            "item": "https://hakanaydemir20.github.io/aymaksan-demo/cnc-uretim-maliyetleri/"
+        }
+    ]
+}
+</script>
+
+<!-- Google Etiket Yöneticisi snippet&#039;i, Site Kit tarafından eklendi -->
+<script>
+			( function( w, d, s, l, i ) {
+				w[l] = w[l] || [];
+				w[l].push( {'gtm.start': new Date().getTime(), event: 'gtm.js'} );
+				var f = d.getElementsByTagName( s )[0],
+					j = d.createElement( s ), dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore( j, f );
+			} )( window, document, 'script', 'dataLayer', 'GTM-M2H7PJWH' );
+			
+</script>
+
+<!-- Son Google Etiket Yöneticisi snippet&#039;i, Site Kit tarafından eklendi -->
+<link rel="icon" href="../wp-content/uploads/2025/12/cropped-aymaksan-simge-32x32.webp" sizes="32x32" />
+<link rel="icon" href="../wp-content/uploads/2025/12/cropped-aymaksan-simge-192x192.webp" sizes="192x192" />
+<link rel="apple-touch-icon" href="../wp-content/uploads/2025/12/cropped-aymaksan-simge-180x180.webp" />
+<meta name="msapplication-TileImage" content="../wp-content/uploads/2025/12/cropped-aymaksan-simge-270x270.webp" />
+<style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=https://hakanaydemir20.github.io/aymaksan-demo/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id="wp-block-latest-comments-inline-css">
+ol.wp-block-latest-comments{box-sizing:border-box;margin-left:0}:where(.wp-block-latest-comments:not([style*=line-height] .wp-block-latest-comments__comment)){line-height:1.1}:where(.wp-block-latest-comments:not([style*=line-height] .wp-block-latest-comments__comment-excerpt p)){line-height:1.8}.has-dates :where(.wp-block-latest-comments:not([style*=line-height])),.has-excerpts :where(.wp-block-latest-comments:not([style*=line-height])){line-height:1.5}.wp-block-latest-comments .wp-block-latest-comments{padding-left:0}.wp-block-latest-comments__comment{list-style:none;margin-bottom:1em}.has-avatars .wp-block-latest-comments__comment{list-style:none;min-height:2.25em}.has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-excerpt,.has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta{margin-left:3.25em}.wp-block-latest-comments__comment-excerpt p{font-size:.875em;margin:.36em 0 1.4em}.wp-block-latest-comments__comment-date{display:block;font-size:.75em}.wp-block-latest-comments .avatar,.wp-block-latest-comments__comment-avatar{border-radius:1.5em;display:block;float:left;height:2.5em;margin-right:.75em;width:2.5em}.wp-block-latest-comments[class*=-font-size] a,.wp-block-latest-comments[style*=font-size] a{font-size:inherit}
+/*# sourceURL=https://hakanaydemir20.github.io/aymaksan-demo/wp-includes/blocks/latest-comments/style.min.css */
+</style>
+<style id="wp-block-latest-posts-inline-css">
+.wp-block-latest-posts{box-sizing:border-box}.wp-block-latest-posts.alignleft{margin-right:2em}.wp-block-latest-posts.alignright{margin-left:2em}.wp-block-latest-posts.wp-block-latest-posts__list{list-style:none}.wp-block-latest-posts.wp-block-latest-posts__list li{clear:both;overflow-wrap:break-word}.wp-block-latest-posts.is-grid{display:flex;flex-wrap:wrap}.wp-block-latest-posts.is-grid li{margin:0 1.25em 1.25em 0;width:100%}@media (min-width:600px){.wp-block-latest-posts.columns-2 li{width:calc(50% - .625em)}.wp-block-latest-posts.columns-2 li:nth-child(2n){margin-right:0}.wp-block-latest-posts.columns-3 li{width:calc(33.33333% - .83333em)}.wp-block-latest-posts.columns-3 li:nth-child(3n){margin-right:0}.wp-block-latest-posts.columns-4 li{width:calc(25% - .9375em)}.wp-block-latest-posts.columns-4 li:nth-child(4n){margin-right:0}.wp-block-latest-posts.columns-5 li{width:calc(20% - 1em)}.wp-block-latest-posts.columns-5 li:nth-child(5n){margin-right:0}.wp-block-latest-posts.columns-6 li{width:calc(16.66667% - 1.04167em)}.wp-block-latest-posts.columns-6 li:nth-child(6n){margin-right:0}}:root :where(.wp-block-latest-posts.is-grid){padding:0}:root :where(.wp-block-latest-posts.wp-block-latest-posts__list){padding-left:0}.wp-block-latest-posts__post-author,.wp-block-latest-posts__post-date{display:block;font-size:.8125em}.wp-block-latest-posts__post-excerpt,.wp-block-latest-posts__post-full-content{margin-bottom:1em;margin-top:.5em}.wp-block-latest-posts__featured-image a{display:inline-block}.wp-block-latest-posts__featured-image img{height:auto;max-width:100%;width:auto}.wp-block-latest-posts__featured-image.alignleft{float:left;margin-right:1em}.wp-block-latest-posts__featured-image.alignright{float:right;margin-left:1em}.wp-block-latest-posts__featured-image.aligncenter{margin-bottom:1em;text-align:center}
+/*# sourceURL=https://hakanaydemir20.github.io/aymaksan-demo/wp-includes/blocks/latest-posts/style.min.css */
+</style>
+<style id="wp-block-search-inline-css">
+.wp-block-search__button{margin-left:10px;word-break:normal}.wp-block-search__button.has-icon{line-height:0}.wp-block-search__button svg{fill:currentColor;height:1.25em;min-height:24px;min-width:24px;vertical-align:text-bottom;width:1.25em}:where(.wp-block-search__button){border:1px solid #ccc;padding:6px 10px}.wp-block-search__inside-wrapper{display:flex;flex:auto;flex-wrap:nowrap;max-width:100%}.wp-block-search__label{width:100%}.wp-block-search.wp-block-search__button-only .wp-block-search__button{box-sizing:border-box;display:flex;flex-shrink:0;justify-content:center;margin-left:0;max-width:100%}.wp-block-search.wp-block-search__button-only .wp-block-search__inside-wrapper{min-width:0!important;transition-property:width}.wp-block-search.wp-block-search__button-only .wp-block-search__input{flex-basis:100%;transition-duration:.3s}.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden,.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden .wp-block-search__inside-wrapper{overflow:hidden}.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden .wp-block-search__input{border-left-width:0!important;border-right-width:0!important;flex-basis:0;flex-grow:0;margin:0;min-width:0!important;padding-left:0!important;padding-right:0!important;width:0!important}:where(.wp-block-search__input){appearance:none;border:1px solid #949494;flex-grow:1;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;margin-left:0;margin-right:0;min-width:3rem;padding:8px;text-decoration:unset!important;text-transform:inherit}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper){background-color:#fff;border:1px solid #949494;box-sizing:border-box;padding:4px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input{border:none;border-radius:0;padding:0 4px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input:focus{outline:none}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) :where(.wp-block-search__button){padding:4px 8px}.wp-block-search.aligncenter .wp-block-search__inside-wrapper{margin:auto}.wp-block[data-align=right] .wp-block-search.wp-block-search__button-only .wp-block-search__inside-wrapper{float:right}
+/*# sourceURL=https://hakanaydemir20.github.io/aymaksan-demo/wp-includes/blocks/search/style.min.css */
+</style>
+<style id="wp-block-group-inline-css">
+.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}
+/*# sourceURL=https://hakanaydemir20.github.io/aymaksan-demo/wp-includes/blocks/group/style.min.css */
+</style>
+
+</head>
+<body class="wp-singular post-template-default single single-post postid-3824 single-format-standard wp-custom-logo wp-embed-responsive wp-theme-aymaksan-stitch is-singular">
+		<!-- Google Etiket Yöneticisi (noscript) snippet&#039;i, Site Kit tarafından eklendi -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2H7PJWH" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<!-- Son Google Etiket Yöneticisi (noscript) snippet&#039;i, Site Kit tarafından eklendi -->
+		<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2H7PJWH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Mobil Overlay -->
+<div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+<!-- Mobil Menü Drawer -->
+<div class="mobile-menu" id="mobile-menu" role="dialog"
+     aria-label="Navigasyon Menüsü"
+     aria-hidden="true">
+  <div class="mobile-menu-header">
+    <a href="../index.html" class="mobile-menu-logo">
+              <img src="../wp-content/uploads/2026/06/logo1-clean.png"
+             alt="Aymaksan Makina"
+             style="height:52px;width:auto;object-fit:contain;">
+          </a>
+    <button class="mobile-menu-close" id="mobile-menu-close"
+            aria-label="Menüyü kapat">
+      <span class="material-symbols-outlined" aria-hidden="true">close</span>
+    </button>
+  </div>
+  <nav aria-label="Mobil Menü">
+    <ul id="menu-ana-menu" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home"><a href="../index.html">Ana Sayfa</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../ozel-talasli-imalat-hizmetleri/index.html">Hizmetlerimiz</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../makine-parkimiz/index.html">Makine Parkımız</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../sektorlere-ozel-cnc-talasli-imalat/index.html">Sektörler</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../aymaksan-makina-hakkimizda/index.html">Hakkımızda</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../blog/index.html">Blog</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../talasli-imalat-teklif-iletisim/index.html">İletişim</a></li></ul>  </nav>
+  <div class="mobile-menu-contact">
+    <a href="tel:+905523615628" class="mobile-contact-item">
+      <span class="material-symbols-outlined" aria-hidden="true">call</span>
+      +90 552 361 56 28
+    </a>
+    <a href="mailto:info@aymaksanmakina.com" class="mobile-contact-item">
+      <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+      info@aymaksanmakina.com
+    </a>
+    <a href="../talasli-imalat-teklif-iletisim/index.html"
+       class="btn-primary" style="justify-content:center;width:100%;margin-top:8px;">
+      Teklif Alın    </a>
+  </div>
+</div>
+
+<!-- SABİT HEADER SARMALAYICI (topbar + ana header birlikte) -->
+<div class="site-header-wrap" id="site-header-wrap">
+
+<!-- Üst Bilgi Çubuğu -->
+<div class="topbar" role="complementary">
+  <div class="container">
+    <div class="topbar-inner">
+      <div class="topbar-left">
+        <a href="tel:+905523615628" class="topbar-item">
+          <span class="material-symbols-outlined" aria-hidden="true">call</span>
+          +90 552 361 56 28
+        </a>
+        <a href="mailto:info@aymaksanmakina.com" class="topbar-item">
+          <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+          info@aymaksanmakina.com
+        </a>
+        <span class="topbar-item topbar-address">
+          <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+          Ostim Sanayi Sitesi 1181. Sk. No:23, Yenimahalle/Ankara
+        </span>
+      </div>
+      <div class="topbar-right">
+        <a href="https://www.google.com/maps/search/Ostim+Sanayi+Sitesi+1181.+Sk.+No+23+Yenimahalle+Ankara"
+           target="_blank" rel="noopener" class="topbar-item" aria-label="Haritada Gör">
+          <span class="material-symbols-outlined" aria-hidden="true">map</span>
+          Haritada Gör
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ANA HEADER -->
+<header class="site-header" id="site-header" role="banner">
+  <div class="container">
+
+    <!-- Logo -->
+    <div class="site-logo">
+      <a href="../index.html"
+         aria-label="Aymaksan Makina — Ana Sayfa">
+                  <img src="../wp-content/uploads/2026/06/logo1-clean.png"
+               alt="Aymaksan Makina | CNC & Design & Automation"
+               class="site-logo-img"
+               style="height:64px;width:auto;max-width:230px;object-fit:contain;"
+               loading="eager" width="230" height="64">
+              </a>
+    </div>
+
+    <!-- Desktop Navigasyon -->
+    <nav class="primary-nav" id="primary-nav"
+         aria-label="Ana Navigasyon">
+      <ul id="menu-ana-menu-1" class="nav-list"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home"><a href="../index.html">Ana Sayfa</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../ozel-talasli-imalat-hizmetleri/index.html">Hizmetlerimiz</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../makine-parkimiz/index.html">Makine Parkımız</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../sektorlere-ozel-cnc-talasli-imalat/index.html">Sektörler</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../aymaksan-makina-hakkimizda/index.html">Hakkımızda</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../blog/index.html">Blog</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../talasli-imalat-teklif-iletisim/index.html">İletişim</a></li></ul>    </nav>
+
+    <!-- Header CTA -->
+    <a href="../talasli-imalat-teklif-iletisim/index.html"
+       class="header-cta">
+      <span class="material-symbols-outlined" aria-hidden="true">request_quote</span>
+      Teklif Alın    </a>
+
+    <!-- Hamburger -->
+    <button class="menu-toggle" id="menu-toggle"
+            aria-controls="mobile-menu" aria-expanded="false"
+            aria-label="Menüyü aç">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+  </div>
+</header>
+
+</div><!-- .site-header-wrap -->
+
+<!-- Back to top -->
+<button class="back-to-top" id="back-to-top"
+        aria-label="Sayfa başına dön">
+  <span class="material-symbols-outlined" aria-hidden="true">arrow_upward</span>
+</button>
+
+<main id="main" class="site-main" role="main">
+  <div class="container">
+    <nav class="breadcrumb container" aria-label="Sayfa konumu"><a href="../index.html">Ana Sayfa</a><span class="sep" aria-hidden="true">›</span><a href="../kategori/cnc-uretim-teknolojileri/index.html">CNC Üretim Teknolojileri</a><span class="sep" aria-hidden="true">›</span><span aria-current="page">CNC Üretim Maliyetleri</span></nav>
+    <div class="single-layout">
+
+      <!-- Sol TOC (sticky, grid col 1) -->
+      <div class="post-toc-col">
+<aside class="post-toc" id="post-toc" aria-label="İçindekiler">
+  <div class="post-toc__inner">
+    <div class="post-toc__title">İçindekiler</div>
+    <nav class="post-toc__nav" id="post-toc-nav"></nav>
+  </div>
+</aside>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var nav = document.getElementById('post-toc-nav');
+  var toc = document.getElementById('post-toc');
+  var col = document.querySelector('.post-toc-col');
+  if (!nav || !toc || !col) return;
+
+  var content = document.querySelector('.entry-content');
+  if (!content) { col.style.setProperty('display', 'none', 'important'); return; }
+
+  /*
+   * Tocer plugini iki şey yapar:
+   * 1. .entry-content içine DIV.tocer (gizli TOC widget) ekler
+   * 2. Asıl makale başlıklarına id="tocer-heading-N" class="tocer-heading" atar
+   *
+   * Bu yüzden yalnızca DIV.tocer IÇINDEKI başlıkları dışarıda bırakıyoruz.
+   * [id^="tocer"] selektörünü KULLANMIYORUZ — başlıkların kendisi bu ID'lere sahip.
+   */
+  var hiddenContainers = ['.tocer', '.ez-toc-container',
+                          '.wp-block-rank-math-toc-block', '.rank-math-toc',
+                          '.ez-toc-v2-container'];
+
+  var headings = Array.from(content.querySelectorAll('h2, h3')).filter(function(h) {
+    for (var s = 0; s < hiddenContainers.length; s++) {
+      if (h.closest(hiddenContainers[s])) return false;
+    }
+    return true;
+  });
+
+  if (headings.length < 3) { col.style.setProperty('display', 'none', 'important'); return; }
+
+  /* ── Header yüksekliği ── */
+  var headerEl = document.querySelector('.site-header');
+  var OFFSET   = (headerEl ? headerEl.offsetHeight : 80) + 16;
+
+  /* ── Linkleri oluştur; tüm başlıklara temiz ID ver ── */
+  headings.forEach(function(h, i) {
+    h.id = 'aym-toc-' + i; // her zaman taze ID — çakışmayı önler
+    var isSub = h.tagName === 'H3';
+    var a = document.createElement('a');
+    a.href       = '#' + h.id;
+    a.className  = 'post-toc__link' + (isSub ? ' post-toc__link--sub' : '');
+    a.dataset.id = h.id;
+    a.textContent = h.textContent.replace(/^\d+\s+/, '').trim();
+    nav.appendChild(a);
+  });
+
+  var links = Array.from(nav.querySelectorAll('a'));
+
+  /* ── Aktif link: scroll bazlı ── */
+  function getActive() {
+    var scrollY = window.scrollY || window.pageYOffset;
+    var active  = headings[0];
+    for (var i = 0; i < headings.length; i++) {
+      var absTop = headings[i].getBoundingClientRect().top + scrollY - OFFSET - 4;
+      if (scrollY >= absTop) active = headings[i];
+      else break;
+    }
+    return active;
+  }
+
+  function setActive(id) {
+    links.forEach(function(l) { l.classList.remove('active'); });
+    var a = nav.querySelector('[data-id="' + id + '"]');
+    if (!a) return;
+    a.classList.add('active');
+    var inner = toc.querySelector('.post-toc__inner');
+    var aTop  = a.offsetTop;
+    var ih    = inner.clientHeight;
+    if (aTop < inner.scrollTop || aTop > inner.scrollTop + ih - 32) {
+      inner.scrollTop = aTop - ih / 2 + 16;
+    }
+  }
+
+  var lastId = '';
+  function onScroll() {
+    var h = getActive();
+    if (h && h.id !== lastId) { lastId = h.id; setActive(h.id); }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ── Tıklama: smooth scroll ── */
+  nav.addEventListener('click', function(e) {
+    var a = e.target.closest('a[data-id]');
+    if (!a) return;
+    e.preventDefault();
+    var target = document.getElementById(a.dataset.id);
+    if (!target) return;
+    var targetY = target.getBoundingClientRect().top
+                  + (window.scrollY || window.pageYOffset)
+                  - OFFSET;
+    window.scrollTo({ top: Math.max(0, targetY), behavior: 'smooth' });
+  });
+});
+</script>
+</div><!-- .post-toc-col -->
+
+      <!-- Ana İçerik -->
+      <article id="post-3824" class="post-3824 post type-post status-publish format-standard has-post-thumbnail hentry category-cnc-uretim-teknolojileri" role="article">
+
+        
+          <header class="post-header">
+                          <div class="post-card__meta">
+                <a href="../kategori/cnc-uretim-teknolojileri/index.html">
+                  CNC Üretim Teknolojileri                </a>
+                <span>—</span>
+                <span>13 Nis 2026</span>
+              </div>
+            
+            <h1>CNC Üretim Maliyetleri</h1>
+
+            <div class="post-meta">
+              <span>aymaksan</span>
+            </div>
+          </header>
+
+                      <div class="post-thumbnail">
+              <img width="1088" height="820" src="../wp-content/uploads/2026/04/cnc-uretim-maliyetleri-1.webp" class="attachment-hero size-hero wp-post-image" alt="CNC Üretim Maliyetleri" loading="lazy" decoding="async" fetchpriority="high" srcset="../wp-content/uploads/2026/04/cnc-uretim-maliyetleri-1.webp 1200w, ../wp-content/uploads/2026/04/cnc-uretim-maliyetleri-1-300x226.webp 300w, ../wp-content/uploads/2026/04/cnc-uretim-maliyetleri-1-1024x771.webp 1024w, ../wp-content/uploads/2026/04/cnc-uretim-maliyetleri-1-768x579.webp 768w" sizes="(max-width: 1088px) 100vw, 1088px" />            </div>
+          
+          <div class="entry-content">
+            <h2 id="tocer-heading-1" class="tocer-heading">CNC Üretim Maliyetleri İçin Zaman ve Maliyet Optimizasyonu</h2>
+<p>Modern imalatta rekabet artık yalnızca parçayı üretmekle sınırlı değildir. Aynı parçayı daha kısa çevrim süresiyle, daha düşük fire oranıyla ve daha öngörülebilir kaliteyle üretebilmek gerçek farkı oluşturur. Bu yüzden <strong>cnc üretim maliyetleri</strong> konusu, yalnızca muhasebe ya da teklif aşamasının değil; tasarımdan bağlamaya, takım seçiminden kalite kontrol düzenine kadar tüm üretim zincirinin ortak meselesidir.</p>
+<p>Basit görünen bir parçada bile gereğinden dar tolerans, yanlış operasyon sırası, gereksiz takım değişimi veya fazla bağlama ihtiyacı, toplam maliyeti sessizce yukarı taşır. Üstelik bu artış çoğu zaman ilk bakışta görünmez. Teklifte yalnızca toplam rakam görünür; fakat o rakamın arkasında hazırlık süresi, programlama emeği, işleme zamanı, takım ömrü, ölçüm disiplini ve yeniden işleme riski gibi birçok bileşen vardır.</p>
+<p>Özetle cevap nettir: <strong>cnc üretim maliyetleri</strong>, yalnızca “tezgâh kaç dakika çalıştı” sorusuyla açıklanamaz. Gerçek maliyet; zaman, proses, kalite ve teknik kararların toplam sonucudur.</p>
+<h2 id="tocer-heading-2" class="tocer-heading">CNC Üretim Maliyetleri Neden Tek Bir Kalemden Oluşmaz?</h2>
+<p>Birçok satın alma ekibi ya da teknik olmayan karar verici, CNC fiyatını “ham madde + işçilik” olarak düşünür. Oysa pratikte maliyet yapısı bundan çok daha katmanlıdır. Üretici açısından parça, yalnızca işlenen metal değildir; aynı zamanda planlanan süreçtir.</p>
+<p>Bir parçanın maliyeti oluşurken önce teknik resim okunur. Resim ne kadar açık, üretilebilir ve fonksiyon odaklıysa fiyat o kadar netleşir. Ölçü, tolerans, yüzey pürüzlülüğü, delik eksenleri, referans yüzeyler ve varsa ısıl işlem ya da kaplama talepleri henüz talaş kaldırılmadan maliyetin temelini oluşturur. Bu aşama zayıfsa üretici risk payı ekler. Risk payı arttıkça teklif yükselir.</p>
+<p>İkinci katman proses planlamasıdır. Parça torna mı ister, freze mi ister, yoksa her iki operasyonu birlikte mi gerektirir? Tek bağlamada mı işlenebilir, ara bağlama gerekir mi? Kaba işleme ile finisaj aynı kurgu içinde mi yürütülmeli? Bu soruların her biri doğrudan süreye etki eder. Süre uzadıkça <strong>cnc üretim maliyetleri</strong> yükselir.</p>
+<p>Üçüncü katman takım ve takım yolu tarafıdır. Aynı geometri iki farklı stratejiyle işlenebilir; biri daha hızlı ama takım aşınmasını yükselten, diğeri daha dengeli fakat daha uzun süren bir yol izleyebilir. Burada doğru tercih yalnızca dakikayı değil, kalite sürekliliğini de belirler.</p>
+<p>Dördüncü katman kalite kontrol düzenidir. Parça fonksiyonu kritikse yalnızca final ölçüm yetmez; proses içi kontrol gerekebilir. Proses içi ölçüm, parça başına ek süre demektir. Fakat çoğu zaman bu ek süre, hurda ve revizyonu azaltarak toplam maliyeti aşağı çeker. Yani her ek kontrol maliyeti yükseltmez; doğru kullanılırsa maliyeti dengeler. Bu çerçeveyi daha geniş üretim perspektifinde görmek için <a href="https://aymaksanmakina.com/cnc-uretim-teknolojileri/">CNC Üretim Teknolojileri</a> içindeki süreç odaklı yazılar, planlama bakışını tamamlar.</p>
+<figure class="wp-block-image"><img decoding="async" src="../wp-content/uploads/2026/04/cnc-uretim-maliyetleri-cnc-uretim-fiyatlandirmasi.webp" alt="cnc üretim maliyetleri - cnc üretim fiyatlandırması" /><figcaption>cnc üretim maliyetleri &#8211; cnc üretim fiyatlandırması</figcaption></figure>
+<h2 id="tocer-heading-3" class="tocer-heading">Görünmeyen Maliyetler Nerededir?</h2>
+<p>Görünmeyen maliyetlerin başında hazırlık süresi gelir. Operatörün tezgâhı ayarlaması, takım ofsetlerini girmesi, bağlama ekipmanını hazırlaması ve ilk parça doğrulamasını yapması üretimin doğal parçasıdır. Dışarıdan bakıldığında “üretim başlamadı” gibi görünür; ama aslında maliyet çoktan işlemeye başlamıştır.</p>
+<p>Bir diğer görünmeyen alan takım aşınmasıdır. Özellikle sert malzemelerde, dar toleranslarda ya da kötü tasarlanmış geometriye sahip parçalarda takım ömrü kısalır. Takım değişim sıklığı arttıkça yalnızca sarf maliyeti değil, zaman kaybı da artar. Bu yüzden <strong>cnc maliyet analizi</strong> yapılırken takımın kaç parçada değişeceği göz ardı edilmemelidir.</p>
+<p>Kalite kaynaklı görünmeyen maliyet ise yeniden işleme ve firedir. Ucuz görünen ama proses kararlılığı düşük üretim modeli, teklif aşamasında cazip olabilir. Ancak sonradan çıkan uygunsuzluklar, teslimat gecikmeleri ve yeniden işleme yükü, toplam maliyeti başlangıçtaki “pahalı” seçeneğin bile üzerine çıkarabilir.</p>
+<h2 id="tocer-heading-4" class="tocer-heading">Zaman Neden Doğrudan Paraya Dönüşür?</h2>
+<p>CNC üretimde zaman, yalnızca takvimde geçen süre değildir. Zaman; makine meşguliyeti, operatör odağı, takım kullanımı ve kalite çevriminin toplamıdır. Bir parçanın çevrim süresi uzadığında aynı makinede işlenebilecek diğer parçaların kapasitesi de daralır. Bu nedenle <strong>cnc üretimde zaman tasarrufu</strong>, sadece teslim süresini kısaltmaz; makine başına verimliliği yükselterek birim maliyeti de düşürür.</p>
+<p>Burada önemli olan daha hızlı olmak değil, daha verimli olmaktır. Aşırı agresif parametreler takım kırar, yüzeyi bozar ya da ölçü kaçırırsa görünürde kazanılan saniyeler toplam süreçte kayba dönüşür. Doğru yaklaşım; kararlı, tekrarlanabilir ve ölçülebilir zaman kazancıdır.</p>
+<h2 id="tocer-heading-5" class="tocer-heading">CNC Üretim Maliyeti Nasıl Düşürülür?</h2>
+<p>“<strong>Cnc üretim maliyeti nasıl düşürülür</strong>?” sorusunun en doğru cevabı şudur: Maliyet, üretim başladıktan sonra değil; tasarım ve proses kararları alınırken düşürülür. Tezgâh başında yapılan optimizasyon önemlidir, fakat asıl kazanç çoğu zaman çizim masasında başlar.</p>
+<p>Bir parçanın maliyetini düşürmenin en etkili yolu, fonksiyona hizmet etmeyen karmaşıklığı temizlemektir. Üretim açısından zor ama kullanım açısından anlamsız detaylar, fark edilmeden maliyeti büyütür. İnce cidarlar, gereksiz derin cepler, standart dışı radyüsler, özel takım gerektiren köşeler ve fonksiyonla ilgisiz dar toleranslar bu grubun tipik örnekleridir.</p>
+<p>Maliyet düşürme yaklaşımı, kaliteyi düşürmek anlamına gelmez. Tersine doğru optimizasyon, kaliteyi koruyarak gereksiz maliyeti ayıklar. Bu yüzden <strong>cnc üretim maliyeti nasıl düşürülür</strong> sorusunu “nereden kısmalıyım?” şeklinde değil, “neredeki teknik gereklilik gerçekten kritik?” şeklinde sormak gerekir.</p>
+<figure class="wp-block-image"><img decoding="async" src="../wp-content/uploads/2026/04/cnc-uretim-maliyetleri-cnc-uretim-maliyeti-nasil-dusurulur.webp" alt="cnc üretim maliyetleri - cnc üretim maliyeti nasıl düşürülür" /><figcaption>cnc üretim maliyetleri &#8211; cnc üretim maliyeti nasıl düşürülür</figcaption></figure>
+<h2 id="tocer-heading-6" class="tocer-heading">Tasarım Sadeleştirme En Büyük Kazanç Alanıdır</h2>
+<p>Bir parçanın toplam maliyeti üzerinde en yüksek etkilerden biri geometri karmaşıklığıdır. Karmaşık geometri daha fazla takım yolu, daha yavaş ilerleme, daha hassas bağlama ve daha fazla ölçüm gerektirir. Bu da zamanın uzaması anlamına gelir.</p>
+<p>Örneğin iç köşelerde gereğinden küçük radyüsler kullanmak, standart takımlarla hızlı işlenebilecek bir yüzeyi özel takım ihtiyacına dönüştürebilir. Benzer şekilde yalnızca estetik amaçlı ama fonksiyon taşımayan kademeler, pahlar veya karmaşık yüzey geçişleri operasyon sayısını artırır. Eğer parçanın fonksiyonuna katkı yoksa, bu detaylar çoğu zaman maliyet yüküdür.</p>
+<p>Bu yüzden üretim dostu tasarım, maliyet optimizasyonunun ilk adımıdır. Üretim dostu tasarım; standart takım kullanımı, daha az bağlama, daha kısa takım yolu ve daha kolay ölçüm anlamına gelir. Bu dört unsur birlikte çalıştığında <strong>cnc üretim maliyetleri</strong> üzerinde ciddi düşüş sağlanır.</p>
+<h2 id="tocer-heading-7" class="tocer-heading">Tolerans Fonksiyon Kadar Dar Olmalıdır</h2>
+<p>CNC dünyasında sık görülen bir hata, tüm kritik olmayan ölçülere de çok dar tolerans vermektir. Oysa tolerans, parçanın teknik gereğine göre belirlenmelidir. Bir yüzey montaj uyumu için kritik değilse veya o delik yalnızca geçiş amacı taşıyorsa, dar tolerans vermek maliyet üretir ama değer üretmez.</p>
+<p>Dar tolerans; daha düşük ilerleme, daha kontrollü kaba-finisaj ayrımı, daha sık ölçüm ve daha yüksek proses disiplini demektir. Bu şartlar elbette bazı parçalar için gereklidir. Ancak gereksiz kullanıldığında <strong>cnc üretim fiyatlandırması</strong> üzerinde doğrudan baskı kurar.</p>
+<p>Buradaki doğru yaklaşım şudur: Fonksiyonel olarak kritik ölçülere hassasiyet, diğer alanlara ise kontrollü esneklik tanımlanmalıdır. Böylece kalite korunur, ama bütün parça gereksiz şekilde “yüksek hassasiyetli” muamelesi görmez.</p>
+<h2 id="tocer-heading-8" class="tocer-heading">Malzeme Seçimi Yalnızca Kilogram Fiyatı Değildir</h2>
+<p>Maliyet düşürmek isteyen birçok firma önce ham madde fiyatına bakar. Oysa gerçek tablo daha geniştir. Malzeme yalnızca satın alma bedeliyle değil, işlenebilirliğiyle de maliyeti belirler.</p>
+<p>Daha ucuz görünen ama zor işlenen bir malzeme; daha uzun çevrim süresi, daha yüksek takım aşınması ve daha sık ölçüm ihtiyacı doğurabilir. Sonuçta kilogram bazında kazanılan rakam, işleme tarafında fazlasıyla geri verilebilir. Tam tersi durumda ise nispeten pahalı ama işlenebilirliği yüksek bir malzeme toplam maliyeti aşağı çekebilir.</p>
+<p>Bu yüzden <strong>cnc parça maliyet hesaplama</strong> yapılırken malzeme kararı tek başına satın alma biriminin değil, üretim ve mühendislik tarafının da değerlendirmesiyle verilmelidir.</p>
+<h2 id="tocer-heading-9" class="tocer-heading">Üretim Adedi Doğru Okunmalıdır</h2>
+<p>Tek adet bir parça ile yüz adet aynı parça aynı mantıkla fiyatlandırılamaz. Çünkü ilk parçada hazırlık, programlama ve doğrulama yükü büyüktür. Seri üretimde ise bu sabit efor çok sayıda parçaya dağılır. Bu nedenle düşük adetli işlerde birim maliyet doğal olarak yüksektir.</p>
+<p>Burada kritik nokta şudur: Eğer parça tekrar siparişe konu olacaksa ilk üretimde standart proses kurmak, takım listesini oturtmak ve fikstür mantığını netleştirmek ilerleyen siparişlerde çok ciddi avantaj sağlar. Yani bazı durumlarda ilk siparişte yapılan mühendislik yatırımı, sonraki siparişlerde kâra dönüşür.</p>
+<h2 id="tocer-heading-10" class="tocer-heading">CNC Parça Maliyet Hesaplama Nasıl Yapılır?</h2>
+<p>Sağlıklı bir <strong>cnc parça maliyet hesaplama</strong> çalışması, tek satırlık formülle yapılmaz. Yine de karar vermeyi kolaylaştıran pratik bir çerçeve vardır:</p>
+<p>Toplam maliyet = hazırlık + programlama + bağlama + işleme süresi + takım tüketimi + kalite kontrol + ikincil işlemler + paketleme/lojistik + risk payı</p>
+<p>Bu formüldeki her bileşen proje bazında değişir. Aynı ölçüde iki parça, farklı malzeme, farklı tolerans ve farklı bağlama ihtiyacı nedeniyle tamamen ayrı bütçelere çıkabilir. Bu yüzden <strong>cnc parça maliyet hesaplama</strong> çalışmasında sayı üretmek kadar, o sayının neden oluştuğunu görmek de önemlidir.</p>
+<figure class="wp-block-image"><img decoding="async" src="../wp-content/uploads/2026/04/cnc-uretim-maliyetleri-cnc-parca-maliyet-hesaplama.webp" alt="cnc üretim maliyetleri - cnc parça maliyet hesaplama" /><figcaption>cnc üretim maliyetleri &#8211; cnc parça maliyet hesaplama</figcaption></figure>
+<h2 id="tocer-heading-11" class="tocer-heading">Hazırlık ve Programlama Maliyeti</h2>
+<p>Bir CNC işinin en az görünen ama en belirleyici kısmı hazırlıktır. CAM programı oluşturmak, takım listesini planlamak, operasyon sırasını belirlemek, bağlama mantığını tasarlamak ve ilk parça için doğrulama akışını kurmak ciddi emek ister. Özellikle özel parçalarda bu emek büyür.</p>
+<p>Tek adet ya da düşük adet üretimlerde hazırlık maliyetinin birim parçaya etkisi yüksektir. Çünkü sabit mühendislik eforu az sayıda parçaya bölünür. Bu nedenle düşük adetli işlerin “küçük iş” gibi görülmesi yanıltıcıdır; çoğu zaman hazırlık yükü yüksektir.</p>
+<h2 id="tocer-heading-12" class="tocer-heading">İşleme Süresi ve Makine Zamanı</h2>
+<p>Makine zamanı çoğu teklifin ana omurgasını oluşturur. Çevrim süresini belirleyen temel unsurlar ise parça geometrisi, kesme parametreleri, takım yolu, bağlama sayısı ve ölçüm duraklarıdır. Parça ne kadar uzun süre tezgâhta kalırsa, <strong>cnc üretim maliyetleri</strong> o kadar yükselir.</p>
+<p>Ancak burada önemli bir ayrım vardır. Kısa çevrim süresi her zaman iyi değildir; ölçü kaçıran, takım ömrünü azaltan ya da yüzeyi bozan agresif strateji toplam süreçte daha pahalı olabilir. Sağlıklı maliyet hesabı, kararlı çevrim süresini esas almalıdır.</p>
+<h2 id="tocer-heading-13" class="tocer-heading">Takım Tüketimi ve Sarf Giderleri</h2>
+<p>Takım maliyeti bazı projelerde küçük görünür; fakat sert malzeme, karmaşık geometri ya da dar tolerans varsa hızla büyür. Takımın yalnızca satın alma bedeli değil, parça başına ne kadar ömür bıraktığı da hesaba katılmalıdır.</p>
+<p>Örneğin aynı operasyon için bir takım daha pahalı olabilir ama iki kat uzun ömür sağlıyorsa toplam maliyet avantajı yaratır. Bu yüzden <strong>cnc maliyet analizi</strong> yapılırken “ucuz takım” yerine “parça başına doğru takım maliyeti” mantığı kullanılmalıdır.</p>
+<h2 id="tocer-heading-14" class="tocer-heading">Ölçüm, İkincil İşlem ve Son İşlemler</h2>
+<p>Çoğu maliyet hesabında yalnızca ana işleme düşünülür. Oysa parça bittikten sonra ölçüm, çapak alma, yıkama, markalama, kaplama hazırlığı, montaj kontrolü gibi aşamalar da zaman ve işçilik yaratır. Bazı parçalar için bu aşamalar ana işleme kadar kritik olabilir.</p>
+<p>Özellikle müşteri çiziminde detaylı kontrol planı isteniyorsa, kalite tarafı teklifin önemli kısmını oluşturur. Burada hata yapmak, teklifi düşük gösterir ama uygulamada kârlılığı bozar.</p>
+<h2 id="tocer-heading-15" class="tocer-heading">Pratik Bir Okuma Örneği</h2>
+<p>Diyelim ki silindirik bir çelik parça üretiyorsunuz. İlk bakışta parça basit görünür. Fakat teknik resimde iki kritik çap, hassas eş merkezlilik, ince yüzey pürüzlülüğü ve çapraz delik varsa tablo değişir. Torna operasyonu dışında ikinci bağlama, delik işlemi, ek kontrol ve belki özel aparat gerekir. Yani “basit parça” algısı yanıltıcıdır.</p>
+<p>Bir başka örnekte prizmatik bir alüminyum parça düşünelim. Malzeme daha kolay işlenir, takım aşınması daha düşüktür. Fakat parça üzerinde çok sayıda cep, kör delik ve farklı derinlikte yüzey varsa çevrim süresi yine büyür. Demek ki maliyet yalnızca malzeme değil, geometri ve proses ilişkisiyle belirlenir.</p>
+<p>Bu yüzden <strong>cnc parça maliyet hesaplama</strong> yaklaşımı, parça resmi görülmeden kesin cevap üretmez. Doğru yöntem, maliyet kalemlerini görünür hale getirip hangi unsurun baskın olduğunu belirlemektir.</p>
+<h2 id="tocer-heading-16" class="tocer-heading">CNC Üretim Fiyatlandırması Nasıl Daha Sağlıklı Yapılır?</h2>
+<p>Doğru <strong>cnc üretim fiyatlandırması</strong>, yalnızca üreticinin değil alıcının da işini kolaylaştırır. Şeffaf fiyatlandırma; hangi operasyonun, hangi riskin ve hangi kalite gereğinin teklifi büyüttüğünü netleştirir. Böylece fiyat pazarlığı “indirim isteği” seviyesinde kalmaz, teknik iyileştirme konuşmasına dönüşür.</p>
+<p>En sağlıklı fiyatlandırma, çizim inceleme notlarıyla birlikte sunulan fiyatlandırmadır. Üretici hangi alanı riskli gördüğünü, hangi toleransın ek zaman yarattığını ve hangi revizyonun maliyet avantajı sağlayacağını açıkça belirttiğinde teklif gerçek anlamda değer üretir. Fiyatı oluşturan kırılımları teklif mantığıyla birlikte okumak için <a href="https://aymaksanmakina.com/cnc-imalat-fiyatlari-neye-gore-belirlenir/">CNC İmalat Fiyatları Neye Göre Belirlenir?</a> yazısı bu başlığı tamamlayıcı biçimde okunabilir.</p>
+<h2 id="tocer-heading-17" class="tocer-heading">CNC Üretimde Zaman Tasarrufu Nasıl Sağlanır?</h2>
+<p><strong>Cnc üretimde zaman tasarrufu</strong>, maliyet düşürmenin en görünür ama en yanlış anlaşılan alanlarından biridir. Çünkü birçok işletme zaman kazanmayı yalnızca makinayı daha hızlı çalıştırmak sanır. Oysa gerçek zaman tasarrufu çoğu zaman akışın iyileştirilmesiyle gelir.</p>
+<p>Bir operatörün takım araması, bağlama aparatı beklemesi, program revizyonu için durması veya ilk parça onayı geciktiği için hattın boş kalması; bunların her biri üretim süresine eklenir. Makine kesim yapmıyorken de zaman kaybı devam eder. Bu nedenle <strong>cnc üretimde zaman tasarrufu</strong> yalnızca kesme anının değil, tüm hazırlık ve destek süreçlerinin optimizasyonudur. Operasyon sayısı, takım seçimi ve çevrim süresi üzerindeki baskıyı daha detaylı görmek için <span style="color: #ff0000;"><strong>Talaşlı İmalat Fiyatlarını Etkileyen Faktörler</strong></span> içeriğiyle birlikte değerlendirme yapılabilir. Takım yolu doğrulaması ve simülasyon temelli iyileştirmelerin önemini görmek için <a href="https://makina.mmo.org.tr/egitim/16717">Sanal Ortamda Talaşlı İmalat ve CNC Sistem Tasarımı</a> içeriği dikkat çekici bir teknik referans sunar.</p>
+<figure class="wp-block-image"><img decoding="async" src="../wp-content/uploads/2026/04/cnc-uretim-maliyetleri-cnc-uretimde-zaman-tasarrufu.webp" alt="cnc üretim maliyetleri - cnc üretimde zaman tasarrufu" /><figcaption>cnc üretim maliyetleri &#8211; cnc üretimde zaman tasarrufu</figcaption></figure>
+<h2 id="tocer-heading-18" class="tocer-heading">CAD/CAM Entegrasyonu ve Takım Yolu Optimizasyonu</h2>
+<p>İyi hazırlanmış CAM stratejisi, çevrim süresini düşürürken takım ömrünü de koruyabilir. Kötü hazırlanmış takım yolu ise gereksiz hava kesimi, fazla geri çekme, kötü giriş-çıkış hareketleri ve dengesiz paso yükleri yaratır. Sonuç: daha uzun süre, daha fazla takım tüketimi, daha yüksek risk.</p>
+<p>Bu nedenle <strong>cnc üretimde zaman tasarrufu</strong> için ilk bakılacak alan, takım yolunun akışıdır. Parça üstündeki gerçek kesme süresi ile programın toplam süresi arasındaki fark ne kadar açılıyorsa, verimsizlik o kadar büyüktür.</p>
+<h2 id="tocer-heading-19" class="tocer-heading">Tek Bağlamada Daha Fazla İş Yapmak</h2>
+<p>Bağlama sayısı arttıkça yalnızca zaman değil, hata ihtimali de artar. Her yeni bağlama; referans kayması, operatör yorumu ve ek kontrol ihtiyacı demektir. Mümkün olan yerlerde tek bağlamada daha fazla işlem yapmak, hem zaman hem kalite tarafında önemli avantaj üretir.</p>
+<p>Bu her parçada mümkün değildir. Fakat fikstür mantığı doğru kurulduğunda, özellikle tekrar eden siparişlerde bağlama sayısını azaltmak <strong>cnc üretim maliyetleri</strong> üzerinde doğrudan etki yaratır. Çünkü daha az bağlama, daha kısa hazırlık ve daha düşük ölçü riski anlamına gelir.</p>
+<h2 id="tocer-heading-20" class="tocer-heading">Takım Standardizasyonu ve Ön Hazırlık</h2>
+<p>Sürekli farklı takım setleriyle çalışan atölyelerde kurulum süresi uzar. Standart takım mantığı ise hazırlığı hızlandırır. Operatör neyi, ne zaman ve hangi offset düzeninde kullanacağını bildiğinde süre kaybı azalır.</p>
+<p>Aynı şekilde ön ayarlı takım, hazır aparat, standart iş sırası ve dijital kontrol listeleri üretimi sakinleştirir. Kaotik çalışan atölye dışarıdan hızlı görünebilir; ancak gerçekte zaman kaybı yüksektir.</p>
+<h2 id="tocer-heading-21" class="tocer-heading">Proses İçi Ölçüm Zaman Kaybettirmez, Zaman Kazandırır</h2>
+<p>Yüzeysel bakışla bakıldığında ölçüm, üretimi yavaşlatan bir adım gibi görünür. Fakat hatalı bir parçayı en sonda fark etmek, çoğu zaman birkaç ara ölçümden çok daha pahalıdır. Bu nedenle kritik ölçülerde proses içi doğrulama, özellikle seri işlerde toplam zaman kazancı sağlar.</p>
+<p>Burada amaç her parçayı uzun uzun ölçmek değil; sapma eğilimini erkenden yakalamaktır. Takım aşınması, ısıl etkiler veya bağlama kaynaklı küçük kaymalar erken fark edildiğinde proses devam eder. Fark edilmediğinde ise tüm parti riske girer.</p>
+<h2 id="tocer-heading-22" class="tocer-heading">CNC Üretim Fiyatlandırması Yapılırken Hangi Teknik Parametreler Dikkate Alınmalıdır?</h2>
+<p>Sağlıklı <strong>cnc üretim fiyatlandırması</strong> için şu soru mutlaka sorulmalıdır: Bu fiyat, hangi teknik varsayımlara göre verildi? Çünkü iki üretici aynı çizime aynı rakamı vermese de ikisi de yanlış olmayabilir; sadece farklı varsayımlarla hesap yapıyor olabilirler.</p>
+<p>Bir üretici toleransı kritik kabul edip ara ölçüm ekler. Diğeri daha düşük risk payı yazar ama süreçte sorun yaşama olasılığı yüksektir. Bir üretici takım maliyetini açıkça hesaba katar. Diğeri daha düşük teklif verir fakat ilk revizyonda fiyat güncellemesi ister. Bu yüzden <strong>cnc üretim fiyatlandırması</strong> teknik kapsamla birlikte okunmalıdır.</p>
+<p>Fiyatlandırmada dikkat edilmesi gereken ana başlıklar; malzeme standardı, operasyon sayısı, çevrim süresi, takım ömrü, bağlama ihtiyacı, tolerans seviyesi, yüzey kalitesi, kalite planı ve teslim modelidir. Bu dokuz başlık net değilse teklifin güvenilirliği de düşer. Kalite disiplininin maliyet üzerindeki etkisini anlamak için <a href="https://www.tse.org.tr/ts-en-iso-9001-kalite-yonetim-sistemi/" target="_blank" rel="noopener">TS EN ISO 9001 Kalite Yönetim Sistemi</a> yaklaşımı, süreç standardizasyonunun neden kritik olduğunu somutlaştırır.</p>
+<h2 id="tocer-heading-23" class="tocer-heading">CNC Maliyet Analizi Satın Alma Kararlarını Nasıl Güçlendirir?</h2>
+<p>İyi bir <strong>cnc maliyet analizi</strong>, fiyat kıyaslamasından daha fazlasını yapar. Hangi teklifin neden düşük olduğunu, hangi teklifin nerede risk taşıdığını ve hangi tedarikçinin uzun vadede daha sürdürülebilir sonuç vereceğini görünür kılar.</p>
+<p>Satın alma tarafının en büyük hatası, tüm teklifleri aynı teknik zeminde sanmaktır. Oysa biri yalnızca ana işleme süresini, diğeri ise kalite ve risk maliyetini de hesaba katıyor olabilir. Bu durumda rakamları yan yana koymak yeterli değildir; teklif içeriğini çözmek gerekir.</p>
+<p>Burada toplam sahip olma maliyeti yaklaşımı kritik hale gelir. İlk siparişte ucuz görünen ama sürekli revizyon çıkaran, teslimat aksatan veya yeniden işleme yaratan model, uzun vadede pahalıdır. Biraz daha disiplinli ve kontrollü süreç ise başlangıçta yüksek görünse de toplam maliyeti aşağı çekebilir. Düşük adetli, prototip ya da teknik riski yüksek işlerde maliyetin neden farklılaştığını görmek için <span style="color: #ff0000;"><strong>Özel Parça İmalatı Fiyatlarını Etkileyen Faktörler</strong></span> yazısını inceleyebilirsiniz. Makine, yazılım ve donanım yatırımlarının verimlilik tarafına nasıl taşınabildiğini görmek için <a href="https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9144/kobi-dijital-donusum-destek-programi" target="_blank" rel="noopener">KOBİ Dijital Dönüşüm Destek Programı</a> sayfası da incelenebilir.</p>
+<figure class="wp-block-image"><img decoding="async" src="../wp-content/uploads/2026/04/cnc-uretim-maliyetleri-cnc-maliyet-analizi.webp" alt="cnc üretim maliyetleri - cnc maliyet analizi" /><figcaption>cnc üretim maliyetleri &#8211; cnc maliyet analizi</figcaption></figure>
+<h2 id="tocer-heading-24" class="tocer-heading">Tedarikçi Seçiminde Sadece Fiyata Bakmak Neden Yanlıştır?</h2>
+<p>CNC üretimde tedarikçi seçimi, yalnızca fiyat satın almak değildir; süreç satın almaktır. Üreticinin teknik iletişim kalitesi, çizim yorumlama yaklaşımı, proses disiplini ve kalite alışkanlığı fiyat kadar önemlidir.</p>
+<p>İyi üretici, maliyeti kör biçimde büyüten noktaları size söyler. Hangi toleransın gereksiz sert olduğunu, hangi geometri değişikliğinin süre kazandıracağını, hangi operasyonun farklı sırayla daha verimli yapılacağını teknik gerekçeyle anlatır. Bu yaklaşım, gerçek <strong>cnc maliyet analizi</strong> kültürünün göstergesidir.</p>
+<h2 id="tocer-heading-25" class="tocer-heading">Tekrarlayan Siparişlerde Asıl Kazanç Nerede Oluşur?</h2>
+<p>Tekrarlayan işlerde en büyük avantaj, ilk üretimde öğrenilen sürecin standartlaşmasıdır. Program oturur, takım listesi netleşir, bağlama mantığı sabitlenir, ölçüm noktaları belirlenir. Böylece sonraki siparişlerde hem süre kısalır hem maliyet daha öngörülebilir hale gelir.</p>
+<p>Bu yüzden seri ya da dönemsel tekrar potansiyeli olan işlerde ilk siparişi yalnızca parça teslimi olarak görmek yanlıştır. İlk sipariş aynı zamanda proses yatırımıdır. Bu yatırımı doğru yapan üretici, sonraki partilerde maliyet avantajını daha rahat yaratır.</p>
+<h2 id="tocer-heading-26" class="tocer-heading">Sık Sorulan Sorular</h2>
+<h2 id="tocer-heading-27" class="tocer-heading">CNC Üretim Maliyeti Nasıl Düşürülür Sorusunda İlk Bakılacak Yer Neresidir?</h2>
+<p>İlk bakılacak yer çizimdir. Fonksiyona katkısı olmayan karmaşık geometri, gereksiz dar tolerans ve standart dışı detaylar maliyeti büyütür. Ardından operasyon sırası, bağlama sayısı ve takım yolu gözden geçirilmelidir.</p>
+<h2 id="tocer-heading-28" class="tocer-heading">CNC Parça Maliyet Hesaplama İçin Tek Bir Formül Yeterli Midir?</h2>
+<p>Hayır. Formül iskelet sunar; fakat gerçek sonuç için teknik resim, malzeme, adet, tolerans, takım tüketimi ve kalite planı birlikte değerlendirilmelidir. Aksi halde rakam çıkar ama doğru maliyet okunmaz.</p>
+<h2 id="tocer-heading-29" class="tocer-heading">CNC Üretimde Zaman Tasarrufu En Çok Hangi Noktalarda Elde Edilir?</h2>
+<p>En büyük tasarruf çoğu zaman hava kesimlerinin azaltılması, bağlama sayısının düşürülmesi, standart takım düzeni kurulması ve proses içi sapmaların erken yakalanmasıyla elde edilir.</p>
+<h2 id="tocer-heading-30" class="tocer-heading">CNC Üretim Fiyatlandırması Neden Firmadan Firmaya Değişir?</h2>
+<p>Çünkü her firma aynı riski, aynı kalite seviyesini ve aynı hazırlık yükünü aynı biçimde hesaplamaz. Mühendislik yaklaşımı ve süreç disiplini farklılaştıkça fiyatlandırma mantığı da değişir.</p>
+<h2 id="tocer-heading-31" class="tocer-heading">Sonuç</h2>
+<p>Bugün <strong>cnc üretim maliyetleri</strong> üzerine doğru düşünmek, yalnızca daha ucuz üretim aramak değildir. Asıl hedef; zamanı, kaliteyi ve teknik gerekliliği birlikte yöneten bir üretim modeli kurmaktır. Bu modelde tasarım sadeleşir, tolerans fonksiyon kadar dar tutulur, takım yolu gereksiz hareketten arındırılır, bağlama sayısı azaltılır ve kalite kontrol sürecin doğal parçası haline gelir.</p>
+<p>Doğru kurgulanmış bir sistemde <strong>cnc üretim maliyetleri</strong> düşerken kalite zayıflamaz; aksine süreç daha öngörülebilir hale gelir. Bu da hem üretici hem satın alma tarafı için daha güvenli, daha sürdürülebilir ve daha rekabetçi bir yapı oluşturur.</p>
+<p>Son söz olarak şunu net söylemek gerekir: <strong>cnc maliyet analizi</strong> yapmadan verilen her karar, çoğu zaman yalnızca fiyat seçimi olur. Oysa güçlü üretim kararı, fiyatın arkasındaki tekniği okuyabilen karardır. Silindirik geometrilerde çevrim süresi, takım ömrü ve proses disiplini ilişkisini sahaya daha yakın okumak için <a href="https://aymaksanmakina.com/cnc-tornalama/">CNC Tornalama</a> hizmet sayfası da destekleyici bir referansdır! Dijital olgunluk ve üretim verimliliği perspektifini genişletmek isteyen firmalar için <a href="https://ddx.tubitak.gov.tr/" target="_blank" rel="noopener">DDX Dijital Dönüşüm Değerlendirme Modeli</a> yararlı bir dış referans niteliğindedir.</p>
+
+<!-- *tocer~post~container* -->
+          </div>
+
+          <!-- Etiketler -->
+          
+          <!-- Önceki / Sonraki -->
+          <nav class="post-navigation" aria-label="Yazı navigasyonu"
+               style="display:flex;justify-content:space-between;margin-top:var(--stack-lg);padding-top:var(--stack-md);border-top:1px solid var(--outline-variant);">
+            <div>
+              <span style="font-size:12px;color:var(--on-surface-variant);">Önceki</span><br><a href="../ozel-parca-imalati-ile-seri-uretim-stratejileri/index.html" rel="prev">Özel Parça İmalatı İle Seri Üretim Stratejileri</a>            </div>
+            <div style="text-align:right;">
+                          </div>
+          </nav>
+
+        
+      </article><!-- article -->
+
+      <!-- Kenar Çubuğu -->
+      <aside class="sidebar" role="complementary" aria-label="İlgili içerikler">
+
+        <!-- İlgili Yazılar -->
+                              <div class="sidebar-widget">
+              <h4>İlgili Yazılar</h4>
+              <ul style="display:flex;flex-direction:column;gap:12px;">
+                                  <li>
+                    <a href="../cnc-frezeleme-nedir/index.html"
+                       style="font-size:14px;line-height:20px;color:var(--defense-navy);font-weight:500;">
+                      CNC Frezeleme Nedir?                    </a>
+                    <div style="font-size:12px;color:var(--on-surface-variant);margin-top:2px;">
+                      30 Ara 2025                    </div>
+                  </li>
+                                  <li>
+                    <a href="../cnc-cad-cam-entegrasyonu/index.html"
+                       style="font-size:14px;line-height:20px;color:var(--defense-navy);font-weight:500;">
+                      CNC CAD CAM Entegrasyonu                    </a>
+                    <div style="font-size:12px;color:var(--on-surface-variant);margin-top:2px;">
+                      12 Mar 2026                    </div>
+                  </li>
+                                  <li>
+                    <a href="../cnc-tornalama-nedir/index.html"
+                       style="font-size:14px;line-height:20px;color:var(--defense-navy);font-weight:500;">
+                      CNC Tornalama Nedir?                    </a>
+                    <div style="font-size:12px;color:var(--on-surface-variant);margin-top:2px;">
+                      30 Ara 2025                    </div>
+                  </li>
+                                  <li>
+                    <a href="../cnc-uretimde-malzeme-secimi/index.html"
+                       style="font-size:14px;line-height:20px;color:var(--defense-navy);font-weight:500;">
+                      CNC Üretimde Malzeme Seçimi                    </a>
+                    <div style="font-size:12px;color:var(--on-surface-variant);margin-top:2px;">
+                      09 Şub 2026                    </div>
+                  </li>
+                              </ul>
+            </div>
+                  
+        <!-- Teklif CTA Widget -->
+        <div class="sidebar-widget" style="background:var(--defense-navy);color:#fff;border-color:transparent;">
+          <h4 style="color:rgba(255,255,255,.6);border-color:rgba(255,255,255,.15);">
+            Üretim Teklifi Alın          </h4>
+          <p style="font-size:14px;line-height:20px;color:#d1d5db;margin-bottom:16px;">
+            Teknik resimlerinizi gönderin, hızlı fiyat teklifi alın.          </p>
+          <a href="../talasli-imalat-teklif-iletisim/index.html"
+             class="btn-primary" style="justify-content:center;width:100%;background:var(--precision-blue);">
+            Teklif Al          </a>
+        </div>
+
+        <!-- Dinamik Sidebar Widget'ları -->
+                  <div id="block-2" class="sidebar-widget widget_block widget_search"><form role="search" method="get" action="https://hakanaydemir20.github.io/aymaksan-demo/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"    ><label class="wp-block-search__label" for="wp-block-search__input-1" >Ara</label><div class="wp-block-search__inside-wrapper" ><input class="wp-block-search__input" id="wp-block-search__input-1" placeholder="" value="" type="search" name="s" required /><button aria-label="Ara" class="wp-block-search__button wp-element-button" type="submit" >Ara</button></div></form></div><div id="block-3" class="sidebar-widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Son Yazılar</h2><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="./index.html">CNC Üretim Maliyetleri</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="../ozel-parca-imalati-ile-seri-uretim-stratejileri/index.html">Özel Parça İmalatı İle Seri Üretim Stratejileri</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="../prototip-talasli-imalat-sureci-nasil-ilerler/index.html">Prototip Talaşlı İmalat Süreci Nasıl İlerler?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="../az-adet-cnc-imalat/index.html">Az Adet CNC İmalat</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="../cnc-tedarikci-yonetimi/index.html">CNC Tedarikçi Yönetimi</a></li>
+</ul></div></div></div><div id="block-4" class="sidebar-widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Son yorumlar</h2><div class="no-comments wp-block-latest-comments">Görüntülenecek bir yorum yok.</div></div></div></div>        
+      </aside><!-- .sidebar -->
+
+    </div><!-- .single-layout -->
+  </div><!-- .container -->
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Kolon 1: Logo + Hakkında -->
+        <div class="footer-col footer-col--brand">
+          <a href="../index.html" class="footer-logo-link">
+                          <img src="../wp-content/uploads/2026/06/logo1-clean.png"
+                   alt="Aymaksan Makina Logo"
+                   style="height:80px;width:auto;max-width:260px;object-fit:contain;filter:brightness(0) invert(1);"
+                   loading="lazy">
+                      </a>
+          <p class="footer-desc">
+            1988'den bu yana CNC talaşlı imalat, tasarım ve otomasyon alanında güvenilir üretim ortağınız.
+          </p>
+          <div class="footer-social">
+            <a href="https://www.google.com/search?q=AYMAKSAN+MAKİNA+Yorumlar"
+               target="_blank" rel="noopener" class="social-link" aria-label="Google Reviews">
+              <span class="material-symbols-outlined">reviews</span>
+            </a>
+            <a href="https://www.linkedin.com/company/aymaksan" target="_blank" rel="noopener"
+               class="social-link" aria-label="LinkedIn">
+              <span class="material-symbols-outlined">work</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Kolon 2: Hızlı Bağlantılar -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Hızlı Bağlantılar</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Ana Sayfa</a></li>
+            <li><a href="../ozel-talasli-imalat-hizmetleri/index.html">Hizmetlerimiz</a></li>
+            <li><a href="../makine-parkimiz/index.html">Makine Parkımız</a></li>
+            <li><a href="../sektorlere-ozel-cnc-talasli-imalat/index.html">Sektörler</a></li>
+            <li><a href="../aymaksan-makina-hakkimizda/index.html">Hakkımızda</a></li>
+            <li><a href="../blog/index.html">Blog</a></li>
+            <li><a href="../talasli-imalat-teklif-iletisim/index.html">İletişim</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolon 3: Hizmetler -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Hizmetlerimiz</h4>
+          <ul class="footer-links">
+            <li><a href="../cnc-tornalama/index.html">CNC Tornalama</a></li>
+            <li><a href="../cnc-frezeleme-ve-dik-isleme/index.html">CNC Frezeleme</a></li>
+            <li><a href="../kaynak-ve-montaj-hizmetleri/index.html">Kaynak & Montaj</a></li>
+            <li><a href="../kalite-kontrol-ve-olcum-hizmetleri/index.html">Kalite Kontrol</a></li>
+            <li><a href="../prototip-uretim-ve-ar-ge-destegi/index.html">Prototip Üretim</a></li>
+            <li><a href="../ozel-talasli-imalat-hizmeti/index.html">Özel Talaşlı İmalat</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolon 4: İletişim -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">İletişim</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+              <address>Ostim Sanayi Sitesi<br>1181. Sk. No:23<br>06370 Yenimahalle/Ankara</address>
+            </li>
+            <li>
+              <span class="material-symbols-outlined" aria-hidden="true">call</span>
+              <a href="tel:+905523615628">+90 552 361 56 28</a>
+            </li>
+            <li>
+              <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+              <a href="mailto:info@aymaksanmakina.com">info@aymaksanmakina.com</a>
+            </li>
+            <li>
+              <span class="material-symbols-outlined" aria-hidden="true">language</span>
+              <a href="https://aymaksanmakina.com" target="_blank" rel="noopener">aymaksanmakina.com</a>
+            </li>
+          </ul>
+        </div>
+
+      </div><!-- .footer-grid -->
+    </div><!-- .container -->
+  </div><!-- .footer-top -->
+
+  <!-- Footer Alt Çubuk -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <p class="footer-copy">
+          &copy; 2026 Aymaksan Makina.
+          Tüm hakları saklıdır.
+        </p>
+        <nav class="footer-legal-nav" aria-label="Yasal Bağlantılar">
+                                <a href="../gizlilik-politikasi/index.html">Gizlilik Politikası</a>
+            <a href="../hizmet-sartlari/index.html">Hizmet Şartları</a>
+            <a href="../kvkk-aydinlatma-metni/index.html">KVKK</a>
+                  </nav>
+      </div>
+    </div>
+  </div>
+
+</footer>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/aymaksan-stitch/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="aymaksan-main-js-js-extra">
+var aymaksanData = {"ajaxUrl":"https://hakanaydemir20.github.io/aymaksan-demo/wp-admin/admin-ajax.php","nonce":"3410ec64b7","siteUrl":"https://hakanaydemir20.github.io/aymaksan-demo","themeUrl":"https://hakanaydemir20.github.io/aymaksan-demo/wp-content/themes/aymaksan-stitch"};
+//# sourceURL=aymaksan-main-js-js-extra
+</script>
+<script defer src="../wp-content/themes/aymaksan-stitch/assets/js/main.js?ver=1.7.4" id="aymaksan-main-js-js"></script>
+<script defer src="../wp-content/themes/aymaksan-stitch/assets/js/mobile-menu.js?ver=1.7.4" id="aymaksan-mobile-menu-js"></script>
+<script defer src="../wp-content/themes/aymaksan-stitch/assets/js/animations.js?ver=1.7.4" id="aymaksan-animations-js-js"></script>
+<script async data-wp-strategy="async" fetchpriority="low" id="comment-reply-js" src="../wp-includes/js/comment-reply.min.js?ver=7.0"></script>
+<script id="qr-code-library-js" src="https://unpkg.com/@bitjson/qr-code@1.0.2/dist/qr-code.js?ver=1.0.2"></script>
+<script id="dan_splittext_enable-js" src="../wp-content/plugins/dancepad/local_assets/dancepad_splittext.min.js?ver=2.1.6&"></script>
+</body>
+</html>

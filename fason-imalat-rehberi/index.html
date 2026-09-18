@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="tr" class="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fason İmalat Rehberi: CNC’de Avantajlar ve Riskler</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel="canonical" href="./index.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel='dns-prefetch' href='//unpkg.com' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='preconnect' href='https://fonts.googleapis.com' />
+<link rel='preconnect' href='https://fonts.gstatic.com' />
+<meta name="description" content="Fason imalat rehberi ile fason CNC üretimde maliyet, termin ve kaliteyi yönetin: avantajlar, riskler, tedarikçi seçimi ve sözleşme kontrol listesi.">
+<link rel="alternate" type="application/rss+xml" title="Aymaksan Makina &raquo; Fason İmalat Rehberi yorum akışı" href="./feed/index.html" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://hakanaydemir20.github.io/aymaksan-demo/wp-json/oembed/1.0/embed?url=http%3A%2F%2Faymaksan.test%2Ffason-imalat-rehberi%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://hakanaydemir20.github.io/aymaksan-demo/wp-json/oembed/1.0/embed?url=http%3A%2F%2Faymaksan.test%2Ffason-imalat-rehberi%2F&#038;format=xml" />
+<meta property="og:title" content="Fason İmalat Rehberi: CNC’de Avantajlar ve Riskler">
+<meta property="og:description" content="Fason imalat rehberi ile fason CNC üretimde maliyet, termin ve kaliteyi yönetin: avantajlar, riskler, tedarikçi seçimi ve sözleşme kontrol listesi.">
+<meta property="og:url" content="./index.html">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="Aymaksan Makina">
+<meta property="og:image" content="../wp-content/uploads/2026/03/fason-imalat-rehberi-1-1024x771.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fason İmalat Rehberi: CNC’de Avantajlar ve Riskler">
+<meta name="twitter:description" content="Fason imalat rehberi ile fason CNC üretimde maliyet, termin ve kaliteyi yönetin: avantajlar, riskler, tedarikçi seçimi ve sözleşme kontrol listesi.">
+<meta name="twitter:image" content="../wp-content/uploads/2026/03/fason-imalat-rehberi-1-1024x771.webp">
+<link rel="alternate" hreflang="tr" href="./index.html">
+<link rel="alternate" hreflang="x-default" href="./index.html">
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='aymaksan-fonts-preconnect-css' href='https://fonts.googleapis.com' media='all' />
+<link rel='stylesheet' id='aymaksan-fonts-css' href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&#038;family=JetBrains+Mono:wght@500&#038;display=swap' media='all' />
+<link rel='stylesheet' id='material-symbols-css' href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&#038;display=swap' media='all' />
+<link rel='stylesheet' id='aymaksan-main-css' href='../wp-content/themes/aymaksan-stitch/style.css?ver=1.7.4' media='all' />
+<link rel='stylesheet' id='aymaksan-animations-css' href='../wp-content/themes/aymaksan-stitch/assets/css/animations.css?ver=1.7.4' media='all' />
+<link rel='stylesheet' id='aymaksan-responsive-css' href='../wp-content/themes/aymaksan-stitch/assets/css/responsive.css?ver=1.7.4' media='all' />
+<link rel='stylesheet' id='tocer-dist-css' href='../wp-content/plugins/tocer/assets/style.min.css?ver=4.2.3' media='all' />
+<script>
+	document.documentElement.classList.add('tocer-init');
+</script>
+<!-- Site Kit tarafından eklenen Google etiketi (gtag.js) snippet&#039;i -->
+<!-- Google Analytics snippet&#039;i, Site Kit tarafından eklendi -->
+<script id="google_gtagjs-js" src="https://www.googletagmanager.com/gtag/js?id=GT-MJWKZR4N" async></script>
+<script id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["aymaksan.test"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-MJWKZR4N", {"googlesitekit_post_type":"post","googlesitekit_post_author":"aymaksan"});
+ window._googlesitekit = window._googlesitekit || {}; window._googlesitekit.throttledEvents = []; window._googlesitekit.gtagEvent = (name, data) => { var key = JSON.stringify( { name, data } ); if ( !! window._googlesitekit.throttledEvents[ key ] ) { return; } window._googlesitekit.throttledEvents[ key ] = true; setTimeout( () => { delete window._googlesitekit.throttledEvents[ key ]; }, 5 ); gtag( "event", name, { ...data, event_source: "site-kit" } ); }; 
+//# sourceURL=google_gtagjs-js-after
+</script>
+<link rel="https://api.w.org/" href="https://hakanaydemir20.github.io/aymaksan-demo/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://hakanaydemir20.github.io/aymaksan-demo/wp-json/wp/v2/posts/3635" /><link rel="canonical" href="./index.html" />
+<meta name="generator" content="Site Kit by Google 1.179.0" /><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2H7PJWH');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Favicon -->
+<link rel="icon" href="../aymaksan/favicon.ico" type="image/x-icon">
+<!-- End Favicon --><link rel="icon" type="image/png" href="../wp-content/uploads/fbrfg/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="../wp-content/uploads/fbrfg/favicon.svg" />
+<link rel="shortcut icon" href="../wp-content/uploads/fbrfg/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../wp-content/uploads/fbrfg/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="aymaksan" />
+<link rel="manifest" href="../wp-content/uploads/fbrfg/site.webmanifest" /><script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Fason İmalat Rehberi",
+    "description": "Fason üretim kararının “doğru” ya da “yanlış” olması; parça geometrisi, tolerans seviyesi, yıllık adet, termin baskısı, kalite doğrulama altyapısı ve tedarikçi olgunluğu gibi değişkenlerin toplamına bağlıdır. Bu yazı, fason imalat rehberi perspektifiyle, özellikle CNC parça üretiminde dış kaynak kullanmanın (taşeron/alt yüklenici)...",
+    "url": "https://hakanaydemir20.github.io/aymaksan-demo/fason-imalat-rehberi/",
+    "datePublished": "2026-03-19T08:00:00+03:00",
+    "dateModified": "2026-02-26T23:16:20+03:00",
+    "author": {
+        "@type": "Organization",
+        "name": "Aymaksan Makina",
+        "url": "https://hakanaydemir20.github.io/aymaksan-demo/"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aymaksan Makina",
+        "url": "https://hakanaydemir20.github.io/aymaksan-demo/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://hakanaydemir20.github.io/aymaksan-demo/wp-content/uploads/aymaksan-logo.png"
+        }
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://hakanaydemir20.github.io/aymaksan-demo/fason-imalat-rehberi/"
+    },
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://hakanaydemir20.github.io/aymaksan-demo/wp-content/uploads/2026/03/fason-imalat-rehberi-1-1024x771.webp"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Ana Sayfa",
+            "item": "https://hakanaydemir20.github.io/aymaksan-demo/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "CNC İmalat Rehberi",
+            "item": "https://hakanaydemir20.github.io/aymaksan-demo/kategori/cnc-imalat-rehberi/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Fason İmalat Rehberi",
+            "item": "https://hakanaydemir20.github.io/aymaksan-demo/fason-imalat-rehberi/"
+        }
+    ]
+}
+</script>
+
+<!-- Google Etiket Yöneticisi snippet&#039;i, Site Kit tarafından eklendi -->
+<script>
+			( function( w, d, s, l, i ) {
+				w[l] = w[l] || [];
+				w[l].push( {'gtm.start': new Date().getTime(), event: 'gtm.js'} );
+				var f = d.getElementsByTagName( s )[0],
+					j = d.createElement( s ), dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore( j, f );
+			} )( window, document, 'script', 'dataLayer', 'GTM-M2H7PJWH' );
+			
+</script>
+
+<!-- Son Google Etiket Yöneticisi snippet&#039;i, Site Kit tarafından eklendi -->
+<link rel="icon" href="../wp-content/uploads/2025/12/cropped-aymaksan-simge-32x32.webp" sizes="32x32" />
+<link rel="icon" href="../wp-content/uploads/2025/12/cropped-aymaksan-simge-192x192.webp" sizes="192x192" />
+<link rel="apple-touch-icon" href="../wp-content/uploads/2025/12/cropped-aymaksan-simge-180x180.webp" />
+<meta name="msapplication-TileImage" content="../wp-content/uploads/2025/12/cropped-aymaksan-simge-270x270.webp" />
+<style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=https://hakanaydemir20.github.io/aymaksan-demo/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id="wp-block-latest-comments-inline-css">
+ol.wp-block-latest-comments{box-sizing:border-box;margin-left:0}:where(.wp-block-latest-comments:not([style*=line-height] .wp-block-latest-comments__comment)){line-height:1.1}:where(.wp-block-latest-comments:not([style*=line-height] .wp-block-latest-comments__comment-excerpt p)){line-height:1.8}.has-dates :where(.wp-block-latest-comments:not([style*=line-height])),.has-excerpts :where(.wp-block-latest-comments:not([style*=line-height])){line-height:1.5}.wp-block-latest-comments .wp-block-latest-comments{padding-left:0}.wp-block-latest-comments__comment{list-style:none;margin-bottom:1em}.has-avatars .wp-block-latest-comments__comment{list-style:none;min-height:2.25em}.has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-excerpt,.has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta{margin-left:3.25em}.wp-block-latest-comments__comment-excerpt p{font-size:.875em;margin:.36em 0 1.4em}.wp-block-latest-comments__comment-date{display:block;font-size:.75em}.wp-block-latest-comments .avatar,.wp-block-latest-comments__comment-avatar{border-radius:1.5em;display:block;float:left;height:2.5em;margin-right:.75em;width:2.5em}.wp-block-latest-comments[class*=-font-size] a,.wp-block-latest-comments[style*=font-size] a{font-size:inherit}
+/*# sourceURL=https://hakanaydemir20.github.io/aymaksan-demo/wp-includes/blocks/latest-comments/style.min.css */
+</style>
+<style id="wp-block-latest-posts-inline-css">
+.wp-block-latest-posts{box-sizing:border-box}.wp-block-latest-posts.alignleft{margin-right:2em}.wp-block-latest-posts.alignright{margin-left:2em}.wp-block-latest-posts.wp-block-latest-posts__list{list-style:none}.wp-block-latest-posts.wp-block-latest-posts__list li{clear:both;overflow-wrap:break-word}.wp-block-latest-posts.is-grid{display:flex;flex-wrap:wrap}.wp-block-latest-posts.is-grid li{margin:0 1.25em 1.25em 0;width:100%}@media (min-width:600px){.wp-block-latest-posts.columns-2 li{width:calc(50% - .625em)}.wp-block-latest-posts.columns-2 li:nth-child(2n){margin-right:0}.wp-block-latest-posts.columns-3 li{width:calc(33.33333% - .83333em)}.wp-block-latest-posts.columns-3 li:nth-child(3n){margin-right:0}.wp-block-latest-posts.columns-4 li{width:calc(25% - .9375em)}.wp-block-latest-posts.columns-4 li:nth-child(4n){margin-right:0}.wp-block-latest-posts.columns-5 li{width:calc(20% - 1em)}.wp-block-latest-posts.columns-5 li:nth-child(5n){margin-right:0}.wp-block-latest-posts.columns-6 li{width:calc(16.66667% - 1.04167em)}.wp-block-latest-posts.columns-6 li:nth-child(6n){margin-right:0}}:root :where(.wp-block-latest-posts.is-grid){padding:0}:root :where(.wp-block-latest-posts.wp-block-latest-posts__list){padding-left:0}.wp-block-latest-posts__post-author,.wp-block-latest-posts__post-date{display:block;font-size:.8125em}.wp-block-latest-posts__post-excerpt,.wp-block-latest-posts__post-full-content{margin-bottom:1em;margin-top:.5em}.wp-block-latest-posts__featured-image a{display:inline-block}.wp-block-latest-posts__featured-image img{height:auto;max-width:100%;width:auto}.wp-block-latest-posts__featured-image.alignleft{float:left;margin-right:1em}.wp-block-latest-posts__featured-image.alignright{float:right;margin-left:1em}.wp-block-latest-posts__featured-image.aligncenter{margin-bottom:1em;text-align:center}
+/*# sourceURL=https://hakanaydemir20.github.io/aymaksan-demo/wp-includes/blocks/latest-posts/style.min.css */
+</style>
+<style id="wp-block-search-inline-css">
+.wp-block-search__button{margin-left:10px;word-break:normal}.wp-block-search__button.has-icon{line-height:0}.wp-block-search__button svg{fill:currentColor;height:1.25em;min-height:24px;min-width:24px;vertical-align:text-bottom;width:1.25em}:where(.wp-block-search__button){border:1px solid #ccc;padding:6px 10px}.wp-block-search__inside-wrapper{display:flex;flex:auto;flex-wrap:nowrap;max-width:100%}.wp-block-search__label{width:100%}.wp-block-search.wp-block-search__button-only .wp-block-search__button{box-sizing:border-box;display:flex;flex-shrink:0;justify-content:center;margin-left:0;max-width:100%}.wp-block-search.wp-block-search__button-only .wp-block-search__inside-wrapper{min-width:0!important;transition-property:width}.wp-block-search.wp-block-search__button-only .wp-block-search__input{flex-basis:100%;transition-duration:.3s}.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden,.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden .wp-block-search__inside-wrapper{overflow:hidden}.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden .wp-block-search__input{border-left-width:0!important;border-right-width:0!important;flex-basis:0;flex-grow:0;margin:0;min-width:0!important;padding-left:0!important;padding-right:0!important;width:0!important}:where(.wp-block-search__input){appearance:none;border:1px solid #949494;flex-grow:1;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;margin-left:0;margin-right:0;min-width:3rem;padding:8px;text-decoration:unset!important;text-transform:inherit}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper){background-color:#fff;border:1px solid #949494;box-sizing:border-box;padding:4px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input{border:none;border-radius:0;padding:0 4px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input:focus{outline:none}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) :where(.wp-block-search__button){padding:4px 8px}.wp-block-search.aligncenter .wp-block-search__inside-wrapper{margin:auto}.wp-block[data-align=right] .wp-block-search.wp-block-search__button-only .wp-block-search__inside-wrapper{float:right}
+/*# sourceURL=https://hakanaydemir20.github.io/aymaksan-demo/wp-includes/blocks/search/style.min.css */
+</style>
+<style id="wp-block-group-inline-css">
+.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}
+/*# sourceURL=https://hakanaydemir20.github.io/aymaksan-demo/wp-includes/blocks/group/style.min.css */
+</style>
+
+</head>
+<body class="wp-singular post-template-default single single-post postid-3635 single-format-standard wp-custom-logo wp-embed-responsive wp-theme-aymaksan-stitch is-singular">
+		<!-- Google Etiket Yöneticisi (noscript) snippet&#039;i, Site Kit tarafından eklendi -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2H7PJWH" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<!-- Son Google Etiket Yöneticisi (noscript) snippet&#039;i, Site Kit tarafından eklendi -->
+		<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2H7PJWH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Mobil Overlay -->
+<div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+<!-- Mobil Menü Drawer -->
+<div class="mobile-menu" id="mobile-menu" role="dialog"
+     aria-label="Navigasyon Menüsü"
+     aria-hidden="true">
+  <div class="mobile-menu-header">
+    <a href="../index.html" class="mobile-menu-logo">
+              <img src="../wp-content/uploads/2026/06/logo1-clean.png"
+             alt="Aymaksan Makina"
+             style="height:52px;width:auto;object-fit:contain;">
+          </a>
+    <button class="mobile-menu-close" id="mobile-menu-close"
+            aria-label="Menüyü kapat">
+      <span class="material-symbols-outlined" aria-hidden="true">close</span>
+    </button>
+  </div>
+  <nav aria-label="Mobil Menü">
+    <ul id="menu-ana-menu" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home"><a href="../index.html">Ana Sayfa</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../ozel-talasli-imalat-hizmetleri/index.html">Hizmetlerimiz</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../makine-parkimiz/index.html">Makine Parkımız</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../sektorlere-ozel-cnc-talasli-imalat/index.html">Sektörler</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../aymaksan-makina-hakkimizda/index.html">Hakkımızda</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../blog/index.html">Blog</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../talasli-imalat-teklif-iletisim/index.html">İletişim</a></li></ul>  </nav>
+  <div class="mobile-menu-contact">
+    <a href="tel:+905523615628" class="mobile-contact-item">
+      <span class="material-symbols-outlined" aria-hidden="true">call</span>
+      +90 552 361 56 28
+    </a>
+    <a href="mailto:info@aymaksanmakina.com" class="mobile-contact-item">
+      <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+      info@aymaksanmakina.com
+    </a>
+    <a href="../talasli-imalat-teklif-iletisim/index.html"
+       class="btn-primary" style="justify-content:center;width:100%;margin-top:8px;">
+      Teklif Alın    </a>
+  </div>
+</div>
+
+<!-- SABİT HEADER SARMALAYICI (topbar + ana header birlikte) -->
+<div class="site-header-wrap" id="site-header-wrap">
+
+<!-- Üst Bilgi Çubuğu -->
+<div class="topbar" role="complementary">
+  <div class="container">
+    <div class="topbar-inner">
+      <div class="topbar-left">
+        <a href="tel:+905523615628" class="topbar-item">
+          <span class="material-symbols-outlined" aria-hidden="true">call</span>
+          +90 552 361 56 28
+        </a>
+        <a href="mailto:info@aymaksanmakina.com" class="topbar-item">
+          <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+          info@aymaksanmakina.com
+        </a>
+        <span class="topbar-item topbar-address">
+          <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+          Ostim Sanayi Sitesi 1181. Sk. No:23, Yenimahalle/Ankara
+        </span>
+      </div>
+      <div class="topbar-right">
+        <a href="https://www.google.com/maps/search/Ostim+Sanayi+Sitesi+1181.+Sk.+No+23+Yenimahalle+Ankara"
+           target="_blank" rel="noopener" class="topbar-item" aria-label="Haritada Gör">
+          <span class="material-symbols-outlined" aria-hidden="true">map</span>
+          Haritada Gör
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ANA HEADER -->
+<header class="site-header" id="site-header" role="banner">
+  <div class="container">
+
+    <!-- Logo -->
+    <div class="site-logo">
+      <a href="../index.html"
+         aria-label="Aymaksan Makina — Ana Sayfa">
+                  <img src="../wp-content/uploads/2026/06/logo1-clean.png"
+               alt="Aymaksan Makina | CNC & Design & Automation"
+               class="site-logo-img"
+               style="height:64px;width:auto;max-width:230px;object-fit:contain;"
+               loading="eager" width="230" height="64">
+              </a>
+    </div>
+
+    <!-- Desktop Navigasyon -->
+    <nav class="primary-nav" id="primary-nav"
+         aria-label="Ana Navigasyon">
+      <ul id="menu-ana-menu-1" class="nav-list"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home"><a href="../index.html">Ana Sayfa</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../ozel-talasli-imalat-hizmetleri/index.html">Hizmetlerimiz</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../makine-parkimiz/index.html">Makine Parkımız</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../sektorlere-ozel-cnc-talasli-imalat/index.html">Sektörler</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../aymaksan-makina-hakkimizda/index.html">Hakkımızda</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../blog/index.html">Blog</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../talasli-imalat-teklif-iletisim/index.html">İletişim</a></li></ul>    </nav>
+
+    <!-- Header CTA -->
+    <a href="../talasli-imalat-teklif-iletisim/index.html"
+       class="header-cta">
+      <span class="material-symbols-outlined" aria-hidden="true">request_quote</span>
+      Teklif Alın    </a>
+
+    <!-- Hamburger -->
+    <button class="menu-toggle" id="menu-toggle"
+            aria-controls="mobile-menu" aria-expanded="false"
+            aria-label="Menüyü aç">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+  </div>
+</header>
+
+</div><!-- .site-header-wrap -->
+
+<!-- Back to top -->
+<button class="back-to-top" id="back-to-top"
+        aria-label="Sayfa başına dön">
+  <span class="material-symbols-outlined" aria-hidden="true">arrow_upward</span>
+</button>
+
+<main id="main" class="site-main" role="main">
+  <div class="container">
+    <nav class="breadcrumb container" aria-label="Sayfa konumu"><a href="../index.html">Ana Sayfa</a><span class="sep" aria-hidden="true">›</span><a href="../kategori/cnc-imalat-rehberi/index.html">CNC İmalat Rehberi</a><span class="sep" aria-hidden="true">›</span><span aria-current="page">Fason İmalat Rehberi</span></nav>
+    <div class="single-layout">
+
+      <!-- Sol TOC (sticky, grid col 1) -->
+      <div class="post-toc-col">
+<aside class="post-toc" id="post-toc" aria-label="İçindekiler">
+  <div class="post-toc__inner">
+    <div class="post-toc__title">İçindekiler</div>
+    <nav class="post-toc__nav" id="post-toc-nav"></nav>
+  </div>
+</aside>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var nav = document.getElementById('post-toc-nav');
+  var toc = document.getElementById('post-toc');
+  var col = document.querySelector('.post-toc-col');
+  if (!nav || !toc || !col) return;
+
+  var content = document.querySelector('.entry-content');
+  if (!content) { col.style.setProperty('display', 'none', 'important'); return; }
+
+  /*
+   * Tocer plugini iki şey yapar:
+   * 1. .entry-content içine DIV.tocer (gizli TOC widget) ekler
+   * 2. Asıl makale başlıklarına id="tocer-heading-N" class="tocer-heading" atar
+   *
+   * Bu yüzden yalnızca DIV.tocer IÇINDEKI başlıkları dışarıda bırakıyoruz.
+   * [id^="tocer"] selektörünü KULLANMIYORUZ — başlıkların kendisi bu ID'lere sahip.
+   */
+  var hiddenContainers = ['.tocer', '.ez-toc-container',
+                          '.wp-block-rank-math-toc-block', '.rank-math-toc',
+                          '.ez-toc-v2-container'];
+
+  var headings = Array.from(content.querySelectorAll('h2, h3')).filter(function(h) {
+    for (var s = 0; s < hiddenContainers.length; s++) {
+      if (h.closest(hiddenContainers[s])) return false;
+    }
+    return true;
+  });
+
+  if (headings.length < 3) { col.style.setProperty('display', 'none', 'important'); return; }
+
+  /* ── Header yüksekliği ── */
+  var headerEl = document.querySelector('.site-header');
+  var OFFSET   = (headerEl ? headerEl.offsetHeight : 80) + 16;
+
+  /* ── Linkleri oluştur; tüm başlıklara temiz ID ver ── */
+  headings.forEach(function(h, i) {
+    h.id = 'aym-toc-' + i; // her zaman taze ID — çakışmayı önler
+    var isSub = h.tagName === 'H3';
+    var a = document.createElement('a');
+    a.href       = '#' + h.id;
+    a.className  = 'post-toc__link' + (isSub ? ' post-toc__link--sub' : '');
+    a.dataset.id = h.id;
+    a.textContent = h.textContent.replace(/^\d+\s+/, '').trim();
+    nav.appendChild(a);
+  });
+
+  var links = Array.from(nav.querySelectorAll('a'));
+
+  /* ── Aktif link: scroll bazlı ── */
+  function getActive() {
+    var scrollY = window.scrollY || window.pageYOffset;
+    var active  = headings[0];
+    for (var i = 0; i < headings.length; i++) {
+      var absTop = headings[i].getBoundingClientRect().top + scrollY - OFFSET - 4;
+      if (scrollY >= absTop) active = headings[i];
+      else break;
+    }
+    return active;
+  }
+
+  function setActive(id) {
+    links.forEach(function(l) { l.classList.remove('active'); });
+    var a = nav.querySelector('[data-id="' + id + '"]');
+    if (!a) return;
+    a.classList.add('active');
+    var inner = toc.querySelector('.post-toc__inner');
+    var aTop  = a.offsetTop;
+    var ih    = inner.clientHeight;
+    if (aTop < inner.scrollTop || aTop > inner.scrollTop + ih - 32) {
+      inner.scrollTop = aTop - ih / 2 + 16;
+    }
+  }
+
+  var lastId = '';
+  function onScroll() {
+    var h = getActive();
+    if (h && h.id !== lastId) { lastId = h.id; setActive(h.id); }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ── Tıklama: smooth scroll ── */
+  nav.addEventListener('click', function(e) {
+    var a = e.target.closest('a[data-id]');
+    if (!a) return;
+    e.preventDefault();
+    var target = document.getElementById(a.dataset.id);
+    if (!target) return;
+    var targetY = target.getBoundingClientRect().top
+                  + (window.scrollY || window.pageYOffset)
+                  - OFFSET;
+    window.scrollTo({ top: Math.max(0, targetY), behavior: 'smooth' });
+  });
+});
+</script>
+</div><!-- .post-toc-col -->
+
+      <!-- Ana İçerik -->
+      <article id="post-3635" class="post-3635 post type-post status-publish format-standard has-post-thumbnail hentry category-cnc-imalat-rehberi" role="article">
+
+        
+          <header class="post-header">
+                          <div class="post-card__meta">
+                <a href="../kategori/cnc-imalat-rehberi/index.html">
+                  CNC İmalat Rehberi                </a>
+                <span>—</span>
+                <span>19 Mar 2026</span>
+              </div>
+            
+            <h1>Fason İmalat Rehberi</h1>
+
+            <div class="post-meta">
+              <span>aymaksan</span>
+            </div>
+          </header>
+
+                      <div class="post-thumbnail">
+              <img width="1088" height="820" src="../wp-content/uploads/2026/03/fason-imalat-rehberi-1.webp" class="attachment-hero size-hero wp-post-image" alt="Fason İmalat Rehberi" loading="lazy" decoding="async" fetchpriority="high" srcset="../wp-content/uploads/2026/03/fason-imalat-rehberi-1.webp 1200w, ../wp-content/uploads/2026/03/fason-imalat-rehberi-1-300x226.webp 300w, ../wp-content/uploads/2026/03/fason-imalat-rehberi-1-1024x771.webp 1024w, ../wp-content/uploads/2026/03/fason-imalat-rehberi-1-768x579.webp 768w" sizes="(max-width: 1088px) 100vw, 1088px" />            </div>
+          
+          <div class="entry-content">
+            <h2 id="tocer-heading-1" class="tocer-heading">Fason İmalat Rehberi: Avantajlar ve Riskler</h2>
+<p>Fason üretim kararının “doğru” ya da “yanlış” olması; parça geometrisi, tolerans seviyesi, yıllık adet, termin baskısı, kalite doğrulama altyapısı ve tedarikçi olgunluğu gibi değişkenlerin toplamına bağlıdır. Bu yazı, <strong>fason imalat rehberi</strong> perspektifiyle, özellikle CNC parça üretiminde dış kaynak kullanmanın (taşeron/alt yüklenici) getirdiği teknik kazanımları ve yönetilmesi gereken riskleri sahadan uygulanabilir bir çerçeveyle ele alır.</p>
+<p>Türkiye’de özellikle Ankara gibi sanayi ekosistemi güçlü bölgelerde işletmeler; yüksek hassasiyetli parçaları, prototipleri veya seri üretim bileşenlerini dışarıdan tedarik ederek kapasite açığını kapatır. Ancak <strong>dış kaynak cnc imalat</strong> doğru tasarlanmadığında; tolerans kaçakları, yüzey kalitesi sapmaları, revizyon karmaşası ve teslimat gecikmeleri “maliyet avantajı” diye başlayan süreci pahalı bir probleme çevirebilir.</p>
+<p>Bu rehber boyunca iki hedefi birlikte tutacağız:</p>
+<ol>
+<li><strong>Fason parça üretimi avantajları</strong>nı netleştirmek,</li>
+<li><strong>Fason cnc üretim riskleri</strong>ni ölçülebilir kontrol adımlarına bağlamak.</li>
+</ol>
+<h2 id="tocer-heading-2" class="tocer-heading">Fason Cnc İmalat Nedir? (Tanım ve Kapsam)</h2>
+<p>Kısa tanım: <strong>fason cnc imalat nedir</strong> sorusunun cevabı; parçanın üretim operasyonlarının (tornalama, frezeleme/dik işleme, delik–diş, yüzey işlemleri, kaynak–montaj, ölçüm/raporlama vb.) bir kısmının veya tamamının, sözleşmeli bir üretici tarafından gerçekleştirilmesidir. “Fason” burada yalnızca tezgâh zamanı satın almak değildir; çoğu projede proses planlama, takım seçimi, fikstürleme, ölçüm stratejisi ve dokümantasyon disiplinini de kapsar.</p>
+<figure class="wp-block-image"><img decoding="async" src="../wp-content/uploads/2026/03/fason-imalat-rehberi-fason-cnc-imalat-nedir.webp" alt="fason imalat rehberi - fason cnc imalat nedir" /><figcaption>fason imalat rehberi &#8211; fason cnc imalat nedir</figcaption></figure>
+<h2 id="tocer-heading-3" class="tocer-heading">Fason Üretim Türleri (CNC Odaklı)</h2>
+<ul>
+<li><strong>Operasyon bazlı fason:</strong> Sadece tornalama veya sadece dik işleme gibi tek bir proses dışarı verilir.</li>
+<li><strong>Uçtan uca fason:</strong> Ham malzemeden bitmiş parçaya kadar tüm süreç yürütülür.</li>
+<li><strong>Hibrit model:</strong> Kritik toleranslı operasyon içeride, yardımcı operasyonlar dışarıda yapılır.</li>
+</ul>
+<p>Bu ayrım önemli; çünkü risk profilini değiştirir. Örneğin uçtan uca modelde izlenebilirlik ve revizyon yönetimi daha kritik hale gelir.</p>
+<h2 id="tocer-heading-4" class="tocer-heading">Neden Şirketler Dış Kaynak CNC İmalata Gider?</h2>
+<p>Dış kaynak kullanımı, yalnızca “işi dışarı yaptırmak” değildir; doğru kurgulandığında üretim planlamasını stratejik bir araca dönüştürür. Özellikle kapasite doluluğu yüksek dönemlerde, yeni işlerin tezgâh sırasına girmesi haftaları bulabilir. Bu noktada <strong>dış kaynak cnc imalat</strong>, işletmenin teslim tarihlerini korumasına ve müşteri memnuniyetini sürdürülebilir hale getirmesine yardımcı olur. Ayrıca bazı parçalar, özel bağlama, yüksek hassasiyet, belirli takım–parametre bilgisi veya gelişmiş ölçüm altyapısı gerektirir. Şirketler bu yetkinlikleri her zaman içeride tutmak yerine, doğru tedarikçiden süreç bazlı destek alarak esneklik kazanır.</p>
+<p>Tek bir cümleyle: Mühendislik ekibi “tasarım ve ürün” odağını korurken üretim tarafında kapasite, teknoloji ve termin esnekliği kazanmak ister.</p>
+<h2 id="tocer-heading-5" class="tocer-heading">Kapasite ve Termin Esnekliği</h2>
+<p>Kendi atölyenizde tezgâh doluluğu yüksekse, yeni işin “en erken” başlangıç tarihi uzar. Bu noktada <strong>dış kaynak cnc imalat</strong>; proje takvimini koruyan bir tampon görevi görür.</p>
+<h2 id="tocer-heading-6" class="tocer-heading">Tezgâh/Yetkinlik Açığını Kapatma</h2>
+<p>Bazı parçalar 4–5 eksen işleme, özel bağlama, ince cidar kontrolü veya belirli ölçüm ekipmanı ister. Bu ekipman ve know-how yatırımı her firma için rasyonel olmayabilir.</p>
+<h2 id="tocer-heading-7" class="tocer-heading">Prototipten Seriye Geçiş Hızını Artırma</h2>
+<p>Ar-Ge parçası hızlı üretilir, testten gelen revizyonlar kısa döngüyle uygulanır. Bu akış iyi yönetildiğinde dış kaynak, ürün geliştirme hızını belirgin artırır.</p>
+<p>Bu noktada üretimi “tek çatı altında” yönetebilen bir yapı özellikle avantajlıdır. AYMAKSAN’ın hizmet mimarisinde CNC tornalama, freze/dik işleme, kaynak–montaj ve kalite kontrolün entegre sunulması bu tür projelerde koordinasyon riskini azaltır.</p>
+<h2 id="tocer-heading-8" class="tocer-heading">İç Kaynak mı, Dış Kaynak mı? (Karar Sorusu)</h2>
+<p>Karar cümlesi şu olmalı: “Bu parçada en kritik kısıtım ne?”</p>
+<ul>
+<li><strong>Tolerans mı?</strong></li>
+<li><strong>Yüzey kalitesi mi?</strong></li>
+<li><strong>Termin mi?</strong></li>
+<li><strong>Maliyet mi?</strong></li>
+<li><strong>Dokümantasyon/izlenebilirlik mi?</strong></li>
+</ul>
+<p>Bu soruya tek bir cevap yok; ama doğru soruyu sormak, <strong>fason imalat rehberi</strong> yaklaşımının temelidir.</p>
+<h2 id="tocer-heading-9" class="tocer-heading">Fason Parça Üretimi Avantajları (Gerçek Kazanımlar)</h2>
+<p>Fason üretimin gerçek kazancı, yalnızca birim fiyat karşılaştırmasıyla anlaşılmaz; toplam süreç performansını iyileştirdiği ölçüde değer üretir. İyi seçilmiş bir tedarikçi, kurulum sürelerini kısaltarak çevrim zamanını düşürür; bu da aynı termin içinde daha fazla parça çıkmasına imkan verir. Ayrıca tekrarlanabilir proses, ölçüm disiplini ve raporlama alışkanlığı sayesinde kalite dalgalanmaları azalır. <strong>fason parça üretimi avantajları</strong> arasında kapasite tamponu oluşturmak, acil işlerde esneklik sağlamak, prototip–seri geçişini hızlandırmak ve revizyon döngülerini daha kontrollü yürütmek de yer alır. Sonuçta firma, üretim riskini daha yönetilebilir hale getirir.</p>
+<p>Birçok firma “fason = ucuz” varsayımıyla hareket eder. Oysa <strong>fason parça üretimi avantajları</strong> yalnızca fiyat değil; hız, kalite sürekliliği, kapasite yönetimi ve proje riskinin azaltılmasıdır.</p>
+<figure class="wp-block-image"><img decoding="async" src="../wp-content/uploads/2026/03/fason-imalat-rehberi-fason-parca-uretimi-avantajlari.webp" alt="fason imalat rehberi - fason parça üretimi avantajları" /><figcaption>fason imalat rehberi &#8211; fason parça üretimi avantajları</figcaption></figure>
+<h2 id="tocer-heading-10" class="tocer-heading">Maliyet Avantajı Nereden Gelir?</h2>
+<ul>
+<li><strong>Sabit yatırımın azalması:</strong> Tezgâh, bağlama aparatları, ölçüm ekipmanı, bakım–kalibrasyon gibi giderler.</li>
+<li><strong>Ölçek ekonomisi:</strong> Fason üretici benzer parçaları arka arkaya işleyerek kurulum sürelerini düşürür.</li>
+<li><strong>Fire ve yeniden işleme azalması:</strong> Olgun proses, doğru takım–parametre ve ölçüm planıyla hata oranını düşürür.</li>
+</ul>
+<p>Burada kritik nokta: Maliyet avantajı “birim fiyat” ile değil <strong>toplam sahip olma maliyeti</strong> ile hesaplanır. Birim fiyat düşük olup iade–yeniden işleme yüksekse, toplam maliyet büyür.</p>
+<h2 id="tocer-heading-11" class="tocer-heading">Termin ve Esneklik Avantajı</h2>
+<p>Dış kaynak kullanımı; kapasite tıkanıklıklarında üretimi paralel hatlara bölmeye imkân verir. Özellikle küçük–orta seri parçalarda, doğru tedarikçiyle termin performansı belirgin artar. Bu avantajı kalıcı kılmak için sözleşmede “termin tanımı” net olmalıdır: sevk tarihi mi, kabul onayı mı, rapor teslimi mi?</p>
+<h2 id="tocer-heading-12" class="tocer-heading">Kalite ve Tekrarlanabilirlik (Doğru Kurgu ile)</h2>
+<p>Kaliteyi yükselten şey “dışarıda üretilmesi” değildir; prosesin standardize edilmesi ve ölçülebilir kontrol sistemidir. ISO 9001 gibi kalite yönetim yaklaşımı; proseslerin tanımlanması ve risk tabanlı yönetim mantığıyla bu standardizasyonu destekler. Bu konuda referans olarak <a href="https://www.tse.org.tr/ts-en-iso-9001-kalite-yonetim-sistemi/" target="_blank" rel="noopener">TS EN ISO 9001 Kalite Yönetim Sistemi</a> sayfasını inceleyebilirsiniz.</p>
+<h2 id="tocer-heading-13" class="tocer-heading">Uzmanlık ve Teknoloji Erişimi</h2>
+<p>Bazı tolerans seviyelerinde süreç; tezgâh kadar ölçüm altyapısı ve operatör/mühendislik alışkanlıklarına bağlıdır. Metroloji yaklaşımı ve ölçüm izlenebilirliği; özellikle kritik ölçülerde güven sağlar. Bu konuda Türkiye’nin ölçüm altyapısında önemli bir kurum olan <a href="https://www.ume.tubitak.gov.tr/" target="_blank" rel="noopener">TÜBİTAK UME (Ulusal Metroloji Enstitüsü)</a> sayfası, ölçüm izlenebilirliği kavramını anlamak için iyi bir başlangıçtır.</p>
+<h2 id="tocer-heading-14" class="tocer-heading">“Avantaj”ın Şarta Bağlı Olduğu 5 Teknik Koşul</h2>
+<p>Fason modelin “avantaj” üretmesi, bazı teknik koşulların aynı anda sağlanmasına bağlıdır. Birincisi, teknik resim ve tolerans tanımları nettir; GD&amp;T, yüzey pürüzlülüğü, ısıl işlem/kaplama notları ve revizyon bilgisi yoruma açık bırakılmamalıdır. İkincisi, kritik ölçüler ve fonksiyonel yüzeyler açıkça işaretlenmelidir; aksi durumda kontrol eforu yanlış yere gider. Üçüncüsü, ölçüm planı ve raporlama formatı baştan belirlenmelidir: ilk parça onayı (FAI), seri örnekleme sıklığı, ölçüm cihazı beklentisi ve kabul kriterleri net olmalıdır.</p>
+<p>Dördüncüsü, proses planı ve bağlama yaklaşımı tedarikçi tarafından şeffaf biçimde anlatılmalı; operasyon sırası, riskli bölgeler (ince cidar, derin delik, hassas yataklama) ve takım stratejisi doğrulanmalıdır. Beşincisi, revizyon ve değişiklik yönetimi disiplinli yürümelidir; hangi revizyonun üretimde olduğu, eski revizyon stoklarının durumu ve yeni revizyonun devreye alma tarihi yazılı hale getirilmelidir. Bu beş şart sağlandığında <strong>fason parça üretimi avantajları</strong> gerçek anlamda ortaya çıkar; aksi halde maliyet ve termin kazanımı kısa sürede kalite problemlerine yenilir.</p>
+<h2 id="tocer-heading-15" class="tocer-heading">Teknik Resim ve Ölçü Tanımları Net mi?</h2>
+<p>Geometrik toleranslar (GD&amp;T), yüzey pürüzlülüğü (Ra), malzeme standardı, ısıl işlem/kaplama notları net değilse; fason üretimde yorum farkı doğar.</p>
+<h2 id="tocer-heading-16" class="tocer-heading">Kritik Ölçüler Tanımlandı mı?</h2>
+<p>Parçada “fonksiyonel” ölçüler ile “kozmetik” ölçüler aynı önemde değildir. Kritik ölçü listesi verilmezse; fason üretici kontrol eforunu yanlış yere harcar.</p>
+<h2 id="tocer-heading-17" class="tocer-heading">Ölçüm Planı ve Rapor Formatı Belirlendi mi?</h2>
+<p>İlk parça onayı, numune ölçüm raporu, seri ölçüm sıklığı (AQL/örnekleme), Cpk hedefleri gibi parametreler projeye göre belirlenmelidir.</p>
+<h2 id="tocer-heading-18" class="tocer-heading">Revizyon ve Değişiklik Yönetimi Kurgulandı mı?</h2>
+<p>Revizyon geldiğinde; hangi revizyonun üretimde olduğu, stoktaki parçanın statüsü ve yeni revizyonun devreye giriş tarihi açık olmalıdır.</p>
+<h2 id="tocer-heading-19" class="tocer-heading">Tedarikçi İletişim Ritmi Var mı?</h2>
+<p>Haftalık üretim planı, risk–aksiyon listesi, termin izleme; “sessiz” projelerde gecikmeyi geç fark etmenize neden olur.</p>
+<p>Bu avantaj koşullarını pratikte desteklemek için üretim yaklaşımınızı “hizmet + kalite kontrol” bütünlüğünde ele almanız gerekir. Örneğin AYMAKSAN tarafında hizmetlerin menü yapısında kalite kontrol ve ölçümün ayrı bir hizmet olarak konumlanması, proje yönetiminde kontrol disiplinini güçlendiren bir sinyaldir.</p>
+<h2 id="tocer-heading-20" class="tocer-heading">Fason Cnc Üretim Riskleri (Gerçekçi ve Yönetilebilir)</h2>
+<p>Fason süreçlerde risk çoğu zaman “bilinmezlik”ten değil, beklentinin doğru tanımlanmamasından doğar. Parçanın hangi ölçülerinin kritik olduğu, hangi yüzeylerin fonksiyon taşıdığı veya hangi proseslerin hassasiyet gerektirdiği açık yazılmadığında; tedarikçi kendi alışkanlıklarına göre karar verir. Bu da tolerans kaçakları, yüzey kalitesi sapmaları, revizyon karışıklığı ve termin kaymalarını tetikler. Oysa <strong>fason cnc üretim riskleri</strong>, doğru kontrol kapıları ve net dokümantasyonla ciddi ölçüde azaltılabilir. Bu bölümde riskleri “korkutmak” için değil; sahada uygulanan pratik kontrol adımlarına bağlamak için ele alacağız.</p>
+<p>Şimdi “kötü senaryoları” konuşalım. Çünkü <strong>fason cnc üretim riskleri</strong> çoğu zaman öngörülebilir ve doğru kontrol adımlarıyla azaltılabilir.</p>
+<figure class="wp-block-image"><img decoding="async" src="../wp-content/uploads/2026/03/fason-imalat-rehberi-fason-cnc-uretim-riskleri.webp" alt="fason imalat rehberi - fason cnc üretim riskleri" /><figcaption>fason imalat rehberi &#8211; fason cnc üretim riskleri</figcaption></figure>
+<h2 id="tocer-heading-21" class="tocer-heading">Kalite Sapması Riski (Tolerans, Yüzey, Geometri)</h2>
+<p>En sık görülen 3 risk:</p>
+<ol>
+<li>Tolerans kaçakları,</li>
+<li>Yüzey pürüzlülüğü hedefinin tutmaması,</li>
+<li>Geometrik doğruluk (diklik, paralellik, run-out) sapmaları.</li>
+</ol>
+<p>Bu riskleri azaltmak için ilk parça onayı ve süreç içi kontrol (in-process) şarttır. Bu konuda, tolerans yönetiminin neden “proses + ölçüm” birleşimi olduğunu anlamak için <a href="https://aymaksanmakina.com/cnc-uretimde-tolerans-ve-hassasiyet-yonetimi/">CNC Üretimde Tolerans ve Hassasiyet Yönetimi</a> içeriğini ilgili bölümde referans alabilirsiniz.</p>
+<h2 id="tocer-heading-22" class="tocer-heading">Termin ve Planlama Riski</h2>
+<p>Termin gecikmesi genellikle tek nedenden olmaz: malzeme tedariki, takım kırılması, fikstür revizyonu, operatör/tezgâh kapasitesi ve ölçüm bekleme süresi zincirleme etki üretir. Bu yüzden termin yönetimi; “tahmin” değil, görünür metrikler ister:</p>
+<ul>
+<li>Planlanan/gerçekleşen operasyon bitiş tarihleri</li>
+<li>Kritik yol (critical path) takibi</li>
+<li>Risk–aksiyon listesi (haftalık)</li>
+</ul>
+<h2 id="tocer-heading-23" class="tocer-heading">Gizlilik ve Know-How Sızıntısı</h2>
+<p>Özellikle özgün tasarımlarda; teknik resmin dolaşımı, CAD dosyalarının paylaşımı ve alt yüklenici ağındaki görünürlük risk yaratır. Burada doğru yaklaşım: kapsamlı bir NDA + dosya erişim disiplinidir (kim, neyi, hangi formatta alıyor?).</p>
+<h2 id="tocer-heading-24" class="tocer-heading">Revizyon Karmaşası (V1–V2–V3 Kargaşası)</h2>
+<p>“Revizyon yönetimi yoksa” fason üretimde en pahalı hata budur: yanlış revizyon üretimi. Çözüm; revizyon matrisi + onay akışı:</p>
+<ul>
+<li>Revizyon numarası</li>
+<li>Değişen ölçü/özellik listesi</li>
+<li>Uygulama başlangıç tarihi</li>
+<li>Eski revizyon stoklarının durumu</li>
+</ul>
+<h2 id="tocer-heading-25" class="tocer-heading">Alt Süreç Riskleri (Isıl İşlem, Kaplama, Sertlik)</h2>
+<p>CNC sonrası süreçlerde; ölçü değişimi (distorsiyon), kaplama kalınlığı ve sertlik hedefi gibi parametreler kritik hale gelir. Bu noktada, uluslararası referans olarak <a href="https://www.iso.org/standard/62085.html" target="_blank" rel="noopener">ISO 9001:2015 gereklilikleri</a> gibi çerçeveler, “dokümantasyon ve proses kontrol” mantığını anlatır.</p>
+<h2 id="tocer-heading-26" class="tocer-heading">Riskleri Azaltan “3 Kapı” Modeli</h2>
+<p>“3 Kapı” modeli, fason üretimi kontrol edilebilir hale getiren basit ama etkili bir çerçevedir. <strong>Kapı-1 (Teklif Öncesi Uygunluk)</strong> aşamasında; malzeme bulunabilirliği, tezgâh–fikstür uygunluğu, ölçüm altyapısı ve termin gerçekçiliği doğrulanır. Burada amaç, üretim başlamadan riskleri görünür kılmaktır. <strong>Kapı-2 (İlk Parça Onayı / FAI)</strong> aşamasında; kritik ölçüler için ölçüm raporu, gerekiyorsa yüzey pürüzlülüğü doğrulaması, geometrik kontroller (diklik, paralellik, run-out) ve proses notları kayıt altına alınır.</p>
+<p>Bu kapı geçilmeden seri üretime başlanmaz; böylece “yanlış doğru”nun seri halinde çoğalması engellenir. <strong>Kapı-3 (Seri Üretim Kontrol Disiplini)</strong> aşamasında ise örnekleme planı, proses içi ölçüm sıklığı, lot bazlı izlenebilirlik ve uygunsuzluk yönetimi devreye girer. Bu üç kapı birlikte çalıştığında <strong>fason cnc üretim riskleri</strong> ölçülebilir bir sisteme dönüşür: sapmalar erken yakalanır, revizyonlar doğru yönetilir ve termin performansı gerçek verilerle izlenir. Sonuç, daha az iade–yeniden işleme ve daha yüksek teslimat güvenidir.</p>
+<h2 id="tocer-heading-27" class="tocer-heading">Kapı-1: Teklif Öncesi Teknik Uygunluk</h2>
+<ul>
+<li>Malzeme bulunabilirliği</li>
+<li>Tezgâh/bağlama uygunluğu</li>
+<li>Ölçüm ekipmanı yeterliliği</li>
+<li>Termin gerçekçiliği</li>
+</ul>
+<h2 id="tocer-heading-28" class="tocer-heading">Kapı-2: İlk Parça Onayı (FAI)</h2>
+<ul>
+<li>Ölçüm raporu (kritik ölçüler)</li>
+<li>Yüzey pürüzlülük doğrulaması</li>
+<li>Fonksiyonel deneme (varsa)</li>
+<li>Foto/işlem notları</li>
+</ul>
+<h2 id="tocer-heading-29" class="tocer-heading">Kapı-3: Seri Üretim Kontrol Disiplini</h2>
+<ul>
+<li>Örnekleme planı</li>
+<li>Proses içi ölçüm</li>
+<li>İzlenebilirlik (lot, malzeme sertifikası, operatör/tezgâh kaydı)</li>
+</ul>
+<p>Kalite kontrol disiplinini derinleştirmek için de <a href="https://aymaksanmakina.com/ozel-parca-kalite-kontrol-olcum-surecleri/">Özel Parça Kalite Kontrol ve Ölçüm Süreçleri</a> sayfasını aynı kapsamda iç referans olarak konumlayabilirsiniz.</p>
+<h2 id="tocer-heading-30" class="tocer-heading">Dış Kaynak Cnc İmalat Süreci Nasıl Yönetilir? (Adım Adım)</h2>
+<p>Dış kaynak üretimde başarı, “iyi tedarikçi buldum” demekle değil, süreci baştan sona yönetecek bir işletim modeli kurmakla gelir. Çünkü fason işler; teknik resim, proses planı, ölçüm, revizyon ve termin gibi birçok değişkenin aynı anda uyumlu çalışmasını gerektirir. Bu nedenle doğru yaklaşım, işi operasyona bırakmak yerine projeyi bir üretim akışı gibi yönetmektir. <strong>dış kaynak cnc imalat</strong> süreci; RFQ teknik paketinin hazırlanması, tedarikçi skorlaması, sözleşme–kabul kriterleri, ilk parça onayı ve seri kontrol rutiniyle adım adım kontrol altına alınır. Aşağıdaki adımlar, pratikte “sorunsuz” akışın iskeletini oluşturur.</p>
+<p>Bu bölüm <strong>fason imalat rehberi</strong>nin “uygulama” kısmı: doğru tedarikçiyi seçmek kadar, süreci doğru yönetmek de sonucu belirler.</p>
+<figure class="wp-block-image"><img decoding="async" src="../wp-content/uploads/2026/03/fason-imalat-rehberi-dis-kaynak-cnc-imalat.webp" alt="fason imalat rehberi - dış kaynak cnc imalat" /><figcaption>fason imalat rehberi &#8211; dış kaynak cnc imalat</figcaption></figure>
+<h2 id="tocer-heading-31" class="tocer-heading">1) Teknik Paket Hazırlığı (RFQ Dosyası)</h2>
+<p>Minimum set:</p>
+<ul>
+<li>PDF teknik resim + revizyon bilgisi</li>
+<li>Malzeme standardı ve sertifika beklentisi</li>
+<li>Yüzey pürüzlülüğü (Ra) ve kritik yüzeyler</li>
+<li>Isıl işlem/kaplama gereksinimleri</li>
+<li>Kritik ölçü listesi + ölçüm yöntemi beklentisi</li>
+<li>Termin hedefi + sevk şekli</li>
+</ul>
+<p>Burada “kısa ama net” olmak kazandırır. Gereksiz sayfalar yerine kritik bilgiyi öne çıkarın.</p>
+<h2 id="tocer-heading-32" class="tocer-heading">2) Tedarikçi Değerlendirmesi (Skor Kartı Mantığı)</h2>
+<p>Skor kartında şu başlıklar olmalı:</p>
+<ul>
+<li>Tezgâh kabiliyeti (eksen, tabla, bağlama)</li>
+<li>Ölçüm altyapısı ve raporlama alışkanlığı</li>
+<li>Proses kontrol (ilk parça, seri kontrol)</li>
+<li>Termin performansı (geçmiş referans)</li>
+<li>Revizyon yönetimi disiplini</li>
+</ul>
+<p>Tedarikçi; “fiyat veren” değil, “proses anlatan” olmalı.</p>
+<h2 id="tocer-heading-33" class="tocer-heading">3) Sözleşme ve Sipariş Maddeleri (Teknik Odaklı)</h2>
+<p>Sözleşmede özellikle:</p>
+<ul>
+<li>Revizyon değişikliklerinde sorumluluk</li>
+<li>Kabul kriterleri (ölçüm raporu, yüzey, sertlik)</li>
+<li>Uygunsuzluk süreci (iade, yeniden işleme, iskonto)</li>
+<li>Gizlilik (NDA)</li>
+<li>Termin gecikmesi durumunda aksiyon</li>
+</ul>
+<h2 id="tocer-heading-34" class="tocer-heading">4) Üretim Başlangıcı: Proses Onayı</h2>
+<p>Üretime başlamadan “kısa bir proses toplantısı” yapın:</p>
+<ul>
+<li>İşleme sırası</li>
+<li>Kritik operasyonlar</li>
+<li>Fikstür yaklaşımı</li>
+<li>Ölçüm planı</li>
+<li>Riskli noktalar (ince cidar, derin delik, vb.)</li>
+</ul>
+<p>Bu toplantı 30 dakika sürer; ama günler kazandırır.</p>
+<h2 id="tocer-heading-35" class="tocer-heading">5) Takip: Haftalık Görünürlük Rutini</h2>
+<p>Haftalık tek sayfa rapor:</p>
+<ul>
+<li>Üretilen adet / kalan adet</li>
+<li>Operasyon bazlı durum</li>
+<li>Riskler ve aksiyonlar</li>
+<li>Beklenen sevk tarihi</li>
+</ul>
+<p>Bu rutin, <strong>dış kaynak cnc imalat</strong> sürecini “kontrol edilebilir” yapar.</p>
+<h2 id="tocer-heading-36" class="tocer-heading">Doğru Hizmet Kapsamını Seçmek (Tornalama–Frezeleme–Montaj)</h2>
+<p>Parçanın geometrisi neyi gerektiriyorsa onu seçin; ama tek bir tedarikçide entegre yürütmek koordinasyon riskini azaltır. Bu noktada, ihtiyaç bazlı şu iç sayfaları doğal biçimde kullanın:</p>
+<ul>
+<li><a href="https://aymaksanmakina.com/cnc-tornalama-nedir/">CNC Tornalama</a> (dönel parçalar)</li>
+<li><a href="https://aymaksanmakina.com/cnc-frezeleme-ve-dik-isleme/">CNC Frezeleme ve Dik İşleme</a> (prizmatik/karmaşık geometri)</li>
+<li><a href="https://aymaksanmakina.com/ozel-talasli-imalat-hizmetleri/">Özel Talaşlı İmalat Hizmetleri</a> (uçtan uca yaklaşım)</li>
+</ul>
+<h2 id="tocer-heading-37" class="tocer-heading">Fason Üretim mi Kendi Üretim mi? (Karar Matrisi)</h2>
+<p>Kararı doğru vermek için önce “hedefi” netleştirmek gerekir: Bu işte öncelik maliyet mi, termin mi, kalite tekrarlanabilirliği mi, yoksa kapasite sürekliliği mi? Çünkü aynı parça, farklı iş hedeflerinde bambaşka bir üretim modeline daha uygun olabilir. Örneğin toleransı dar, ölçüm yükü yüksek ve revizyon ihtimali bulunan parçalarda dış kaynak modeli; yatırım yapmadan uzmanlık ve ölçüm altyapısına erişim sağlayabilir.</p>
+<p>Buna karşılık adetleri yükselen, tasarımı stabil ve proses penceresi oturmuş ürünlerde kendi üretim; birim maliyeti aşağı çekip planlama kontrolünü artırabilir. Ayrıca tedarik zinciri riski, gizlilik ihtiyacı ve iç ekipte proses geliştirme hedefi gibi faktörler de kararın teknik tarafını etkiler. Bu nedenle karar, “hangi model daha mantıklı” sorusundan önce, “bu parça için kritik kısıtım ne” sorusuyla başlar; sonra hesaplanır, test edilir ve uygulanır.</p>
+<p>Bu soru “duygusal” değil, sayısal ve teknik bir karar olmalı. <strong>fason üretim mi kendi üretim mi</strong> sorusunu aşağıdaki 6 parametreyle çözebilirsiniz.</p>
+<h2 id="tocer-heading-38" class="tocer-heading">1) Yıllık Adet ve Ürün Ömrü</h2>
+<p>Yıllık adet yükseldikçe iç üretim yatırımı daha anlamlı hale gelir. Ancak ürün ömrü kısa (revizyonlu) ise dış kaynak daha çevik kalabilir.</p>
+<h2 id="tocer-heading-39" class="tocer-heading">2) Tolerans Seviyesi ve Ölçüm Yükü</h2>
+<p>Çok dar toleranslarda (mikron seviyeleri) sadece tezgâh değil; ölçüm ve proses stabilitesi gerekir. İçeride bu altyapı yoksa, dış kaynak daha güvenli sonuç verebilir.</p>
+<h2 id="tocer-heading-40" class="tocer-heading">3) Termin Baskısı</h2>
+<p>Termin baskısı yüksek projelerde; paralel üretim hattı kurabilen tedarikçi ağı ciddi avantaj sağlar.</p>
+<h2 id="tocer-heading-41" class="tocer-heading">4) Tasarım Revizyon Sıklığı</h2>
+<p>Revizyon sık ise; değişiklik yönetimi ve ilk parça onay çevrimi hızlı olan taraf avantajlıdır.</p>
+<h2 id="tocer-heading-42" class="tocer-heading">5) Nakit Akışı ve Yatırım Stratejisi</h2>
+<p>Tezgâh yatırımı sadece CAPEX değildir; bakım, kalibrasyon, insan kaynağı ve sürekli iyileştirme maliyeti getirir.</p>
+<h2 id="tocer-heading-43" class="tocer-heading">6) Tedarik Zinciri Riski</h2>
+<p>Tek tedarikçiye bağımlılık risklidir. Bu yüzden “ana + alternatif” kaynak planı rasyoneldir.</p>
+<h2 id="tocer-heading-44" class="tocer-heading">Pratik Karar Tablosu Mantığı (Kısa Örnek)</h2>
+<ul>
+<li><strong>Adet düşük + tolerans orta + termin kritik:</strong> Dış kaynak mantıklı</li>
+<li><strong>Adet yüksek + parça stabil + proses oturmuş:</strong> İç üretim mantıklı</li>
+<li><strong>Adet orta + tolerans yüksek + ölçüm kritik:</strong> Hibrit model mantıklı</li>
+</ul>
+<p>Bu kararları verirken devlet destekleri ve KOBİ programları da bazen yatırım kararını etkiler. Güncel örnek olarak <a href="https://www.kosgeb.gov.tr/site/tr/genel/destekler/3/destekler" target="_blank" rel="noopener">KOSGEB Destekler Listesi</a> sayfası üzerinden uygun programları takip edebilirsiniz.</p>
+<h2 id="tocer-heading-45" class="tocer-heading">Sonuç: Güvenli Fason Modeli Nasıl Kurulur?</h2>
+<p>Bu <strong>fason imalat rehberi</strong>nin özü şudur:</p>
+<ul>
+<li>Avantajları almak için süreç “ölçülebilir” olmalı,</li>
+<li>Riskleri azaltmak için kontrol kapıları net olmalı,</li>
+<li>Revizyon ve dokümantasyon disiplinine yatırım yapılmalı.</li>
+</ul>
+<p>CNC projelerinde doğru kurgulanmış dış kaynak modeli; maliyet, termin ve kaliteyi aynı anda iyileştirebilir. Yanlış kurgulanmış model ise aynı üç başlıkta da kaybettirir.</p>
+
+<!-- *tocer~post~container* -->
+          </div>
+
+          <!-- Etiketler -->
+          
+          <!-- Önceki / Sonraki -->
+          <nav class="post-navigation" aria-label="Yazı navigasyonu"
+               style="display:flex;justify-content:space-between;margin-top:var(--stack-lg);padding-top:var(--stack-md);border-top:1px solid var(--outline-variant);">
+            <div>
+              <span style="font-size:12px;color:var(--on-surface-variant);">Önceki</span><br><a href="../cnc-imalat-firmasi-secimi/index.html" rel="prev">CNC İmalat Firması Seçimi</a>            </div>
+            <div style="text-align:right;">
+              <span style="font-size:12px;color:var(--on-surface-variant);">Sonraki</span><br><a href="../talasli-imalat-firmasi-secimi/index.html" rel="next">Talaşlı İmalat Firması Seçimi</a>            </div>
+          </nav>
+
+        
+      </article><!-- article -->
+
+      <!-- Kenar Çubuğu -->
+      <aside class="sidebar" role="complementary" aria-label="İlgili içerikler">
+
+        <!-- İlgili Yazılar -->
+                              <div class="sidebar-widget">
+              <h4>İlgili Yazılar</h4>
+              <ul style="display:flex;flex-direction:column;gap:12px;">
+                                  <li>
+                    <a href="../cnc-imalat-fiyatlari-neye-gore-belirlenir/index.html"
+                       style="font-size:14px;line-height:20px;color:var(--defense-navy);font-weight:500;">
+                      CNC İmalat Fiyatları Neye Göre Belirlenir?                    </a>
+                    <div style="font-size:12px;color:var(--on-surface-variant);margin-top:2px;">
+                      03 Oca 2026                    </div>
+                  </li>
+                                  <li>
+                    <a href="../cnc-uretim-teslim-suresi/index.html"
+                       style="font-size:14px;line-height:20px;color:var(--defense-navy);font-weight:500;">
+                      CNC Üretim Teslim Süresi                    </a>
+                    <div style="font-size:12px;color:var(--on-surface-variant);margin-top:2px;">
+                      26 Şub 2026                    </div>
+                  </li>
+                                  <li>
+                    <a href="../cnc-tedarikci-yonetimi/index.html"
+                       style="font-size:14px;line-height:20px;color:var(--defense-navy);font-weight:500;">
+                      CNC Tedarikçi Yönetimi                    </a>
+                    <div style="font-size:12px;color:var(--on-surface-variant);margin-top:2px;">
+                      30 Mar 2026                    </div>
+                  </li>
+                                  <li>
+                    <a href="../cnc-imalat-satin-alma-rehberi/index.html"
+                       style="font-size:14px;line-height:20px;color:var(--defense-navy);font-weight:500;">
+                      CNC İmalat Satın Alma Rehberi                    </a>
+                    <div style="font-size:12px;color:var(--on-surface-variant);margin-top:2px;">
+                      27 Ara 2025                    </div>
+                  </li>
+                              </ul>
+            </div>
+                  
+        <!-- Teklif CTA Widget -->
+        <div class="sidebar-widget" style="background:var(--defense-navy);color:#fff;border-color:transparent;">
+          <h4 style="color:rgba(255,255,255,.6);border-color:rgba(255,255,255,.15);">
+            Üretim Teklifi Alın          </h4>
+          <p style="font-size:14px;line-height:20px;color:#d1d5db;margin-bottom:16px;">
+            Teknik resimlerinizi gönderin, hızlı fiyat teklifi alın.          </p>
+          <a href="../talasli-imalat-teklif-iletisim/index.html"
+             class="btn-primary" style="justify-content:center;width:100%;background:var(--precision-blue);">
+            Teklif Al          </a>
+        </div>
+
+        <!-- Dinamik Sidebar Widget'ları -->
+                  <div id="block-2" class="sidebar-widget widget_block widget_search"><form role="search" method="get" action="https://hakanaydemir20.github.io/aymaksan-demo/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"    ><label class="wp-block-search__label" for="wp-block-search__input-1" >Ara</label><div class="wp-block-search__inside-wrapper" ><input class="wp-block-search__input" id="wp-block-search__input-1" placeholder="" value="" type="search" name="s" required /><button aria-label="Ara" class="wp-block-search__button wp-element-button" type="submit" >Ara</button></div></form></div><div id="block-3" class="sidebar-widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Son Yazılar</h2><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="../cnc-uretim-maliyetleri/index.html">CNC Üretim Maliyetleri</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="../ozel-parca-imalati-ile-seri-uretim-stratejileri/index.html">Özel Parça İmalatı İle Seri Üretim Stratejileri</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="../prototip-talasli-imalat-sureci-nasil-ilerler/index.html">Prototip Talaşlı İmalat Süreci Nasıl İlerler?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="../az-adet-cnc-imalat/index.html">Az Adet CNC İmalat</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="../cnc-tedarikci-yonetimi/index.html">CNC Tedarikçi Yönetimi</a></li>
+</ul></div></div></div><div id="block-4" class="sidebar-widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Son yorumlar</h2><div class="no-comments wp-block-latest-comments">Görüntülenecek bir yorum yok.</div></div></div></div>        
+      </aside><!-- .sidebar -->
+
+    </div><!-- .single-layout -->
+  </div><!-- .container -->
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Kolon 1: Logo + Hakkında -->
+        <div class="footer-col footer-col--brand">
+          <a href="../index.html" class="footer-logo-link">
+                          <img src="../wp-content/uploads/2026/06/logo1-clean.png"
+                   alt="Aymaksan Makina Logo"
+                   style="height:80px;width:auto;max-width:260px;object-fit:contain;filter:brightness(0) invert(1);"
+                   loading="lazy">
+                      </a>
+          <p class="footer-desc">
+            1988'den bu yana CNC talaşlı imalat, tasarım ve otomasyon alanında güvenilir üretim ortağınız.
+          </p>
+          <div class="footer-social">
+            <a href="https://www.google.com/search?q=AYMAKSAN+MAKİNA+Yorumlar"
+               target="_blank" rel="noopener" class="social-link" aria-label="Google Reviews">
+              <span class="material-symbols-outlined">reviews</span>
+            </a>
+            <a href="https://www.linkedin.com/company/aymaksan" target="_blank" rel="noopener"
+               class="social-link" aria-label="LinkedIn">
+              <span class="material-symbols-outlined">work</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Kolon 2: Hızlı Bağlantılar -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Hızlı Bağlantılar</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Ana Sayfa</a></li>
+            <li><a href="../ozel-talasli-imalat-hizmetleri/index.html">Hizmetlerimiz</a></li>
+            <li><a href="../makine-parkimiz/index.html">Makine Parkımız</a></li>
+            <li><a href="../sektorlere-ozel-cnc-talasli-imalat/index.html">Sektörler</a></li>
+            <li><a href="../aymaksan-makina-hakkimizda/index.html">Hakkımızda</a></li>
+            <li><a href="../blog/index.html">Blog</a></li>
+            <li><a href="../talasli-imalat-teklif-iletisim/index.html">İletişim</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolon 3: Hizmetler -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Hizmetlerimiz</h4>
+          <ul class="footer-links">
+            <li><a href="../cnc-tornalama/index.html">CNC Tornalama</a></li>
+            <li><a href="../cnc-frezeleme-ve-dik-isleme/index.html">CNC Frezeleme</a></li>
+            <li><a href="../kaynak-ve-montaj-hizmetleri/index.html">Kaynak & Montaj</a></li>
+            <li><a href="../kalite-kontrol-ve-olcum-hizmetleri/index.html">Kalite Kontrol</a></li>
+            <li><a href="../prototip-uretim-ve-ar-ge-destegi/index.html">Prototip Üretim</a></li>
+            <li><a href="../ozel-talasli-imalat-hizmeti/index.html">Özel Talaşlı İmalat</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolon 4: İletişim -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">İletişim</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+              <address>Ostim Sanayi Sitesi<br>1181. Sk. No:23<br>06370 Yenimahalle/Ankara</address>
+            </li>
+            <li>
+              <span class="material-symbols-outlined" aria-hidden="true">call</span>
+              <a href="tel:+905523615628">+90 552 361 56 28</a>
+            </li>
+            <li>
+              <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+              <a href="mailto:info@aymaksanmakina.com">info@aymaksanmakina.com</a>
+            </li>
+            <li>
+              <span class="material-symbols-outlined" aria-hidden="true">language</span>
+              <a href="https://aymaksanmakina.com" target="_blank" rel="noopener">aymaksanmakina.com</a>
+            </li>
+          </ul>
+        </div>
+
+      </div><!-- .footer-grid -->
+    </div><!-- .container -->
+  </div><!-- .footer-top -->
+
+  <!-- Footer Alt Çubuk -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <p class="footer-copy">
+          &copy; 2026 Aymaksan Makina.
+          Tüm hakları saklıdır.
+        </p>
+        <nav class="footer-legal-nav" aria-label="Yasal Bağlantılar">
+                                <a href="../gizlilik-politikasi/index.html">Gizlilik Politikası</a>
+            <a href="../hizmet-sartlari/index.html">Hizmet Şartları</a>
+            <a href="../kvkk-aydinlatma-metni/index.html">KVKK</a>
+                  </nav>
+      </div>
+    </div>
+  </div>
+
+</footer>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/aymaksan-stitch/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="aymaksan-main-js-js-extra">
+var aymaksanData = {"ajaxUrl":"https://hakanaydemir20.github.io/aymaksan-demo/wp-admin/admin-ajax.php","nonce":"3410ec64b7","siteUrl":"https://hakanaydemir20.github.io/aymaksan-demo","themeUrl":"https://hakanaydemir20.github.io/aymaksan-demo/wp-content/themes/aymaksan-stitch"};
+//# sourceURL=aymaksan-main-js-js-extra
+</script>
+<script defer src="../wp-content/themes/aymaksan-stitch/assets/js/main.js?ver=1.7.4" id="aymaksan-main-js-js"></script>
+<script defer src="../wp-content/themes/aymaksan-stitch/assets/js/mobile-menu.js?ver=1.7.4" id="aymaksan-mobile-menu-js"></script>
+<script defer src="../wp-content/themes/aymaksan-stitch/assets/js/animations.js?ver=1.7.4" id="aymaksan-animations-js-js"></script>
+<script async data-wp-strategy="async" fetchpriority="low" id="comment-reply-js" src="../wp-includes/js/comment-reply.min.js?ver=7.0"></script>
+<script id="qr-code-library-js" src="https://unpkg.com/@bitjson/qr-code@1.0.2/dist/qr-code.js?ver=1.0.2"></script>
+<script id="dan_splittext_enable-js" src="../wp-content/plugins/dancepad/local_assets/dancepad_splittext.min.js?ver=2.1.6&"></script>
+</body>
+</html>
